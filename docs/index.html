@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MII Kerndatensatz Version History</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div>
+      <h1>MII Kerndatensatz Version History</h1>
+      <div class="subtitle">Strukturelle Kompatibilität publizierter FHIR-Profilversionen</div>
+    </div>
+    <div class="header-meta" id="header-meta"></div>
+  </div>
+</header>
+
+<main>
+
+<section id="intro">
+  <div class="intro-grid">
+    <div class="intro-text">
+      <h2>Worum geht es?</h2>
+      <p>Diese Seite analysiert alle publizierten Versionen der FHIR-Profile des
+        <strong>MII Kerndatensatzes</strong> (2019&ndash;2026) und zeigt, welche Versionen
+        strukturell kompatibel sind &mdash; also ab wann sich Daten von Standorten
+        direkt aggregieren lassen.</p>
+      <p>Die zentrale Metapher: <strong>Wie ein U-Bahn-Netz</strong>. Jede Linie ist
+        ein Profil, jede Station ein Release. Wo die Linie durchgängig ist, sind die
+        Versionen aggregierbar. Umsteigepunkte markieren Breaking Changes.</p>
+    </div>
+    <div class="kpi-strip">
+      <div class="kpi"><span class="kpi-num" id="kpi-modules">&mdash;</span><span class="kpi-label">Module</span></div>
+      <div class="kpi"><span class="kpi-num" id="kpi-releases">&mdash;</span><span class="kpi-label">Releases</span></div>
+      <div class="kpi"><span class="kpi-num" id="kpi-profiles">&mdash;</span><span class="kpi-label">Profile</span></div>
+      <div class="kpi"><span class="kpi-num" id="kpi-groups">&mdash;</span><span class="kpi-label">Kompatibilitäts&shy;gruppen</span></div>
+      <div class="kpi"><span class="kpi-num" id="kpi-breaking">&mdash;</span><span class="kpi-label">Breaking Changes</span></div>
+    </div>
+  </div>
+
+  <details class="help">
+    <summary>Legende und Hinweise</summary>
+    <div class="help-grid">
+      <div>
+        <h4>Farben der Stationsverbindungen</h4>
+        <ul class="legend-list">
+          <li><span class="swatch identical"></span><strong>identical</strong> &mdash; Differential exakt gleich</li>
+          <li><span class="swatch canonical-only"></span><strong>canonical-only</strong> &mdash; nur Versions-/URL-Bump</li>
+          <li><span class="swatch elements-added"></span><strong>elements-added</strong> &mdash; neue Elemente, additive</li>
+          <li><span class="swatch elements-removed"></span><strong>elements-removed</strong> &mdash; entfernte Elemente</li>
+          <li><span class="swatch modified"></span><strong>modified</strong> &mdash; Element-Eigenschaften geändert</li>
+          <li><span class="swatch mixed"></span><strong>mixed</strong> &mdash; gemischt, meist Major-Bump</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Symbole</h4>
+        <ul class="legend-list">
+          <li><span class="station-sample"></span>Station = publiziertes Release</li>
+          <li><span class="interchange-sample">✕</span>Umsteigebahnhof = Breaking Change</li>
+          <li>Größere Station = mehr Profile in dieser Version</li>
+          <li>Linien-Farbverlauf = Kategorie der Transition</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <ol class="help-steps">
+          <li>Modul aus der Liste oben wählen</li>
+          <li>Alle Profile erscheinen als parallele Linien</li>
+          <li>Auf eine Station oder ein Segment klicken &rarr; Detail rechts</li>
+          <li>URL mit <code>#modul/ProfilName</code> ist teilbar</li>
+        </ol>
+      </div>
+    </div>
+  </details>
+</section>
+
+<section id="module-picker">
+  <h2>Modul wählen</h2>
+  <div class="module-grid" id="module-grid"></div>
+</section>
+
+<section id="subway-section" class="hidden">
+  <div class="subway-header">
+    <h2 id="subway-title">&mdash;</h2>
+    <div class="subway-meta" id="subway-meta"></div>
+  </div>
+  <div class="subway-layout">
+    <div class="subway-container">
+      <svg id="subway-map"></svg>
+    </div>
+    <aside class="detail-panel" id="detail-panel">
+      <div class="empty-state">
+        <strong>Klick auf eine Station oder ein Segment</strong>
+        <p>um Details zu dieser Version oder zum Übergang zu sehen.</p>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<footer>
+  <p>
+    Daten aus dem öffentlichen
+    <a href="https://packages.simplifier.net/" target="_blank" rel="noopener">Simplifier FHIR Package Registry</a>.
+    Quellcode auf
+    <a href="https://github.com/medizininformatik-initiative/mii-kerndatensatz-versionhistory" target="_blank" rel="noopener">GitHub</a>.
+  </p>
+</footer>
+
+<script src="explorer.js"></script>
+</body>
+</html>

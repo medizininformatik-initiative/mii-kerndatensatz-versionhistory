@@ -1,0 +1,4758 @@
+[
+  {
+    "module": "bildgebung",
+    "profile": "MII_PR_Bildgebung_Anforderung_Bildgebung",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-anforderung-bildgebung",
+    "from": "2025.0.2",
+    "to": "2026.0.0",
+    "transition_type": "major",
+    "reason": "major+ext-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "fhir.dicom": {
+        "from": "2024.2.20240331",
+        "to": "2025.3.20250714"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.medikation": {
+        "from": "2025.0.0",
+        "to": "2026.0.0"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.meta": {
+        "from": "2025.0.0",
+        "to": "2026.0.0"
+      }
+    },
+    "ext_deps_changed": {
+      "fhir.dicom": {
+        "from": "2024.2.20240331",
+        "to": "2025.3.20250714"
+      }
+    },
+    "ext_deps_added": {
+      "hl7.fhir.uv.extensions.r4": "5.2.0"
+    },
+    "n_elements_added": 10,
+    "n_elements_removed": 2,
+    "category": "mixed"
+  },
+  {
+    "module": "bildgebung",
+    "profile": "MII_PR_Bildgebung_Bildgebungsprozedur",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsprozedur",
+    "from": "2025.0.2",
+    "to": "2026.0.0",
+    "transition_type": "major",
+    "reason": "major+ext-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "fhir.dicom": {
+        "from": "2024.2.20240331",
+        "to": "2025.3.20250714"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.medikation": {
+        "from": "2025.0.0",
+        "to": "2026.0.0"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.meta": {
+        "from": "2025.0.0",
+        "to": "2026.0.0"
+      }
+    },
+    "ext_deps_changed": {
+      "fhir.dicom": {
+        "from": "2024.2.20240331",
+        "to": "2025.3.20250714"
+      }
+    },
+    "ext_deps_added": {
+      "hl7.fhir.uv.extensions.r4": "5.2.0"
+    },
+    "n_elements_added": 8,
+    "n_elements_removed": 0,
+    "category": "mixed"
+  },
+  {
+    "module": "bildgebung",
+    "profile": "MII_PR_Bildgebung_Bildgebungsstudie",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsstudie",
+    "from": "2025.0.0",
+    "to": "2025.0.1",
+    "transition_type": "patch",
+    "reason": "dep-driven",
+    "severity": "neutral",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {
+      "hl7.fhir.extensions.r5": "4.0.1"
+    },
+    "n_elements_added": 0,
+    "n_elements_removed": 3,
+    "category": "elements-removed"
+  },
+  {
+    "module": "bildgebung",
+    "profile": "MII_PR_Bildgebung_Bildgebungsstudie",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsstudie",
+    "from": "2025.0.2",
+    "to": "2026.0.0",
+    "transition_type": "major",
+    "reason": "major+ext-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "fhir.dicom": {
+        "from": "2024.2.20240331",
+        "to": "2025.3.20250714"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.medikation": {
+        "from": "2025.0.0",
+        "to": "2026.0.0"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.meta": {
+        "from": "2025.0.0",
+        "to": "2026.0.0"
+      }
+    },
+    "ext_deps_changed": {
+      "fhir.dicom": {
+        "from": "2024.2.20240331",
+        "to": "2025.3.20250714"
+      }
+    },
+    "ext_deps_added": {
+      "hl7.fhir.uv.extensions.r4": "5.2.0"
+    },
+    "n_elements_added": 7,
+    "n_elements_removed": 5,
+    "category": "mixed"
+  },
+  {
+    "module": "bildgebung",
+    "profile": "MII_PR_Bildgebung_Koerperstruktur",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-koerperstruktur",
+    "from": "2025.0.2",
+    "to": "2026.0.0",
+    "transition_type": "major",
+    "reason": "major+ext-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "fhir.dicom": {
+        "from": "2024.2.20240331",
+        "to": "2025.3.20250714"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.medikation": {
+        "from": "2025.0.0",
+        "to": "2026.0.0"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.meta": {
+        "from": "2025.0.0",
+        "to": "2026.0.0"
+      }
+    },
+    "ext_deps_changed": {
+      "fhir.dicom": {
+        "from": "2024.2.20240331",
+        "to": "2025.3.20250714"
+      }
+    },
+    "ext_deps_added": {
+      "hl7.fhir.uv.extensions.r4": "5.2.0"
+    },
+    "n_elements_added": 0,
+    "n_elements_removed": 0,
+    "category": "modified"
+  },
+  {
+    "module": "bildgebung",
+    "profile": "MII_PR_Bildgebung_Radiologische_Befundungsprozedur",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-befundungsprozedur",
+    "from": "2025.0.2",
+    "to": "2026.0.0",
+    "transition_type": "major",
+    "reason": "major+ext-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "fhir.dicom": {
+        "from": "2024.2.20240331",
+        "to": "2025.3.20250714"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.medikation": {
+        "from": "2025.0.0",
+        "to": "2026.0.0"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.meta": {
+        "from": "2025.0.0",
+        "to": "2026.0.0"
+      }
+    },
+    "ext_deps_changed": {
+      "fhir.dicom": {
+        "from": "2024.2.20240331",
+        "to": "2025.3.20250714"
+      }
+    },
+    "ext_deps_added": {
+      "hl7.fhir.uv.extensions.r4": "5.2.0"
+    },
+    "n_elements_added": 10,
+    "n_elements_removed": 1,
+    "category": "mixed"
+  },
+  {
+    "module": "bildgebung",
+    "profile": "MII_PR_Bildgebung_Radiologische_Beobachtung",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-beobachtung",
+    "from": "2025.0.0",
+    "to": "2025.0.1",
+    "transition_type": "patch",
+    "reason": "dep-driven",
+    "severity": "neutral",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {
+      "hl7.fhir.extensions.r5": "4.0.1"
+    },
+    "n_elements_added": 0,
+    "n_elements_removed": 1,
+    "category": "mixed"
+  },
+  {
+    "module": "bildgebung",
+    "profile": "MII_PR_Bildgebung_Radiologische_Beobachtung",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-beobachtung",
+    "from": "2025.0.2",
+    "to": "2026.0.0",
+    "transition_type": "major",
+    "reason": "major+ext-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "fhir.dicom": {
+        "from": "2024.2.20240331",
+        "to": "2025.3.20250714"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.medikation": {
+        "from": "2025.0.0",
+        "to": "2026.0.0"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.meta": {
+        "from": "2025.0.0",
+        "to": "2026.0.0"
+      }
+    },
+    "ext_deps_changed": {
+      "fhir.dicom": {
+        "from": "2024.2.20240331",
+        "to": "2025.3.20250714"
+      }
+    },
+    "ext_deps_added": {
+      "hl7.fhir.uv.extensions.r4": "5.2.0"
+    },
+    "n_elements_added": 12,
+    "n_elements_removed": 2,
+    "category": "mixed"
+  },
+  {
+    "module": "bildgebung",
+    "profile": "MII_PR_Bildgebung_Radiologischer_Befund",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologischer-befund",
+    "from": "2025.0.0",
+    "to": "2025.0.1",
+    "transition_type": "patch",
+    "reason": "dep-driven",
+    "severity": "neutral",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {
+      "hl7.fhir.extensions.r5": "4.0.1"
+    },
+    "n_elements_added": 0,
+    "n_elements_removed": 1,
+    "category": "elements-removed"
+  },
+  {
+    "module": "bildgebung",
+    "profile": "MII_PR_Bildgebung_Radiologischer_Befund",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologischer-befund",
+    "from": "2025.0.2",
+    "to": "2026.0.0",
+    "transition_type": "major",
+    "reason": "major+ext-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "fhir.dicom": {
+        "from": "2024.2.20240331",
+        "to": "2025.3.20250714"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.medikation": {
+        "from": "2025.0.0",
+        "to": "2026.0.0"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.meta": {
+        "from": "2025.0.0",
+        "to": "2026.0.0"
+      }
+    },
+    "ext_deps_changed": {
+      "fhir.dicom": {
+        "from": "2024.2.20240331",
+        "to": "2025.3.20250714"
+      }
+    },
+    "ext_deps_added": {
+      "hl7.fhir.uv.extensions.r4": "5.2.0"
+    },
+    "n_elements_added": 16,
+    "n_elements_removed": 4,
+    "category": "mixed"
+  },
+  {
+    "module": "bildgebung",
+    "profile": "MII_PR_Bildgebung_Semistrukt_Befundbericht",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-semistrukt-befundbericht",
+    "from": "2025.0.2",
+    "to": "2026.0.0",
+    "transition_type": "major",
+    "reason": "major+ext-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "fhir.dicom": {
+        "from": "2024.2.20240331",
+        "to": "2025.3.20250714"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.medikation": {
+        "from": "2025.0.0",
+        "to": "2026.0.0"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.meta": {
+        "from": "2025.0.0",
+        "to": "2026.0.0"
+      }
+    },
+    "ext_deps_changed": {
+      "fhir.dicom": {
+        "from": "2024.2.20240331",
+        "to": "2025.3.20250714"
+      }
+    },
+    "ext_deps_added": {
+      "hl7.fhir.uv.extensions.r4": "5.2.0"
+    },
+    "n_elements_added": 9,
+    "n_elements_removed": 0,
+    "category": "mixed"
+  },
+  {
+    "module": "biobank",
+    "profile": "ProfileOrganizationSammlungBiobank",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Organization",
+    "from": "0.9.0",
+    "to": "1.0.0",
+    "transition_type": "major",
+    "reason": "major-own-decision",
+    "severity": "expected",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 0,
+    "n_elements_removed": 3,
+    "category": "mixed"
+  },
+  {
+    "module": "biobank",
+    "profile": "ProfileOrganizationSammlungBiobank",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Organization",
+    "from": "2025.0.4",
+    "to": "2026.0.0",
+    "transition_type": "major",
+    "reason": "major+ext-dep-update",
+    "severity": "expected",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {
+      "eu.miabis.r4": "0.2.0"
+    },
+    "n_elements_added": 7,
+    "n_elements_removed": 2,
+    "category": "mixed"
+  },
+  {
+    "module": "biobank",
+    "profile": "ProfileSpecimenBioprobe",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Specimen",
+    "from": "0.9.0",
+    "to": "1.0.0",
+    "transition_type": "major",
+    "reason": "major-own-decision",
+    "severity": "expected",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 1,
+    "n_elements_removed": 40,
+    "category": "mixed"
+  },
+  {
+    "module": "biobank",
+    "profile": "ProfileSpecimenBioprobe",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Specimen",
+    "from": "2025.0.4",
+    "to": "2026.0.0",
+    "transition_type": "major",
+    "reason": "major+ext-dep-update",
+    "severity": "expected",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {
+      "eu.miabis.r4": "0.2.0"
+    },
+    "n_elements_added": 11,
+    "n_elements_removed": 1,
+    "category": "mixed"
+  },
+  {
+    "module": "biobank",
+    "profile": "ProfileSpecimenBioprobeCore",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore",
+    "from": "1.0.2",
+    "to": "1.0.3",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 7,
+    "n_elements_removed": 6,
+    "category": "mixed"
+  },
+  {
+    "module": "biobank",
+    "profile": "ProfileSpecimenBioprobeCore",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore",
+    "from": "1.0.6",
+    "to": "1.0.7",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 1,
+    "n_elements_removed": 0,
+    "category": "mixed"
+  },
+  {
+    "module": "biobank",
+    "profile": "ProfileSpecimenBioprobeCore",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore",
+    "from": "1.0.7",
+    "to": "1.0.8",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 1,
+    "n_elements_removed": 1,
+    "category": "mixed"
+  },
+  {
+    "module": "biobank",
+    "profile": "ProfileSpecimenBioprobeCore",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore",
+    "from": "2025.0.4",
+    "to": "2026.0.0",
+    "transition_type": "major",
+    "reason": "major+ext-dep-update",
+    "severity": "expected",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {
+      "eu.miabis.r4": "0.2.0"
+    },
+    "n_elements_added": 34,
+    "n_elements_removed": 2,
+    "category": "mixed"
+  },
+  {
+    "module": "diagnose",
+    "profile": "Diagnose",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose",
+    "from": "0.9.5",
+    "to": "0.9.6",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 2,
+    "n_elements_removed": 2,
+    "category": "mixed"
+  },
+  {
+    "module": "diagnose",
+    "profile": "Diagnose",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose",
+    "from": "0.9.6",
+    "to": "1.0.0",
+    "transition_type": "major",
+    "reason": "major+ext-dep-update",
+    "severity": "expected",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {
+      "KBV.Basis": "1.1.0"
+    },
+    "n_elements_added": 0,
+    "n_elements_removed": 1,
+    "category": "elements-removed"
+  },
+  {
+    "module": "diagnose",
+    "profile": "Diagnose",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose",
+    "from": "1.0.4",
+    "to": "2024.0.0",
+    "transition_type": "major",
+    "reason": "consolidation",
+    "severity": "transition",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {
+      "de.basisprofil.r4": "1.4.0"
+    },
+    "n_elements_added": 16,
+    "n_elements_removed": 9,
+    "category": "mixed"
+  },
+  {
+    "module": "diagnose",
+    "profile": "Diagnose",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose",
+    "from": "2024.0.0",
+    "to": "2025.0.0",
+    "transition_type": "major",
+    "reason": "consolidation",
+    "severity": "transition",
+    "deps_changed": {
+      "de.basisprofil.r4": {
+        "from": "1.4.0",
+        "to": "1.5.x"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.meta": {
+        "from": "1.0.3",
+        "to": "2025.0.x"
+      }
+    },
+    "ext_deps_changed": {
+      "de.basisprofil.r4": {
+        "from": "1.4.0",
+        "to": "1.5.x"
+      }
+    },
+    "ext_deps_added": {},
+    "n_elements_added": 3,
+    "n_elements_removed": 9,
+    "category": "mixed"
+  },
+  {
+    "module": "fall",
+    "profile": "KontaktGesundheitseinrichtung",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung",
+    "from": "1.0.1",
+    "to": "2024.0.0",
+    "transition_type": "major",
+    "reason": "consolidation",
+    "severity": "transition",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {
+      "de.basisprofil.r4": "1.4.0"
+    },
+    "n_elements_added": 40,
+    "n_elements_removed": 24,
+    "category": "mixed"
+  },
+  {
+    "module": "fall",
+    "profile": "KontaktGesundheitseinrichtung",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung",
+    "from": "2024.0.1",
+    "to": "2025.0.0",
+    "transition_type": "major",
+    "reason": "consolidation",
+    "severity": "transition",
+    "deps_changed": {
+      "de.basisprofil.r4": {
+        "from": "1.4.0",
+        "to": "1.5.x"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.meta": {
+        "from": "1.0.3",
+        "to": "2025.0.x"
+      }
+    },
+    "ext_deps_changed": {
+      "de.basisprofil.r4": {
+        "from": "1.4.0",
+        "to": "1.5.x"
+      }
+    },
+    "ext_deps_added": {},
+    "n_elements_added": 2,
+    "n_elements_removed": 9,
+    "category": "mixed"
+  },
+  {
+    "module": "icu",
+    "profile": "SD_MII_ICU_Arterieller_Druck",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/arterieller-druck",
+    "from": "1.0.0",
+    "to": "2025.0.0",
+    "transition_type": "major",
+    "reason": "major+ext-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "de.medizininformatikinitiative.kerndatensatz.prozedur": {
+        "from": "2.0.0-alpha5",
+        "to": "2024.0.0-ballot"
+      }
+    },
+    "ext_deps_changed": {},
+    "ext_deps_added": {
+      "de.basisprofil.r4": "1.5.0",
+      "de.gematik.isik-vitalparameter": "4.0.0"
+    },
+    "n_elements_added": 2,
+    "n_elements_removed": 0,
+    "category": "mixed"
+  },
+  {
+    "module": "icu",
+    "profile": "SD_MII_ICU_Atemfrequenz",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/atemfrequenz",
+    "from": "1.0.0",
+    "to": "2025.0.0",
+    "transition_type": "major",
+    "reason": "major+ext-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "de.medizininformatikinitiative.kerndatensatz.prozedur": {
+        "from": "2.0.0-alpha5",
+        "to": "2024.0.0-ballot"
+      }
+    },
+    "ext_deps_changed": {},
+    "ext_deps_added": {
+      "de.basisprofil.r4": "1.5.0",
+      "de.gematik.isik-vitalparameter": "4.0.0"
+    },
+    "n_elements_added": 1,
+    "n_elements_removed": 7,
+    "category": "mixed"
+  },
+  {
+    "module": "icu",
+    "profile": "SD_MII_ICU_Atemzugvolumen_Einstellung",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/atemzugvolumen-einstellung",
+    "from": "1.0.0",
+    "to": "2025.0.0",
+    "transition_type": "major",
+    "reason": "major+ext-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "de.medizininformatikinitiative.kerndatensatz.prozedur": {
+        "from": "2.0.0-alpha5",
+        "to": "2024.0.0-ballot"
+      }
+    },
+    "ext_deps_changed": {},
+    "ext_deps_added": {
+      "de.basisprofil.r4": "1.5.0",
+      "de.gematik.isik-vitalparameter": "4.0.0"
+    },
+    "n_elements_added": 2,
+    "n_elements_removed": 4,
+    "category": "mixed"
+  },
+  {
+    "module": "icu",
+    "profile": "SD_MII_ICU_Atemzugvolumen_Waehrend_Beatmung",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/atemzugvolumen-waehrend-beatmung",
+    "from": "1.0.0",
+    "to": "2025.0.0",
+    "transition_type": "major",
+    "reason": "major+ext-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "de.medizininformatikinitiative.kerndatensatz.prozedur": {
+        "from": "2.0.0-alpha5",
+        "to": "2024.0.0-ballot"
+      }
+    },
+    "ext_deps_changed": {},
+    "ext_deps_added": {
+      "de.basisprofil.r4": "1.5.0",
+      "de.gematik.isik-vitalparameter": "4.0.0"
+    },
+    "n_elements_added": 2,
+    "n_elements_removed": 4,
+    "category": "mixed"
+  },
+  {
+    "module": "icu",
+    "profile": "SD_MII_ICU_Beatmung",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/beatmung",
+    "from": "1.0.0",
+    "to": "2025.0.0",
+    "transition_type": "major",
+    "reason": "major+ext-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "de.medizininformatikinitiative.kerndatensatz.prozedur": {
+        "from": "2.0.0-alpha5",
+        "to": "2024.0.0-ballot"
+      }
+    },
+    "ext_deps_changed": {},
+    "ext_deps_added": {
+      "de.basisprofil.r4": "1.5.0",
+      "de.gematik.isik-vitalparameter": "4.0.0"
+    },
+    "n_elements_added": 1,
+    "n_elements_removed": 2,
+    "category": "mixed"
+  },
+  {
+    "module": "icu",
+    "profile": "SD_MII_ICU_Beatmungszeit_Hohem_Druck",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/beatmungszeit-hohem-druck",
+    "from": "1.0.0",
+    "to": "2025.0.0",
+    "transition_type": "major",
+    "reason": "major+ext-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "de.medizininformatikinitiative.kerndatensatz.prozedur": {
+        "from": "2.0.0-alpha5",
+        "to": "2024.0.0-ballot"
+      }
+    },
+    "ext_deps_changed": {},
+    "ext_deps_added": {
+      "de.basisprofil.r4": "1.5.0",
+      "de.gematik.isik-vitalparameter": "4.0.0"
+    },
+    "n_elements_added": 3,
+    "n_elements_removed": 4,
+    "category": "mixed"
+  },
+  {
+    "module": "icu",
+    "profile": "SD_MII_ICU_Beatmungszeit_Niedrigem_Druck",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/beatmungszeit-niedrigem-druck",
+    "from": "1.0.0",
+    "to": "2025.0.0",
+    "transition_type": "major",
+    "reason": "major+ext-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "de.medizininformatikinitiative.kerndatensatz.prozedur": {
+        "from": "2.0.0-alpha5",
+        "to": "2024.0.0-ballot"
+      }
+    },
+    "ext_deps_changed": {},
+    "ext_deps_added": {
+      "de.basisprofil.r4": "1.5.0",
+      "de.gematik.isik-vitalparameter": "4.0.0"
+    },
+    "n_elements_added": 2,
+    "n_elements_removed": 0,
+    "category": "mixed"
+  },
+  {
+    "module": "icu",
+    "profile": "SD_MII_ICU_Bilanz",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanz",
+    "from": "2025.0.3",
+    "to": "2025.0.4",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 0,
+    "n_elements_removed": 3,
+    "category": "elements-removed"
+  },
+  {
+    "module": "icu",
+    "profile": "SD_MII_ICU_Blutfluss_Cardiovasculaeres_Geraet",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/blutfluss-cardiovasculaeres-geraet",
+    "from": "1.0.0",
+    "to": "2025.0.0",
+    "transition_type": "major",
+    "reason": "major+ext-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "de.medizininformatikinitiative.kerndatensatz.prozedur": {
+        "from": "2.0.0-alpha5",
+        "to": "2024.0.0-ballot"
+      }
+    },
+    "ext_deps_changed": {},
+    "ext_deps_added": {
+      "de.basisprofil.r4": "1.5.0",
+      "de.gematik.isik-vitalparameter": "4.0.0"
+    },
+    "n_elements_added": 3,
+    "n_elements_removed": 0,
+    "category": "mixed"
+  },
+  {
+    "module": "icu",
+    "profile": "SD_MII_ICU_Blutfluss_Extrakorporaler_Gasaustausch",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/blutfluss-extrakorporaler-gasaustausch",
+    "from": "1.0.0",
+    "to": "2025.0.0",
+    "transition_type": "major",
+    "reason": "major+ext-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "de.medizininformatikinitiative.kerndatensatz.prozedur": {
+        "from": "2.0.0-alpha5",
+        "to": "2024.0.0-ballot"
+      }
+    },
+    "ext_deps_changed": {},
+    "ext_deps_added": {
+      "de.basisprofil.r4": "1.5.0",
+      "de.gematik.isik-vitalparameter": "4.0.0"
+    },
+    "n_elements_added": 3,
+    "n_elements_removed": 0,
+    "category": "mixed"
+  },
+  {
+    "module": "icu",
+    "profile": "SD_MII_ICU_Blutflussindex_Extrakorporaler_Gasaustausch",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/blutflussindex-extrakorporaler-gasaustausch",
+    "from": "1.0.0",
+    "to": "2025.0.0",
+    "transition_type": "major",
+    "reason": "major+ext-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "de.medizininformatikinitiative.kerndatensatz.prozedur": {
+        "from": "2.0.0-alpha5",
+        "to": "2024.0.0-ballot"
+      }
+    },
+    "ext_deps_changed": {},
+    "ext_deps_added": {
+      "de.basisprofil.r4": "1.5.0",
+      "de.gematik.isik-vitalparameter": "4.0.0"
+    },
+    "n_elements_added": 3,
+    "n_elements_removed": 0,
+    "category": "mixed"
+  },
+  {
+    "module": "icu",
+    "profile": "SD_MII_ICU_Dauer_Extrakorporaler_Gasaustausch",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/dauer-extrakorporaler-gasaustausch",
+    "from": "1.0.0",
+    "to": "2025.0.0",
+    "transition_type": "major",
+    "reason": "major+ext-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "de.medizininformatikinitiative.kerndatensatz.prozedur": {
+        "from": "2.0.0-alpha5",
+        "to": "2024.0.0-ballot"
+      }
+    },
+    "ext_deps_changed": {},
+    "ext_deps_added": {
+      "de.basisprofil.r4": "1.5.0",
+      "de.gematik.isik-vitalparameter": "4.0.0"
+    },
+    "n_elements_added": 3,
+    "n_elements_removed": 0,
+    "category": "mixed"
+  },
+  {
+    "module": "icu",
+    "profile": "SD_MII_ICU_Dauer_Haemodialysesitzung",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/dauer-haemodialysesitzung",
+    "from": "1.0.0",
+    "to": "2025.0.0",
+    "transition_type": "major",
+    "reason": "major+ext-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "de.medizininformatikinitiative.kerndatensatz.prozedur": {
+        "from": "2.0.0-alpha5",
+        "to": "2024.0.0-ballot"
+      }
+    },
+    "ext_deps_changed": {},
+    "ext_deps_added": {
+      "de.basisprofil.r4": "1.5.0",
+      "de.gematik.isik-vitalparameter": "4.0.0"
+    },
+    "n_elements_added": 3,
+    "n_elements_removed": 0,
+    "category": "mixed"
+  },
+  {
+    "module": "icu",
+    "profile": "SD_MII_ICU_Druckdifferenz_Beatmung",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/druckdifferenz-beatmung",
+    "from": "1.0.0",
+    "to": "2025.0.0",
+    "transition_type": "major",
+    "reason": "major+ext-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "de.medizininformatikinitiative.kerndatensatz.prozedur": {
+        "from": "2.0.0-alpha5",
+        "to": "2024.0.0-ballot"
+      }
+    },
+    "ext_deps_changed": {},
+    "ext_deps_added": {
+      "de.basisprofil.r4": "1.5.0",
+      "de.gematik.isik-vitalparameter": "4.0.0"
+    },
+    "n_elements_added": 3,
+    "n_elements_removed": 4,
+    "category": "mixed"
+  },
+  {
+    "module": "icu",
+    "profile": "SD_MII_ICU_Dynamische_Kompliance",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/dynamische-kompliance",
+    "from": "1.0.0",
+    "to": "2025.0.0",
+    "transition_type": "major",
+    "reason": "major+ext-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "de.medizininformatikinitiative.kerndatensatz.prozedur": {
+        "from": "2.0.0-alpha5",
+        "to": "2024.0.0-ballot"
+      }
+    },
+    "ext_deps_changed": {},
+    "ext_deps_added": {
+      "de.basisprofil.r4": "1.5.0",
+      "de.gematik.isik-vitalparameter": "4.0.0"
+    },
+    "n_elements_added": 2,
+    "n_elements_removed": 4,
+    "category": "mixed"
+  },
+  {
+    "module": "icu",
+    "profile": "SD_MII_ICU_Eingestellter_Inspiratorischer_Gasfluss",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/eingestellter-inspiratorischer-gasfluss",
+    "from": "1.0.0",
+    "to": "2025.0.0",
+    "transition_type": "major",
+    "reason": "major+ext-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "de.medizininformatikinitiative.kerndatensatz.prozedur": {
+        "from": "2.0.0-alpha5",
+        "to": "2024.0.0-ballot"
+      }
+    },
+    "ext_deps_changed": {},
+    "ext_deps_added": {
+      "de.basisprofil.r4": "1.5.0",
+      "de.gematik.isik-vitalparameter": "4.0.0"
+    },
+    "n_elements_added": 4,
+    "n_elements_removed": 5,
+    "category": "mixed"
+  },
+  {
+    "module": "icu",
+    "profile": "SD_MII_ICU_Einstellung_Ausatmungszeit_Beatmung",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/einstellung-ausatmungszeit-beatmung",
+    "from": "1.0.0",
+    "to": "2025.0.0",
+    "transition_type": "major",
+    "reason": "major+ext-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "de.medizininformatikinitiative.kerndatensatz.prozedur": {
+        "from": "2.0.0-alpha5",
+        "to": "2024.0.0-ballot"
+      }
+    },
+    "ext_deps_changed": {},
+    "ext_deps_added": {
+      "de.basisprofil.r4": "1.5.0",
+      "de.gematik.isik-vitalparameter": "4.0.0"
+    },
+    "n_elements_added": 1,
+    "n_elements_removed": 0,
+    "category": "mixed"
+  },
+  {
+    "module": "icu",
+    "profile": "SD_MII_ICU_Einstellung_Einatmungszeit_Beatmung",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/einstellung-einatmungszeit-beatmung",
+    "from": "1.0.0",
+    "to": "2025.0.0",
+    "transition_type": "major",
+    "reason": "major+ext-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "de.medizininformatikinitiative.kerndatensatz.prozedur": {
+        "from": "2.0.0-alpha5",
+        "to": "2024.0.0-ballot"
+      }
+    },
+    "ext_deps_changed": {},
+    "ext_deps_added": {
+      "de.basisprofil.r4": "1.5.0",
+      "de.gematik.isik-vitalparameter": "4.0.0"
+    },
+    "n_elements_added": 0,
+    "n_elements_removed": 0,
+    "category": "modified"
+  },
+  {
+    "module": "icu",
+    "profile": "SD_MII_ICU_Exspiratorischer_Gasfluss",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/exspiratorischer-gasfluss",
+    "from": "1.0.0",
+    "to": "2025.0.0",
+    "transition_type": "major",
+    "reason": "major+ext-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "de.medizininformatikinitiative.kerndatensatz.prozedur": {
+        "from": "2.0.0-alpha5",
+        "to": "2024.0.0-ballot"
+      }
+    },
+    "ext_deps_changed": {},
+    "ext_deps_added": {
+      "de.basisprofil.r4": "1.5.0",
+      "de.gematik.isik-vitalparameter": "4.0.0"
+    },
+    "n_elements_added": 4,
+    "n_elements_removed": 5,
+    "category": "mixed"
+  },
+  {
+    "module": "icu",
+    "profile": "SD_MII_ICU_Exspiratorischer_Sauerstoffpartialdruck",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/exspiratorischer-sauerstoffpartialdruck",
+    "from": "1.0.0",
+    "to": "2025.0.0",
+    "transition_type": "major",
+    "reason": "major+ext-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "de.medizininformatikinitiative.kerndatensatz.prozedur": {
+        "from": "2.0.0-alpha5",
+        "to": "2024.0.0-ballot"
+      }
+    },
+    "ext_deps_changed": {},
+    "ext_deps_added": {
+      "de.basisprofil.r4": "1.5.0",
+      "de.gematik.isik-vitalparameter": "4.0.0"
+    },
+    "n_elements_added": 1,
+    "n_elements_removed": 0,
+    "category": "mixed"
+  },
+  {
+    "module": "icu",
+    "profile": "SD_MII_ICU_Haemodialyse_Blutfluss",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/haemodialyse-blutfluss",
+    "from": "1.0.0",
+    "to": "2025.0.0",
+    "transition_type": "major",
+    "reason": "major+ext-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "de.medizininformatikinitiative.kerndatensatz.prozedur": {
+        "from": "2.0.0-alpha5",
+        "to": "2024.0.0-ballot"
+      }
+    },
+    "ext_deps_changed": {},
+    "ext_deps_added": {
+      "de.basisprofil.r4": "1.5.0",
+      "de.gematik.isik-vitalparameter": "4.0.0"
+    },
+    "n_elements_added": 3,
+    "n_elements_removed": 0,
+    "category": "mixed"
+  },
+  {
+    "module": "icu",
+    "profile": "SD_MII_ICU_Herzfrequenz",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/herzfrequenz",
+    "from": "1.0.0",
+    "to": "2025.0.0",
+    "transition_type": "major",
+    "reason": "major+ext-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "de.medizininformatikinitiative.kerndatensatz.prozedur": {
+        "from": "2.0.0-alpha5",
+        "to": "2024.0.0-ballot"
+      }
+    },
+    "ext_deps_changed": {},
+    "ext_deps_added": {
+      "de.basisprofil.r4": "1.5.0",
+      "de.gematik.isik-vitalparameter": "4.0.0"
+    },
+    "n_elements_added": 2,
+    "n_elements_removed": 4,
+    "category": "mixed"
+  },
+  {
+    "module": "icu",
+    "profile": "SD_MII_ICU_Horowitz_In_Arteriellem_Blut",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/horowitz-in-arteriellem-blut",
+    "from": "1.0.0",
+    "to": "2025.0.0",
+    "transition_type": "major",
+    "reason": "major+ext-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "de.medizininformatikinitiative.kerndatensatz.prozedur": {
+        "from": "2.0.0-alpha5",
+        "to": "2024.0.0-ballot"
+      }
+    },
+    "ext_deps_changed": {},
+    "ext_deps_added": {
+      "de.basisprofil.r4": "1.5.0",
+      "de.gematik.isik-vitalparameter": "4.0.0"
+    },
+    "n_elements_added": 4,
+    "n_elements_removed": 0,
+    "category": "mixed"
+  },
+  {
+    "module": "icu",
+    "profile": "SD_MII_ICU_Inspiratorische_Sauerstofffraktion",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/inspiratorische-sauerstofffraktion",
+    "from": "1.0.0",
+    "to": "2025.0.0",
+    "transition_type": "major",
+    "reason": "major+ext-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "de.medizininformatikinitiative.kerndatensatz.prozedur": {
+        "from": "2.0.0-alpha5",
+        "to": "2024.0.0-ballot"
+      }
+    },
+    "ext_deps_changed": {},
+    "ext_deps_added": {
+      "de.basisprofil.r4": "1.5.0",
+      "de.gematik.isik-vitalparameter": "4.0.0"
+    },
+    "n_elements_added": 2,
+    "n_elements_removed": 0,
+    "category": "mixed"
+  },
+  {
+    "module": "icu",
+    "profile": "SD_MII_ICU_Inspiratorische_Sauerstofffraktion_Eingestellt",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/inspiratorische-sauerstofffraktion-eingestellt",
+    "from": "1.0.0",
+    "to": "2025.0.0",
+    "transition_type": "major",
+    "reason": "major+ext-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "de.medizininformatikinitiative.kerndatensatz.prozedur": {
+        "from": "2.0.0-alpha5",
+        "to": "2024.0.0-ballot"
+      }
+    },
+    "ext_deps_changed": {},
+    "ext_deps_added": {
+      "de.basisprofil.r4": "1.5.0",
+      "de.gematik.isik-vitalparameter": "4.0.0"
+    },
+    "n_elements_added": 2,
+    "n_elements_removed": 0,
+    "category": "mixed"
+  },
+  {
+    "module": "icu",
+    "profile": "SD_MII_ICU_Inspiratorischer_Gasfluss",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/inspiratorischer-gasfluss",
+    "from": "1.0.0",
+    "to": "2025.0.0",
+    "transition_type": "major",
+    "reason": "major+ext-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "de.medizininformatikinitiative.kerndatensatz.prozedur": {
+        "from": "2.0.0-alpha5",
+        "to": "2024.0.0-ballot"
+      }
+    },
+    "ext_deps_changed": {},
+    "ext_deps_added": {
+      "de.basisprofil.r4": "1.5.0",
+      "de.gematik.isik-vitalparameter": "4.0.0"
+    },
+    "n_elements_added": 4,
+    "n_elements_removed": 5,
+    "category": "mixed"
+  },
+  {
+    "module": "icu",
+    "profile": "SD_MII_ICU_Ionisiertes_Kalzium_Nierenersatzverfahren",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/ionisiertes-kalzium-nierenersatzverfahren",
+    "from": "1.0.0",
+    "to": "2025.0.0",
+    "transition_type": "major",
+    "reason": "major+ext-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "de.medizininformatikinitiative.kerndatensatz.prozedur": {
+        "from": "2.0.0-alpha5",
+        "to": "2024.0.0-ballot"
+      }
+    },
+    "ext_deps_changed": {},
+    "ext_deps_added": {
+      "de.basisprofil.r4": "1.5.0",
+      "de.gematik.isik-vitalparameter": "4.0.0"
+    },
+    "n_elements_added": 3,
+    "n_elements_removed": 0,
+    "category": "mixed"
+  },
+  {
+    "module": "icu",
+    "profile": "SD_MII_ICU_Koerpergewicht",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/koerpergewicht",
+    "from": "1.0.0",
+    "to": "2025.0.0",
+    "transition_type": "major",
+    "reason": "major+ext-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "de.medizininformatikinitiative.kerndatensatz.prozedur": {
+        "from": "2.0.0-alpha5",
+        "to": "2024.0.0-ballot"
+      }
+    },
+    "ext_deps_changed": {},
+    "ext_deps_added": {
+      "de.basisprofil.r4": "1.5.0",
+      "de.gematik.isik-vitalparameter": "4.0.0"
+    },
+    "n_elements_added": 16,
+    "n_elements_removed": 8,
+    "category": "mixed"
+  },
+  {
+    "module": "icu",
+    "profile": "SD_MII_ICU_Koerpergroesse",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/koerpergroesse",
+    "from": "1.0.0",
+    "to": "2025.0.0",
+    "transition_type": "major",
+    "reason": "major+ext-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "de.medizininformatikinitiative.kerndatensatz.prozedur": {
+        "from": "2.0.0-alpha5",
+        "to": "2024.0.0-ballot"
+      }
+    },
+    "ext_deps_changed": {},
+    "ext_deps_added": {
+      "de.basisprofil.r4": "1.5.0",
+      "de.gematik.isik-vitalparameter": "4.0.0"
+    },
+    "n_elements_added": 14,
+    "n_elements_removed": 11,
+    "category": "mixed"
+  },
+  {
+    "module": "icu",
+    "profile": "SD_MII_ICU_Kopfumfang",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/kopfumfang",
+    "from": "1.0.0",
+    "to": "2025.0.0",
+    "transition_type": "major",
+    "reason": "major+ext-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "de.medizininformatikinitiative.kerndatensatz.prozedur": {
+        "from": "2.0.0-alpha5",
+        "to": "2024.0.0-ballot"
+      }
+    },
+    "ext_deps_changed": {},
+    "ext_deps_added": {
+      "de.basisprofil.r4": "1.5.0",
+      "de.gematik.isik-vitalparameter": "4.0.0"
+    },
+    "n_elements_added": 2,
+    "n_elements_removed": 4,
+    "category": "mixed"
+  },
+  {
+    "module": "icu",
+    "profile": "SD_MII_ICU_Kopfumfang",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/kopfumfang",
+    "from": "2025.0.3",
+    "to": "2025.0.4",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 3,
+    "n_elements_removed": 3,
+    "category": "mixed"
+  },
+  {
+    "module": "icu",
+    "profile": "SD_MII_ICU_Maximaler_Beatmungsdruck",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/maximaler-beatmungsdruck",
+    "from": "1.0.0",
+    "to": "2025.0.0",
+    "transition_type": "major",
+    "reason": "major+ext-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "de.medizininformatikinitiative.kerndatensatz.prozedur": {
+        "from": "2.0.0-alpha5",
+        "to": "2024.0.0-ballot"
+      }
+    },
+    "ext_deps_changed": {},
+    "ext_deps_added": {
+      "de.basisprofil.r4": "1.5.0",
+      "de.gematik.isik-vitalparameter": "4.0.0"
+    },
+    "n_elements_added": 1,
+    "n_elements_removed": 0,
+    "category": "mixed"
+  },
+  {
+    "module": "icu",
+    "profile": "SD_MII_ICU_Mechanische_Atemfrequenz_Beatmet",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mechanische-atemfrequenz-beatmet",
+    "from": "1.0.0",
+    "to": "2025.0.0",
+    "transition_type": "major",
+    "reason": "major+ext-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "de.medizininformatikinitiative.kerndatensatz.prozedur": {
+        "from": "2.0.0-alpha5",
+        "to": "2024.0.0-ballot"
+      }
+    },
+    "ext_deps_changed": {},
+    "ext_deps_added": {
+      "de.basisprofil.r4": "1.5.0",
+      "de.gematik.isik-vitalparameter": "4.0.0"
+    },
+    "n_elements_added": 1,
+    "n_elements_removed": 0,
+    "category": "mixed"
+  },
+  {
+    "module": "icu",
+    "profile": "MII_PR_ICU_Bilanz_Ausfuhr_Drainage_Generisch",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-drainage-generisch",
+    "from": "2026.0.1",
+    "to": "2026.0.2",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 3,
+    "n_elements_removed": 0,
+    "category": "mixed"
+  },
+  {
+    "module": "icu",
+    "profile": "MII_PR_ICU_Bilanz_Ausfuhr_Fluessigkeit_Gesamt",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-fluessigkeit-gesamt",
+    "from": "2026.0.1",
+    "to": "2026.0.2",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 1,
+    "n_elements_removed": 0,
+    "category": "mixed"
+  },
+  {
+    "module": "icu",
+    "profile": "MII_PR_ICU_Bilanz_Ausfuhr_Gallenfluessigkeit",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-gallenfluessigkeit",
+    "from": "2026.0.1",
+    "to": "2026.0.2",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 1,
+    "n_elements_removed": 0,
+    "category": "mixed"
+  },
+  {
+    "module": "icu",
+    "profile": "MII_PR_ICU_Bilanz_Ausfuhr_Magensonde",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-magensonde",
+    "from": "2026.0.1",
+    "to": "2026.0.2",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 1,
+    "n_elements_removed": 0,
+    "category": "mixed"
+  },
+  {
+    "module": "icu",
+    "profile": "MII_PR_ICU_Bilanz_Ausfuhr_Pankreasdrainage",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-pankreasdrainage",
+    "from": "2026.0.1",
+    "to": "2026.0.2",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 2,
+    "n_elements_removed": 0,
+    "category": "mixed"
+  },
+  {
+    "module": "icu",
+    "profile": "MII_PR_ICU_Bilanz_Ausfuhr_Stuhlgang",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-stuhlgang",
+    "from": "2026.0.1",
+    "to": "2026.0.2",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 1,
+    "n_elements_removed": 0,
+    "category": "mixed"
+  },
+  {
+    "module": "icu",
+    "profile": "MII_PR_ICU_Bilanz_Ausfuhr_Urin",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-urin",
+    "from": "2026.0.1",
+    "to": "2026.0.2",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 1,
+    "n_elements_removed": 0,
+    "category": "mixed"
+  },
+  {
+    "module": "icu",
+    "profile": "MII_PR_ICU_Bilanz_Ausfuhr_Wunddrainage",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-wunddrainage",
+    "from": "2026.0.1",
+    "to": "2026.0.2",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 1,
+    "n_elements_removed": 0,
+    "category": "mixed"
+  },
+  {
+    "module": "icu",
+    "profile": "MII_PR_ICU_Bilanz_Einfuhr_Enterale_Fluessigkeit",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-enterale-fluessigkeit",
+    "from": "2026.0.1",
+    "to": "2026.0.2",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 1,
+    "n_elements_removed": 0,
+    "category": "mixed"
+  },
+  {
+    "module": "icu",
+    "profile": "MII_PR_ICU_Bilanz_Einfuhr_Fluessigkeit_Gesamt",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt",
+    "from": "2026.0.1",
+    "to": "2026.0.2",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 2,
+    "n_elements_removed": 0,
+    "category": "mixed"
+  },
+  {
+    "module": "icu",
+    "profile": "MII_PR_ICU_MUV_Arterieller_Blutdruck",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-arterieller-blutdruck",
+    "from": "2026.0.1",
+    "to": "2026.0.2",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 10,
+    "n_elements_removed": 5,
+    "category": "mixed"
+  },
+  {
+    "module": "icu",
+    "profile": "MII_PR_ICU_MUV_Atemfrequenz",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-atemfrequenz",
+    "from": "2026.0.1",
+    "to": "2026.0.2",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 0,
+    "n_elements_removed": 0,
+    "category": "modified"
+  },
+  {
+    "module": "icu",
+    "profile": "MII_PR_ICU_MUV_Koerpergewicht",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerpergewicht",
+    "from": "2026.0.1",
+    "to": "2026.0.2",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 1,
+    "n_elements_removed": 1,
+    "category": "mixed"
+  },
+  {
+    "module": "icu",
+    "profile": "MII_PR_ICU_MUV_Koerpergroesse",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerpergroesse",
+    "from": "2026.0.1",
+    "to": "2026.0.2",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 0,
+    "n_elements_removed": 2,
+    "category": "mixed"
+  },
+  {
+    "module": "icu",
+    "profile": "MII_PR_ICU_MUV_Kopfumfang",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-kopfumfang",
+    "from": "2026.0.1",
+    "to": "2026.0.2",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 0,
+    "n_elements_removed": 0,
+    "category": "modified"
+  },
+  {
+    "module": "icu",
+    "profile": "SD_MII_ICU_Mittlerer_Beatmungsdruck",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mittlerer-beatmungsdruck",
+    "from": "1.0.0",
+    "to": "2025.0.0",
+    "transition_type": "major",
+    "reason": "major+ext-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "de.medizininformatikinitiative.kerndatensatz.prozedur": {
+        "from": "2.0.0-alpha5",
+        "to": "2024.0.0-ballot"
+      }
+    },
+    "ext_deps_changed": {},
+    "ext_deps_added": {
+      "de.basisprofil.r4": "1.5.0",
+      "de.gematik.isik-vitalparameter": "4.0.0"
+    },
+    "n_elements_added": 1,
+    "n_elements_removed": 0,
+    "category": "mixed"
+  },
+  {
+    "module": "icu",
+    "profile": "SD_MII_ICU_Spontane_Atemfrequenz_Beatmet",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/spontane-atemfrequenz-beatmet",
+    "from": "1.0.0",
+    "to": "2025.0.0",
+    "transition_type": "major",
+    "reason": "major+ext-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "de.medizininformatikinitiative.kerndatensatz.prozedur": {
+        "from": "2.0.0-alpha5",
+        "to": "2024.0.0-ballot"
+      }
+    },
+    "ext_deps_changed": {},
+    "ext_deps_added": {
+      "de.basisprofil.r4": "1.5.0",
+      "de.gematik.isik-vitalparameter": "4.0.0"
+    },
+    "n_elements_added": 1,
+    "n_elements_removed": 0,
+    "category": "mixed"
+  },
+  {
+    "module": "icu",
+    "profile": "SD_MII_ICU_Spontane_Mechanische_Atemfrequenz_Beatmet",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/spontane-mechanische-atemfrequenz-beatmet",
+    "from": "1.0.0",
+    "to": "2025.0.0",
+    "transition_type": "major",
+    "reason": "major+ext-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "de.medizininformatikinitiative.kerndatensatz.prozedur": {
+        "from": "2.0.0-alpha5",
+        "to": "2024.0.0-ballot"
+      }
+    },
+    "ext_deps_changed": {},
+    "ext_deps_added": {
+      "de.basisprofil.r4": "1.5.0",
+      "de.gematik.isik-vitalparameter": "4.0.0"
+    },
+    "n_elements_added": 0,
+    "n_elements_removed": 0,
+    "category": "modified"
+  },
+  {
+    "module": "icu",
+    "profile": "SD_MII_ICU_Spontanes_Atemzugvolumen",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/spontanes-atemzugvolumen",
+    "from": "1.0.0",
+    "to": "2025.0.0",
+    "transition_type": "major",
+    "reason": "major+ext-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "de.medizininformatikinitiative.kerndatensatz.prozedur": {
+        "from": "2.0.0-alpha5",
+        "to": "2024.0.0-ballot"
+      }
+    },
+    "ext_deps_changed": {},
+    "ext_deps_added": {
+      "de.basisprofil.r4": "1.5.0",
+      "de.gematik.isik-vitalparameter": "4.0.0"
+    },
+    "n_elements_added": 3,
+    "n_elements_removed": 4,
+    "category": "mixed"
+  },
+  {
+    "module": "icu",
+    "profile": "SD_MII_ICU_Substituatfluss",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/substituatfluss",
+    "from": "1.0.0",
+    "to": "2025.0.0",
+    "transition_type": "major",
+    "reason": "major+ext-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "de.medizininformatikinitiative.kerndatensatz.prozedur": {
+        "from": "2.0.0-alpha5",
+        "to": "2024.0.0-ballot"
+      }
+    },
+    "ext_deps_changed": {},
+    "ext_deps_added": {
+      "de.basisprofil.r4": "1.5.0",
+      "de.gematik.isik-vitalparameter": "4.0.0"
+    },
+    "n_elements_added": 3,
+    "n_elements_removed": 0,
+    "category": "mixed"
+  },
+  {
+    "module": "icu",
+    "profile": "SD_MII_ICU_Substituatvolumen",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/substituatvolumen",
+    "from": "1.0.0",
+    "to": "2025.0.0",
+    "transition_type": "major",
+    "reason": "major+ext-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "de.medizininformatikinitiative.kerndatensatz.prozedur": {
+        "from": "2.0.0-alpha5",
+        "to": "2024.0.0-ballot"
+      }
+    },
+    "ext_deps_changed": {},
+    "ext_deps_added": {
+      "de.basisprofil.r4": "1.5.0",
+      "de.gematik.isik-vitalparameter": "4.0.0"
+    },
+    "n_elements_added": 3,
+    "n_elements_removed": 0,
+    "category": "mixed"
+  },
+  {
+    "module": "icu",
+    "profile": "SD_MII_ICU_Unterstuezungsdruck_Beatmung",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/unterstuetzungsdruck-beatmung",
+    "from": "1.0.0",
+    "to": "2025.0.0",
+    "transition_type": "major",
+    "reason": "major+ext-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "de.medizininformatikinitiative.kerndatensatz.prozedur": {
+        "from": "2.0.0-alpha5",
+        "to": "2024.0.0-ballot"
+      }
+    },
+    "ext_deps_changed": {},
+    "ext_deps_added": {
+      "de.basisprofil.r4": "1.5.0",
+      "de.gematik.isik-vitalparameter": "4.0.0"
+    },
+    "n_elements_added": 3,
+    "n_elements_removed": 5,
+    "category": "mixed"
+  },
+  {
+    "module": "icu",
+    "profile": "SD_MII_ICU_Venoeser_Druck",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/venoeser-druck",
+    "from": "1.0.0",
+    "to": "2025.0.0",
+    "transition_type": "major",
+    "reason": "major+ext-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "de.medizininformatikinitiative.kerndatensatz.prozedur": {
+        "from": "2.0.0-alpha5",
+        "to": "2024.0.0-ballot"
+      }
+    },
+    "ext_deps_changed": {},
+    "ext_deps_added": {
+      "de.basisprofil.r4": "1.5.0",
+      "de.gematik.isik-vitalparameter": "4.0.0"
+    },
+    "n_elements_added": 3,
+    "n_elements_removed": 0,
+    "category": "mixed"
+  },
+  {
+    "module": "icu",
+    "profile": "SD_MII_ICU_Zeitverhaeltnis_Ein_Ausatmung",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/zeitverhaeltnis-ein-ausatmung",
+    "from": "1.0.0",
+    "to": "2025.0.0",
+    "transition_type": "major",
+    "reason": "major+ext-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "de.medizininformatikinitiative.kerndatensatz.prozedur": {
+        "from": "2.0.0-alpha5",
+        "to": "2024.0.0-ballot"
+      }
+    },
+    "ext_deps_changed": {},
+    "ext_deps_added": {
+      "de.basisprofil.r4": "1.5.0",
+      "de.gematik.isik-vitalparameter": "4.0.0"
+    },
+    "n_elements_added": 2,
+    "n_elements_removed": 4,
+    "category": "mixed"
+  },
+  {
+    "module": "laborbefund",
+    "profile": "ObservationLab",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/ObservationLab",
+    "from": "0.9.0",
+    "to": "0.9.1",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 10,
+    "n_elements_removed": 4,
+    "category": "mixed"
+  },
+  {
+    "module": "laborbefund",
+    "profile": "ObservationLab",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/ObservationLab",
+    "from": "0.9.1",
+    "to": "0.9.2",
+    "transition_type": "patch",
+    "reason": "mii-dep-driven",
+    "severity": "neutral",
+    "deps_changed": {
+      "de.medizininformatikinitiative.kerndatensatz.person": {
+        "from": "1.0.2",
+        "to": "1.0.3"
+      }
+    },
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 0,
+    "n_elements_removed": 1,
+    "category": "elements-removed"
+  },
+  {
+    "module": "laborbefund",
+    "profile": "DiagnosticReportLab",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/DiagnosticReportLab",
+    "from": "1.0.3",
+    "to": "1.0.4",
+    "transition_type": "patch",
+    "reason": "mii-dep-driven",
+    "severity": "neutral",
+    "deps_changed": {
+      "de.medizininformatikinitiative.kerndatensatz.meta": {
+        "from": "1.0.3",
+        "to": "1.0.0"
+      }
+    },
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 0,
+    "n_elements_removed": 6,
+    "category": "mixed"
+  },
+  {
+    "module": "laborbefund",
+    "profile": "DiagnosticReportLab",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/DiagnosticReportLab",
+    "from": "1.0.6",
+    "to": "2025.0.0",
+    "transition_type": "major",
+    "reason": "major+mii-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "de.medizininformatikinitiative.kerndatensatz.meta": {
+        "from": "1.0.3",
+        "to": "2025.0.0-alpha1"
+      }
+    },
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 1,
+    "n_elements_removed": 0,
+    "category": "mixed"
+  },
+  {
+    "module": "laborbefund",
+    "profile": "DiagnosticReportLab",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/DiagnosticReportLab",
+    "from": "2025.0.2",
+    "to": "2026.0.0",
+    "transition_type": "major",
+    "reason": "major+ext-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "hl7.fhir.uv.ips": {
+        "from": "1.1.0",
+        "to": "2.0.0"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.meta": {
+        "from": "2025.0.0",
+        "to": "2026.0.0"
+      }
+    },
+    "ext_deps_changed": {
+      "hl7.fhir.uv.ips": {
+        "from": "1.1.0",
+        "to": "2.0.0"
+      }
+    },
+    "ext_deps_added": {},
+    "n_elements_added": 15,
+    "n_elements_removed": 3,
+    "category": "mixed"
+  },
+  {
+    "module": "laborbefund",
+    "profile": "ObservationLab",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab",
+    "from": "1.0.3",
+    "to": "1.0.4",
+    "transition_type": "patch",
+    "reason": "mii-dep-driven",
+    "severity": "neutral",
+    "deps_changed": {
+      "de.medizininformatikinitiative.kerndatensatz.meta": {
+        "from": "1.0.3",
+        "to": "1.0.0"
+      }
+    },
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 1,
+    "n_elements_removed": 4,
+    "category": "mixed"
+  },
+  {
+    "module": "laborbefund",
+    "profile": "ObservationLab",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab",
+    "from": "1.0.6",
+    "to": "2025.0.0",
+    "transition_type": "major",
+    "reason": "major+mii-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "de.medizininformatikinitiative.kerndatensatz.meta": {
+        "from": "1.0.3",
+        "to": "2025.0.0-alpha1"
+      }
+    },
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 4,
+    "n_elements_removed": 1,
+    "category": "mixed"
+  },
+  {
+    "module": "laborbefund",
+    "profile": "ServiceRequestLab",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ServiceRequestLab",
+    "from": "1.0.2",
+    "to": "1.0.3",
+    "transition_type": "patch",
+    "reason": "mii-dep-driven",
+    "severity": "neutral",
+    "deps_changed": {
+      "de.medizininformatikinitiative.kerndatensatz.meta": {
+        "from": "1.0.2",
+        "to": "1.0.3"
+      }
+    },
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 0,
+    "n_elements_removed": 0,
+    "category": "modified"
+  },
+  {
+    "module": "laborbefund",
+    "profile": "ServiceRequestLab",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ServiceRequestLab",
+    "from": "1.0.3",
+    "to": "1.0.4",
+    "transition_type": "patch",
+    "reason": "mii-dep-driven",
+    "severity": "neutral",
+    "deps_changed": {
+      "de.medizininformatikinitiative.kerndatensatz.meta": {
+        "from": "1.0.3",
+        "to": "1.0.0"
+      }
+    },
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 1,
+    "n_elements_removed": 2,
+    "category": "mixed"
+  },
+  {
+    "module": "laborbefund",
+    "profile": "ServiceRequestLab",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ServiceRequestLab",
+    "from": "1.0.6",
+    "to": "2025.0.0",
+    "transition_type": "major",
+    "reason": "major+mii-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "de.medizininformatikinitiative.kerndatensatz.meta": {
+        "from": "1.0.3",
+        "to": "2025.0.0-alpha1"
+      }
+    },
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 0,
+    "n_elements_removed": 0,
+    "category": "modified"
+  },
+  {
+    "module": "medikation",
+    "profile": "Medication",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Medication",
+    "from": "0.9.0",
+    "to": "1.0.0",
+    "transition_type": "major",
+    "reason": "major-own-decision",
+    "severity": "expected",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 16,
+    "n_elements_removed": 13,
+    "category": "mixed"
+  },
+  {
+    "module": "medikation",
+    "profile": "MedicationAdministration",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MedicationAdministration",
+    "from": "0.9.0",
+    "to": "1.0.0",
+    "transition_type": "major",
+    "reason": "major-own-decision",
+    "severity": "expected",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 14,
+    "n_elements_removed": 9,
+    "category": "mixed"
+  },
+  {
+    "module": "medikation",
+    "profile": "MedicationStatement",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MedicationStatement",
+    "from": "0.9.0",
+    "to": "1.0.0",
+    "transition_type": "major",
+    "reason": "major-own-decision",
+    "severity": "expected",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 14,
+    "n_elements_removed": 18,
+    "category": "mixed"
+  },
+  {
+    "module": "medikation",
+    "profile": "Medication",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication",
+    "from": "1.0.10",
+    "to": "1.0.11",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 15,
+    "n_elements_removed": 16,
+    "category": "mixed"
+  },
+  {
+    "module": "medikation",
+    "profile": "Medication",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication",
+    "from": "1.0.11",
+    "to": "2.0.0",
+    "transition_type": "major",
+    "reason": "major-own-decision",
+    "severity": "expected",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 17,
+    "n_elements_removed": 15,
+    "category": "mixed"
+  },
+  {
+    "module": "medikation",
+    "profile": "Medication",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication",
+    "from": "2.0.0",
+    "to": "2025.0.0",
+    "transition_type": "major",
+    "reason": "major+ext-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "hl7.fhir.uv.ips": {
+        "from": "1.0.0",
+        "to": "1.1.x"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.meta": {
+        "from": "1.0.3",
+        "to": "2025.0.x"
+      }
+    },
+    "ext_deps_changed": {
+      "hl7.fhir.uv.ips": {
+        "from": "1.0.0",
+        "to": "1.1.x"
+      }
+    },
+    "ext_deps_added": {
+      "de.basisprofil.r4": "1.5.x",
+      "de.ihe-d.terminology": "3.0.1"
+    },
+    "n_elements_added": 2,
+    "n_elements_removed": 0,
+    "category": "mixed"
+  },
+  {
+    "module": "medikation",
+    "profile": "Medication",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication",
+    "from": "2025.0.0",
+    "to": "2025.0.1",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 0,
+    "n_elements_removed": 0,
+    "category": "modified"
+  },
+  {
+    "module": "medikation",
+    "profile": "MedicationAdministration",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration",
+    "from": "1.0.5",
+    "to": "1.0.6",
+    "transition_type": "patch",
+    "reason": "mii-dep-driven",
+    "severity": "neutral",
+    "deps_changed": {
+      "de.medizininformatikinitiative.kerndatensatz.meta": {
+        "from": "1.0.1",
+        "to": "1.0.2"
+      }
+    },
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 0,
+    "n_elements_removed": 0,
+    "category": "modified"
+  },
+  {
+    "module": "medikation",
+    "profile": "MedicationAdministration",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration",
+    "from": "2.0.0",
+    "to": "2025.0.0",
+    "transition_type": "major",
+    "reason": "major+ext-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "hl7.fhir.uv.ips": {
+        "from": "1.0.0",
+        "to": "1.1.x"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.meta": {
+        "from": "1.0.3",
+        "to": "2025.0.x"
+      }
+    },
+    "ext_deps_changed": {
+      "hl7.fhir.uv.ips": {
+        "from": "1.0.0",
+        "to": "1.1.x"
+      }
+    },
+    "ext_deps_added": {
+      "de.basisprofil.r4": "1.5.x",
+      "de.ihe-d.terminology": "3.0.1"
+    },
+    "n_elements_added": 0,
+    "n_elements_removed": 0,
+    "category": "modified"
+  },
+  {
+    "module": "medikation",
+    "profile": "MII_PR_Medikation_MedicationRequest",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest",
+    "from": "2.0.0",
+    "to": "2025.0.0",
+    "transition_type": "major",
+    "reason": "major+ext-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "hl7.fhir.uv.ips": {
+        "from": "1.0.0",
+        "to": "1.1.x"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.meta": {
+        "from": "1.0.3",
+        "to": "2025.0.x"
+      }
+    },
+    "ext_deps_changed": {
+      "hl7.fhir.uv.ips": {
+        "from": "1.0.0",
+        "to": "1.1.x"
+      }
+    },
+    "ext_deps_added": {
+      "de.basisprofil.r4": "1.5.x",
+      "de.ihe-d.terminology": "3.0.1"
+    },
+    "n_elements_added": 0,
+    "n_elements_removed": 0,
+    "category": "modified"
+  },
+  {
+    "module": "medikation",
+    "profile": "MII_PR_Medikation_MedicationRequest",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest",
+    "from": "2025.0.1",
+    "to": "2026.0.0",
+    "transition_type": "major",
+    "reason": "major+ext-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "de.medizininformatikinitiative.kerndatensatz.meta": {
+        "from": "2025.0.x",
+        "to": "2026.0.x"
+      },
+      "hl7.fhir.uv.ips": {
+        "from": "1.1.x",
+        "to": "2.0.0"
+      }
+    },
+    "ext_deps_changed": {
+      "hl7.fhir.uv.ips": {
+        "from": "1.1.x",
+        "to": "2.0.0"
+      }
+    },
+    "ext_deps_added": {
+      "de.fhir.medication": "1.0.x"
+    },
+    "n_elements_added": 0,
+    "n_elements_removed": 13,
+    "category": "mixed"
+  },
+  {
+    "module": "medikation",
+    "profile": "MedicationStatement",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement",
+    "from": "1.0.5",
+    "to": "1.0.6",
+    "transition_type": "patch",
+    "reason": "mii-dep-driven",
+    "severity": "neutral",
+    "deps_changed": {
+      "de.medizininformatikinitiative.kerndatensatz.meta": {
+        "from": "1.0.1",
+        "to": "1.0.2"
+      }
+    },
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 0,
+    "n_elements_removed": 0,
+    "category": "modified"
+  },
+  {
+    "module": "medikation",
+    "profile": "MedicationStatement",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement",
+    "from": "1.0.11",
+    "to": "2.0.0",
+    "transition_type": "major",
+    "reason": "major-own-decision",
+    "severity": "expected",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 124,
+    "n_elements_removed": 0,
+    "category": "mixed"
+  },
+  {
+    "module": "medikation",
+    "profile": "MedicationStatement",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement",
+    "from": "2.0.0",
+    "to": "2025.0.0",
+    "transition_type": "major",
+    "reason": "major+ext-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "hl7.fhir.uv.ips": {
+        "from": "1.0.0",
+        "to": "1.1.x"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.meta": {
+        "from": "1.0.3",
+        "to": "2025.0.x"
+      }
+    },
+    "ext_deps_changed": {
+      "hl7.fhir.uv.ips": {
+        "from": "1.0.0",
+        "to": "1.1.x"
+      }
+    },
+    "ext_deps_added": {
+      "de.basisprofil.r4": "1.5.x",
+      "de.ihe-d.terminology": "3.0.1"
+    },
+    "n_elements_added": 0,
+    "n_elements_removed": 0,
+    "category": "modified"
+  },
+  {
+    "module": "medikation",
+    "profile": "MedicationStatement",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement",
+    "from": "2025.0.1",
+    "to": "2026.0.0",
+    "transition_type": "major",
+    "reason": "major+ext-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "de.medizininformatikinitiative.kerndatensatz.meta": {
+        "from": "2025.0.x",
+        "to": "2026.0.x"
+      },
+      "hl7.fhir.uv.ips": {
+        "from": "1.1.x",
+        "to": "2.0.0"
+      }
+    },
+    "ext_deps_changed": {
+      "hl7.fhir.uv.ips": {
+        "from": "1.1.x",
+        "to": "2.0.0"
+      }
+    },
+    "ext_deps_added": {
+      "de.fhir.medication": "1.0.x"
+    },
+    "n_elements_added": 0,
+    "n_elements_removed": 13,
+    "category": "mixed"
+  },
+  {
+    "module": "mikrobiologie",
+    "profile": "MII_PR_Mikrobio_voraussichtliche_Empfindlichkeit",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-voraussichtliche-empfindlichkeit",
+    "from": "0.0.2",
+    "to": "2024.0.0",
+    "transition_type": "major",
+    "reason": "major-own-decision",
+    "severity": "expected",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 0,
+    "n_elements_removed": 3,
+    "category": "mixed"
+  },
+  {
+    "module": "molgen",
+    "profile": "MII_PR_MolGen_DiagnostischeImplikation",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/diagnostische-implikation",
+    "from": "2025.0.0",
+    "to": "2026.0.0",
+    "transition_type": "major",
+    "reason": "major+ext-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "de.basisprofil.r4": {
+        "from": "1.5.0",
+        "to": "1.5.x"
+      },
+      "hl7.terminology.r4": {
+        "from": "6.1.0",
+        "to": "6.1.x"
+      },
+      "hl7.fhir.uv.genomics-reporting": {
+        "from": "2.0.0",
+        "to": "3.0.x"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.diagnose": {
+        "from": "2025.0.0",
+        "to": "2025.0.x"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.biobank": {
+        "from": "2025.0.2",
+        "to": "2026.0.0-ballot"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.meta": {
+        "from": "2025.0.0",
+        "to": "2026.0.x"
+      }
+    },
+    "ext_deps_changed": {
+      "de.basisprofil.r4": {
+        "from": "1.5.0",
+        "to": "1.5.x"
+      },
+      "hl7.terminology.r4": {
+        "from": "6.1.0",
+        "to": "6.1.x"
+      },
+      "hl7.fhir.uv.genomics-reporting": {
+        "from": "2.0.0",
+        "to": "3.0.x"
+      }
+    },
+    "ext_deps_added": {},
+    "n_elements_added": 3,
+    "n_elements_removed": 2,
+    "category": "mixed"
+  },
+  {
+    "module": "molgen",
+    "profile": "MII_PR_MolGen_Familienanamnese",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/familienanamnese",
+    "from": "1.0.0",
+    "to": "2025.0.0",
+    "transition_type": "major",
+    "reason": "major+ext-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "de.basisprofil.r4": {
+        "from": "1.4.0",
+        "to": "1.5.0"
+      },
+      "hl7.terminology.r4": {
+        "from": "5.0.0",
+        "to": "6.1.0"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.meta": {
+        "from": "1.0.3",
+        "to": "2025.0.0"
+      }
+    },
+    "ext_deps_changed": {
+      "de.basisprofil.r4": {
+        "from": "1.4.0",
+        "to": "1.5.0"
+      },
+      "hl7.terminology.r4": {
+        "from": "5.0.0",
+        "to": "6.1.0"
+      }
+    },
+    "ext_deps_added": {},
+    "n_elements_added": 0,
+    "n_elements_removed": 0,
+    "category": "modified"
+  },
+  {
+    "module": "molgen",
+    "profile": "MII_PR_MolGen_Familienanamnese",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/familienanamnese",
+    "from": "2025.0.0",
+    "to": "2026.0.1",
+    "transition_type": "major",
+    "reason": "major+ext-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "de.basisprofil.r4": {
+        "from": "1.5.0",
+        "to": "1.5.x"
+      },
+      "hl7.terminology.r4": {
+        "from": "6.1.0",
+        "to": "6.1.x"
+      },
+      "hl7.fhir.uv.genomics-reporting": {
+        "from": "2.0.0",
+        "to": "3.0.x"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.diagnose": {
+        "from": "2025.0.0",
+        "to": "2025.0.x"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.biobank": {
+        "from": "2025.0.2",
+        "to": "2026.0.0-ballot"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.meta": {
+        "from": "2025.0.0",
+        "to": "2026.0.x"
+      }
+    },
+    "ext_deps_changed": {
+      "de.basisprofil.r4": {
+        "from": "1.5.0",
+        "to": "1.5.x"
+      },
+      "hl7.terminology.r4": {
+        "from": "6.1.0",
+        "to": "6.1.x"
+      },
+      "hl7.fhir.uv.genomics-reporting": {
+        "from": "2.0.0",
+        "to": "3.0.x"
+      }
+    },
+    "ext_deps_added": {},
+    "n_elements_added": 0,
+    "n_elements_removed": 0,
+    "category": "modified"
+  },
+  {
+    "module": "molgen",
+    "profile": "MII_PR_MolGen_Mikrosatelliteninstabilitaet",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mikrosatelliteninstabilitaet",
+    "from": "2025.0.0",
+    "to": "2026.0.0",
+    "transition_type": "major",
+    "reason": "major+ext-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "de.basisprofil.r4": {
+        "from": "1.5.0",
+        "to": "1.5.x"
+      },
+      "hl7.terminology.r4": {
+        "from": "6.1.0",
+        "to": "6.1.x"
+      },
+      "hl7.fhir.uv.genomics-reporting": {
+        "from": "2.0.0",
+        "to": "3.0.x"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.diagnose": {
+        "from": "2025.0.0",
+        "to": "2025.0.x"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.biobank": {
+        "from": "2025.0.2",
+        "to": "2026.0.0-ballot"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.meta": {
+        "from": "2025.0.0",
+        "to": "2026.0.x"
+      }
+    },
+    "ext_deps_changed": {
+      "de.basisprofil.r4": {
+        "from": "1.5.0",
+        "to": "1.5.x"
+      },
+      "hl7.terminology.r4": {
+        "from": "6.1.0",
+        "to": "6.1.x"
+      },
+      "hl7.fhir.uv.genomics-reporting": {
+        "from": "2.0.0",
+        "to": "3.0.x"
+      }
+    },
+    "ext_deps_added": {},
+    "n_elements_added": 0,
+    "n_elements_removed": 3,
+    "category": "mixed"
+  },
+  {
+    "module": "molgen",
+    "profile": "MII_PR_MolGen_MolekulargenetischerBefundbericht",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/molekulargenetischer-befundbericht",
+    "from": "2025.0.0",
+    "to": "2026.0.0",
+    "transition_type": "major",
+    "reason": "major+ext-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "de.basisprofil.r4": {
+        "from": "1.5.0",
+        "to": "1.5.x"
+      },
+      "hl7.terminology.r4": {
+        "from": "6.1.0",
+        "to": "6.1.x"
+      },
+      "hl7.fhir.uv.genomics-reporting": {
+        "from": "2.0.0",
+        "to": "3.0.x"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.diagnose": {
+        "from": "2025.0.0",
+        "to": "2025.0.x"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.biobank": {
+        "from": "2025.0.2",
+        "to": "2026.0.0-ballot"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.meta": {
+        "from": "2025.0.0",
+        "to": "2026.0.x"
+      }
+    },
+    "ext_deps_changed": {
+      "de.basisprofil.r4": {
+        "from": "1.5.0",
+        "to": "1.5.x"
+      },
+      "hl7.terminology.r4": {
+        "from": "6.1.0",
+        "to": "6.1.x"
+      },
+      "hl7.fhir.uv.genomics-reporting": {
+        "from": "2.0.0",
+        "to": "3.0.x"
+      }
+    },
+    "ext_deps_added": {},
+    "n_elements_added": 4,
+    "n_elements_removed": 7,
+    "category": "mixed"
+  },
+  {
+    "module": "molgen",
+    "profile": "MII_PR_MolGen_Mutationslast",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mutationslast",
+    "from": "2025.0.0",
+    "to": "2026.0.0",
+    "transition_type": "major",
+    "reason": "major+ext-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "de.basisprofil.r4": {
+        "from": "1.5.0",
+        "to": "1.5.x"
+      },
+      "hl7.terminology.r4": {
+        "from": "6.1.0",
+        "to": "6.1.x"
+      },
+      "hl7.fhir.uv.genomics-reporting": {
+        "from": "2.0.0",
+        "to": "3.0.x"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.diagnose": {
+        "from": "2025.0.0",
+        "to": "2025.0.x"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.biobank": {
+        "from": "2025.0.2",
+        "to": "2026.0.0-ballot"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.meta": {
+        "from": "2025.0.0",
+        "to": "2026.0.x"
+      }
+    },
+    "ext_deps_changed": {
+      "de.basisprofil.r4": {
+        "from": "1.5.0",
+        "to": "1.5.x"
+      },
+      "hl7.terminology.r4": {
+        "from": "6.1.0",
+        "to": "6.1.x"
+      },
+      "hl7.fhir.uv.genomics-reporting": {
+        "from": "2.0.0",
+        "to": "3.0.x"
+      }
+    },
+    "ext_deps_added": {},
+    "n_elements_added": 0,
+    "n_elements_removed": 4,
+    "category": "mixed"
+  },
+  {
+    "module": "molgen",
+    "profile": "MII_PR_MolGen_PolygenerRisikoScore",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/polygener-risiko-score",
+    "from": "1.0.0",
+    "to": "2025.0.0",
+    "transition_type": "major",
+    "reason": "major+ext-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "de.basisprofil.r4": {
+        "from": "1.4.0",
+        "to": "1.5.0"
+      },
+      "hl7.terminology.r4": {
+        "from": "5.0.0",
+        "to": "6.1.0"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.meta": {
+        "from": "1.0.3",
+        "to": "2025.0.0"
+      }
+    },
+    "ext_deps_changed": {
+      "de.basisprofil.r4": {
+        "from": "1.4.0",
+        "to": "1.5.0"
+      },
+      "hl7.terminology.r4": {
+        "from": "5.0.0",
+        "to": "6.1.0"
+      }
+    },
+    "ext_deps_added": {},
+    "n_elements_added": 0,
+    "n_elements_removed": 1,
+    "category": "mixed"
+  },
+  {
+    "module": "molgen",
+    "profile": "MII_PR_MolGen_PolygenerRisikoScore",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/polygener-risiko-score",
+    "from": "2026.0.1",
+    "to": "2026.0.2",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 0,
+    "n_elements_removed": 1,
+    "category": "elements-removed"
+  },
+  {
+    "module": "molgen",
+    "profile": "MII_PR_MolGen_TherapeutischeImplikation",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/therapeutische-implikation",
+    "from": "2025.0.0",
+    "to": "2026.0.0",
+    "transition_type": "major",
+    "reason": "major+ext-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "de.basisprofil.r4": {
+        "from": "1.5.0",
+        "to": "1.5.x"
+      },
+      "hl7.terminology.r4": {
+        "from": "6.1.0",
+        "to": "6.1.x"
+      },
+      "hl7.fhir.uv.genomics-reporting": {
+        "from": "2.0.0",
+        "to": "3.0.x"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.diagnose": {
+        "from": "2025.0.0",
+        "to": "2025.0.x"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.biobank": {
+        "from": "2025.0.2",
+        "to": "2026.0.0-ballot"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.meta": {
+        "from": "2025.0.0",
+        "to": "2026.0.x"
+      }
+    },
+    "ext_deps_changed": {
+      "de.basisprofil.r4": {
+        "from": "1.5.0",
+        "to": "1.5.x"
+      },
+      "hl7.terminology.r4": {
+        "from": "6.1.0",
+        "to": "6.1.x"
+      },
+      "hl7.fhir.uv.genomics-reporting": {
+        "from": "2.0.0",
+        "to": "3.0.x"
+      }
+    },
+    "ext_deps_added": {},
+    "n_elements_added": 3,
+    "n_elements_removed": 2,
+    "category": "mixed"
+  },
+  {
+    "module": "molgen",
+    "profile": "MII_PR_MolGen_Variante",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/variante",
+    "from": "2025.0.0",
+    "to": "2026.0.0",
+    "transition_type": "major",
+    "reason": "major+ext-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "de.basisprofil.r4": {
+        "from": "1.5.0",
+        "to": "1.5.x"
+      },
+      "hl7.terminology.r4": {
+        "from": "6.1.0",
+        "to": "6.1.x"
+      },
+      "hl7.fhir.uv.genomics-reporting": {
+        "from": "2.0.0",
+        "to": "3.0.x"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.diagnose": {
+        "from": "2025.0.0",
+        "to": "2025.0.x"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.biobank": {
+        "from": "2025.0.2",
+        "to": "2026.0.0-ballot"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.meta": {
+        "from": "2025.0.0",
+        "to": "2026.0.x"
+      }
+    },
+    "ext_deps_changed": {
+      "de.basisprofil.r4": {
+        "from": "1.5.0",
+        "to": "1.5.x"
+      },
+      "hl7.terminology.r4": {
+        "from": "6.1.0",
+        "to": "6.1.x"
+      },
+      "hl7.fhir.uv.genomics-reporting": {
+        "from": "2.0.0",
+        "to": "3.0.x"
+      }
+    },
+    "ext_deps_added": {},
+    "n_elements_added": 5,
+    "n_elements_removed": 5,
+    "category": "mixed"
+  },
+  {
+    "module": "onkologie",
+    "profile": "MII_PR_Onko_Allgemeiner_Leistungszustand_ECOG",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-allgemeiner-leistungszustand-ecog",
+    "from": "2025.1.0",
+    "to": "2026.0.0",
+    "transition_type": "major",
+    "reason": "major+mii-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "de.medizininformatikinitiative.kerndatensatz.medikation": {
+        "from": "2025.0.x",
+        "to": "2026.0.x"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.biobank": {
+        "from": "2025.0.x",
+        "to": "2026.0.0"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.meta": {
+        "from": "2025.0.x",
+        "to": "2026.0.x"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.molgen": {
+        "from": "2025.0.x",
+        "to": "2026.0.x"
+      }
+    },
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 12,
+    "n_elements_removed": 3,
+    "category": "mixed"
+  },
+  {
+    "module": "onkologie",
+    "profile": "MII_PR_Onko_Allgemeiner_Leistungszustand_Karnofsky",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-allgemeiner-leistungszustand-karnofsky",
+    "from": "2025.1.0",
+    "to": "2026.0.0",
+    "transition_type": "major",
+    "reason": "major+mii-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "de.medizininformatikinitiative.kerndatensatz.medikation": {
+        "from": "2025.0.x",
+        "to": "2026.0.x"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.biobank": {
+        "from": "2025.0.x",
+        "to": "2026.0.0"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.meta": {
+        "from": "2025.0.x",
+        "to": "2026.0.x"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.molgen": {
+        "from": "2025.0.x",
+        "to": "2026.0.x"
+      }
+    },
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 12,
+    "n_elements_removed": 2,
+    "category": "mixed"
+  },
+  {
+    "module": "onkologie",
+    "profile": "MII_PR_Onko_Anzahl_Befallene_Lymphknoten",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-anzahl-befallene-lymphknoten",
+    "from": "2026.0.2",
+    "to": "2026.0.3",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 0,
+    "n_elements_removed": 1,
+    "category": "elements-removed"
+  },
+  {
+    "module": "onkologie",
+    "profile": "MII_PR_Onko_Anzahl_Befallene_Sentinel_Lymphknoten",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-anzahl-befallene-sentinel-lymphknoten",
+    "from": "2026.0.2",
+    "to": "2026.0.3",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 0,
+    "n_elements_removed": 1,
+    "category": "elements-removed"
+  },
+  {
+    "module": "onkologie",
+    "profile": "MII_PR_Onko_Anzahl_Untersuchte_Lymphknoten",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-anzahl-untersuchte-lymphknoten",
+    "from": "2026.0.2",
+    "to": "2026.0.3",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 0,
+    "n_elements_removed": 1,
+    "category": "elements-removed"
+  },
+  {
+    "module": "onkologie",
+    "profile": "MII_PR_Onko_Anzahl_Untersuchte_Sentinel_Lymphknoten",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-anzahl-untersuchte-sentinel-lymphknoten",
+    "from": "2026.0.2",
+    "to": "2026.0.3",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 0,
+    "n_elements_removed": 1,
+    "category": "elements-removed"
+  },
+  {
+    "module": "onkologie",
+    "profile": "MII_PR_Onko_Befund",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-befund",
+    "from": "2025.0.4",
+    "to": "2025.1.0",
+    "transition_type": "minor",
+    "reason": "minor-own-decision",
+    "severity": "concerning",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 0,
+    "n_elements_removed": 1,
+    "category": "elements-removed"
+  },
+  {
+    "module": "onkologie",
+    "profile": "MII_PR_Onko_Befund",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-befund",
+    "from": "2026.0.2",
+    "to": "2026.0.3",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 0,
+    "n_elements_removed": 1,
+    "category": "elements-removed"
+  },
+  {
+    "module": "onkologie",
+    "profile": "MII_PR_Onko_Diagnose_Primaertumor",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-diagnose-primaertumor",
+    "from": "2025.0.2",
+    "to": "2025.0.3",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 0,
+    "n_elements_removed": 0,
+    "category": "modified"
+  },
+  {
+    "module": "onkologie",
+    "profile": "MII_PR_Onko_Diagnose_Primaertumor",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-diagnose-primaertumor",
+    "from": "2026.0.1",
+    "to": "2026.0.2",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 0,
+    "n_elements_removed": 3,
+    "category": "elements-removed"
+  },
+  {
+    "module": "onkologie",
+    "profile": "MII_PR_Onko_Grading",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-grading",
+    "from": "2026.0.2",
+    "to": "2026.0.3",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 0,
+    "n_elements_removed": 1,
+    "category": "elements-removed"
+  },
+  {
+    "module": "onkologie",
+    "profile": "MII_PR_Onko_Histologie_ICDO3",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-histologie-icdo3",
+    "from": "2025.0.2",
+    "to": "2025.0.3",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 0,
+    "n_elements_removed": 0,
+    "category": "modified"
+  },
+  {
+    "module": "onkologie",
+    "profile": "MII_PR_Onko_Histologie_ICDO3",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-histologie-icdo3",
+    "from": "2026.0.2",
+    "to": "2026.0.3",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 0,
+    "n_elements_removed": 1,
+    "category": "elements-removed"
+  },
+  {
+    "module": "onkologie",
+    "profile": "MII_PR_Onko_KRK_Stoma_Markierung",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-krk-stoma-markierung",
+    "from": "2026.0.2",
+    "to": "2026.0.3",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 0,
+    "n_elements_removed": 1,
+    "category": "elements-removed"
+  },
+  {
+    "module": "onkologie",
+    "profile": "MII_PR_Onko_Liste_Evidenz_Erstdiagnose",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-liste-evidenz-erstdiagnose",
+    "from": "2026.0.2",
+    "to": "2026.0.3",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 0,
+    "n_elements_removed": 1,
+    "category": "elements-removed"
+  },
+  {
+    "module": "onkologie",
+    "profile": "MII_PR_Onko_Melanom_Exzision",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-melanom-exzision",
+    "from": "2026.0.2",
+    "to": "2026.0.3",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 0,
+    "n_elements_removed": 1,
+    "category": "elements-removed"
+  },
+  {
+    "module": "onkologie",
+    "profile": "MII_PR_Onko_Nebenwirkung_Adverse_Event",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-nebenwirkung-adverse-event",
+    "from": "2025.0.4",
+    "to": "2025.1.0",
+    "transition_type": "minor",
+    "reason": "minor-own-decision",
+    "severity": "concerning",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 0,
+    "n_elements_removed": 0,
+    "category": "modified"
+  },
+  {
+    "module": "onkologie",
+    "profile": "MII_PR_Onko_Nebenwirkung_Adverse_Event",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-nebenwirkung-adverse-event",
+    "from": "2025.1.0",
+    "to": "2026.0.0",
+    "transition_type": "major",
+    "reason": "major+mii-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "de.medizininformatikinitiative.kerndatensatz.medikation": {
+        "from": "2025.0.x",
+        "to": "2026.0.x"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.biobank": {
+        "from": "2025.0.x",
+        "to": "2026.0.0"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.meta": {
+        "from": "2025.0.x",
+        "to": "2026.0.x"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.molgen": {
+        "from": "2025.0.x",
+        "to": "2026.0.x"
+      }
+    },
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 4,
+    "n_elements_removed": 0,
+    "category": "mixed"
+  },
+  {
+    "module": "onkologie",
+    "profile": "MII_PR_Onko_Nebenwirkung_Adverse_Event",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-nebenwirkung-adverse-event",
+    "from": "2026.0.1",
+    "to": "2026.0.2",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 1,
+    "n_elements_removed": 4,
+    "category": "mixed"
+  },
+  {
+    "module": "onkologie",
+    "profile": "MII_PR_Onko_Nebenwirkung_Adverse_Event",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-nebenwirkung-adverse-event",
+    "from": "2026.0.2",
+    "to": "2026.0.3",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 4,
+    "n_elements_removed": 1,
+    "category": "mixed"
+  },
+  {
+    "module": "onkologie",
+    "profile": "MII_PR_Onko_Operation",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-operation",
+    "from": "2025.1.0",
+    "to": "2026.0.0",
+    "transition_type": "major",
+    "reason": "major+mii-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "de.medizininformatikinitiative.kerndatensatz.medikation": {
+        "from": "2025.0.x",
+        "to": "2026.0.x"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.biobank": {
+        "from": "2025.0.x",
+        "to": "2026.0.0"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.meta": {
+        "from": "2025.0.x",
+        "to": "2026.0.x"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.molgen": {
+        "from": "2025.0.x",
+        "to": "2026.0.x"
+      }
+    },
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 2,
+    "n_elements_removed": 1,
+    "category": "mixed"
+  },
+  {
+    "module": "onkologie",
+    "profile": "MII_PR_Onko_Operation",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-operation",
+    "from": "2026.0.2",
+    "to": "2026.0.3",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 0,
+    "n_elements_removed": 1,
+    "category": "elements-removed"
+  },
+  {
+    "module": "onkologie",
+    "profile": "MII_PR_Onko_Prostata_Operation",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-prostata-operation",
+    "from": "2026.0.2",
+    "to": "2026.0.3",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 0,
+    "n_elements_removed": 1,
+    "category": "elements-removed"
+  },
+  {
+    "module": "onkologie",
+    "profile": "MII_PR_Onko_Strahlentherapie",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-strahlentherapie",
+    "from": "2025.0.4",
+    "to": "2025.1.0",
+    "transition_type": "minor",
+    "reason": "minor-own-decision",
+    "severity": "concerning",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 0,
+    "n_elements_removed": 22,
+    "category": "mixed"
+  },
+  {
+    "module": "onkologie",
+    "profile": "MII_PR_Onko_Strahlentherapie",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-strahlentherapie",
+    "from": "2025.1.0",
+    "to": "2026.0.0",
+    "transition_type": "major",
+    "reason": "major+mii-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "de.medizininformatikinitiative.kerndatensatz.medikation": {
+        "from": "2025.0.x",
+        "to": "2026.0.x"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.biobank": {
+        "from": "2025.0.x",
+        "to": "2026.0.0"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.meta": {
+        "from": "2025.0.x",
+        "to": "2026.0.x"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.molgen": {
+        "from": "2025.0.x",
+        "to": "2026.0.x"
+      }
+    },
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 0,
+    "n_elements_removed": 1,
+    "category": "elements-removed"
+  },
+  {
+    "module": "onkologie",
+    "profile": "MII_PR_Onko_Strahlentherapie",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-strahlentherapie",
+    "from": "2026.0.2",
+    "to": "2026.0.3",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 0,
+    "n_elements_removed": 1,
+    "category": "elements-removed"
+  },
+  {
+    "module": "onkologie",
+    "profile": "MII_PR_Onko_Strahlentherapie_Bestrahlung_Nuklearmedizin",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-strahlentherapie-bestrahlung-nuklearmedizin",
+    "from": "2025.0.4",
+    "to": "2025.1.0",
+    "transition_type": "minor",
+    "reason": "minor-own-decision",
+    "severity": "concerning",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 2,
+    "n_elements_removed": 0,
+    "category": "mixed"
+  },
+  {
+    "module": "onkologie",
+    "profile": "MII_PR_Onko_Strahlentherapie_Bestrahlung_Nuklearmedizin",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-strahlentherapie-bestrahlung-nuklearmedizin",
+    "from": "2025.1.0",
+    "to": "2026.0.0",
+    "transition_type": "major",
+    "reason": "major+mii-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "de.medizininformatikinitiative.kerndatensatz.medikation": {
+        "from": "2025.0.x",
+        "to": "2026.0.x"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.biobank": {
+        "from": "2025.0.x",
+        "to": "2026.0.0"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.meta": {
+        "from": "2025.0.x",
+        "to": "2026.0.x"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.molgen": {
+        "from": "2025.0.x",
+        "to": "2026.0.x"
+      }
+    },
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 4,
+    "n_elements_removed": 4,
+    "category": "mixed"
+  },
+  {
+    "module": "onkologie",
+    "profile": "MII_PR_Onko_Strahlentherapie_Bestrahlung_Nuklearmedizin",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-strahlentherapie-bestrahlung-nuklearmedizin",
+    "from": "2026.0.2",
+    "to": "2026.0.3",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 0,
+    "n_elements_removed": 1,
+    "category": "elements-removed"
+  },
+  {
+    "module": "onkologie",
+    "profile": "MII_PR_Onko_Strahlentherapie_Bestrahlung_Strahlentherapie",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-strahlentherapie-bestrahlung-strahlentherapie",
+    "from": "2025.0.4",
+    "to": "2025.1.0",
+    "transition_type": "minor",
+    "reason": "minor-own-decision",
+    "severity": "concerning",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 2,
+    "n_elements_removed": 0,
+    "category": "mixed"
+  },
+  {
+    "module": "onkologie",
+    "profile": "MII_PR_Onko_Strahlentherapie_Bestrahlung_Strahlentherapie",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-strahlentherapie-bestrahlung-strahlentherapie",
+    "from": "2025.1.0",
+    "to": "2026.0.0",
+    "transition_type": "major",
+    "reason": "major+mii-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "de.medizininformatikinitiative.kerndatensatz.medikation": {
+        "from": "2025.0.x",
+        "to": "2026.0.x"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.biobank": {
+        "from": "2025.0.x",
+        "to": "2026.0.0"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.meta": {
+        "from": "2025.0.x",
+        "to": "2026.0.x"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.molgen": {
+        "from": "2025.0.x",
+        "to": "2026.0.x"
+      }
+    },
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 4,
+    "n_elements_removed": 4,
+    "category": "mixed"
+  },
+  {
+    "module": "onkologie",
+    "profile": "MII_PR_Onko_Strahlentherapie_Bestrahlung_Strahlentherapie",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-strahlentherapie-bestrahlung-strahlentherapie",
+    "from": "2026.0.2",
+    "to": "2026.0.3",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 0,
+    "n_elements_removed": 1,
+    "category": "elements-removed"
+  },
+  {
+    "module": "onkologie",
+    "profile": "MII_PR_Onko_Studienteilnahme",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-studienteilnahme",
+    "from": "2025.1.0",
+    "to": "2026.0.0",
+    "transition_type": "major",
+    "reason": "major+mii-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "de.medizininformatikinitiative.kerndatensatz.medikation": {
+        "from": "2025.0.x",
+        "to": "2026.0.x"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.biobank": {
+        "from": "2025.0.x",
+        "to": "2026.0.0"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.meta": {
+        "from": "2025.0.x",
+        "to": "2026.0.x"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.molgen": {
+        "from": "2025.0.x",
+        "to": "2026.0.x"
+      }
+    },
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 2,
+    "n_elements_removed": 0,
+    "category": "mixed"
+  },
+  {
+    "module": "onkologie",
+    "profile": "MII_PR_Onko_Systemische_Therapie",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-systemische-therapie",
+    "from": "2025.1.0",
+    "to": "2026.0.0",
+    "transition_type": "major",
+    "reason": "major+mii-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "de.medizininformatikinitiative.kerndatensatz.medikation": {
+        "from": "2025.0.x",
+        "to": "2026.0.x"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.biobank": {
+        "from": "2025.0.x",
+        "to": "2026.0.0"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.meta": {
+        "from": "2025.0.x",
+        "to": "2026.0.x"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.molgen": {
+        "from": "2025.0.x",
+        "to": "2026.0.x"
+      }
+    },
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 4,
+    "n_elements_removed": 1,
+    "category": "mixed"
+  },
+  {
+    "module": "onkologie",
+    "profile": "MII_PR_Onko_Systemische_Therapie",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-systemische-therapie",
+    "from": "2026.0.2",
+    "to": "2026.0.3",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 0,
+    "n_elements_removed": 1,
+    "category": "mixed"
+  },
+  {
+    "module": "onkologie",
+    "profile": "MII_PR_Onko_Systemische_Therapie_Medikation",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-systemische-therapie-medikation",
+    "from": "2025.0.4",
+    "to": "2025.1.0",
+    "transition_type": "minor",
+    "reason": "minor-own-decision",
+    "severity": "concerning",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 0,
+    "n_elements_removed": 0,
+    "category": "modified"
+  },
+  {
+    "module": "onkologie",
+    "profile": "MII_PR_Onko_Systemische_Therapie_Medikation",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-systemische-therapie-medikation",
+    "from": "2026.0.2",
+    "to": "2026.0.3",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 0,
+    "n_elements_removed": 1,
+    "category": "elements-removed"
+  },
+  {
+    "module": "onkologie",
+    "profile": "MII_PR_Onko_Therapieempfehlung_Kombinationstherapie",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-therapieempfehlung-kombinationstherapie",
+    "from": "2026.0.2",
+    "to": "2026.0.3",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 0,
+    "n_elements_removed": 1,
+    "category": "elements-removed"
+  },
+  {
+    "module": "onkologie",
+    "profile": "MII_PR_Onko_Therapieempfehlung_Medikation",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-therapieempfehlung-medikation",
+    "from": "2026.0.1",
+    "to": "2026.0.2",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 1,
+    "n_elements_removed": 1,
+    "category": "mixed"
+  },
+  {
+    "module": "onkologie",
+    "profile": "MII_PR_Onko_Therapieempfehlung_Medikation",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-therapieempfehlung-medikation",
+    "from": "2026.0.2",
+    "to": "2026.0.3",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 1,
+    "n_elements_removed": 1,
+    "category": "mixed"
+  },
+  {
+    "module": "onkologie",
+    "profile": "MII_PR_Onko_Therapieempfehlung_Operation",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-therapieempfehlung-operation",
+    "from": "2026.0.2",
+    "to": "2026.0.3",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 0,
+    "n_elements_removed": 1,
+    "category": "elements-removed"
+  },
+  {
+    "module": "onkologie",
+    "profile": "MII_PR_Onko_TNM_a_Symbol",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-a-symbol",
+    "from": "2026.0.2",
+    "to": "2026.0.3",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 0,
+    "n_elements_removed": 1,
+    "category": "elements-removed"
+  },
+  {
+    "module": "onkologie",
+    "profile": "MII_PR_Onko_TNM_Klassifikation",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-klassifikation",
+    "from": "2026.0.2",
+    "to": "2026.0.3",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 0,
+    "n_elements_removed": 1,
+    "category": "elements-removed"
+  },
+  {
+    "module": "onkologie",
+    "profile": "MII_PR_Onko_TNM_L_Kategorie",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-l-kategorie",
+    "from": "2026.0.2",
+    "to": "2026.0.3",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 0,
+    "n_elements_removed": 1,
+    "category": "elements-removed"
+  },
+  {
+    "module": "onkologie",
+    "profile": "MII_PR_Onko_TNM_M_Kategorie",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-m-kategorie",
+    "from": "2026.0.2",
+    "to": "2026.0.3",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 0,
+    "n_elements_removed": 1,
+    "category": "elements-removed"
+  },
+  {
+    "module": "onkologie",
+    "profile": "MII_PR_Onko_TNM_m_Symbol",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-m-symbol",
+    "from": "2026.0.2",
+    "to": "2026.0.3",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 0,
+    "n_elements_removed": 1,
+    "category": "elements-removed"
+  },
+  {
+    "module": "onkologie",
+    "profile": "MII_PR_Onko_TNM_N_Kategorie",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-n-kategorie",
+    "from": "2026.0.2",
+    "to": "2026.0.3",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 0,
+    "n_elements_removed": 1,
+    "category": "elements-removed"
+  },
+  {
+    "module": "onkologie",
+    "profile": "MII_PR_Onko_TNM_Pn_Kategorie",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-pn-kategorie",
+    "from": "2026.0.2",
+    "to": "2026.0.3",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 0,
+    "n_elements_removed": 1,
+    "category": "elements-removed"
+  },
+  {
+    "module": "onkologie",
+    "profile": "MII_PR_Onko_TNM_r_Symbol",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-r-symbol",
+    "from": "2026.0.2",
+    "to": "2026.0.3",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 0,
+    "n_elements_removed": 1,
+    "category": "elements-removed"
+  },
+  {
+    "module": "onkologie",
+    "profile": "MII_PR_Onko_TNM_S_Kategorie",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-s-kategorie",
+    "from": "2026.0.2",
+    "to": "2026.0.3",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 0,
+    "n_elements_removed": 1,
+    "category": "elements-removed"
+  },
+  {
+    "module": "onkologie",
+    "profile": "MII_PR_Onko_TNM_T_Kategorie",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-t-kategorie",
+    "from": "2026.0.2",
+    "to": "2026.0.3",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 0,
+    "n_elements_removed": 1,
+    "category": "elements-removed"
+  },
+  {
+    "module": "onkologie",
+    "profile": "MII_PR_Onko_TNM_V_Kategorie",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-v-kategorie",
+    "from": "2026.0.2",
+    "to": "2026.0.3",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 0,
+    "n_elements_removed": 1,
+    "category": "elements-removed"
+  },
+  {
+    "module": "onkologie",
+    "profile": "MII_PR_Onko_TNM_y_Symbol",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-y-symbol",
+    "from": "2026.0.2",
+    "to": "2026.0.3",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 0,
+    "n_elements_removed": 1,
+    "category": "elements-removed"
+  },
+  {
+    "module": "onkologie",
+    "profile": "MII_PR_Onko_Tod",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tod",
+    "from": "2026.0.2",
+    "to": "2026.0.3",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 0,
+    "n_elements_removed": 1,
+    "category": "elements-removed"
+  },
+  {
+    "module": "onkologie",
+    "profile": "MII_PR_Onko_Tumorgroesse",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tumorgroesse",
+    "from": "2026.0.2",
+    "to": "2026.0.3",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 0,
+    "n_elements_removed": 1,
+    "category": "elements-removed"
+  },
+  {
+    "module": "onkologie",
+    "profile": "MII_PR_Onko_Tumorkonferenz",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tumorkonferenz",
+    "from": "2025.1.0",
+    "to": "2026.0.0",
+    "transition_type": "major",
+    "reason": "major+mii-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "de.medizininformatikinitiative.kerndatensatz.medikation": {
+        "from": "2025.0.x",
+        "to": "2026.0.x"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.biobank": {
+        "from": "2025.0.x",
+        "to": "2026.0.0"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.meta": {
+        "from": "2025.0.x",
+        "to": "2026.0.x"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.molgen": {
+        "from": "2025.0.x",
+        "to": "2026.0.x"
+      }
+    },
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 16,
+    "n_elements_removed": 10,
+    "category": "mixed"
+  },
+  {
+    "module": "onkologie",
+    "profile": "MII_PR_Onko_Tumorkonferenz",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tumorkonferenz",
+    "from": "2026.0.2",
+    "to": "2026.0.3",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 0,
+    "n_elements_removed": 1,
+    "category": "elements-removed"
+  },
+  {
+    "module": "onkologie",
+    "profile": "MII_PR_Onko_Verlauf",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-verlauf",
+    "from": "2025.0.4",
+    "to": "2025.1.0",
+    "transition_type": "minor",
+    "reason": "minor-own-decision",
+    "severity": "concerning",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 0,
+    "n_elements_removed": 0,
+    "category": "modified"
+  },
+  {
+    "module": "onkologie",
+    "profile": "MII_PR_Onko_Verlauf",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-verlauf",
+    "from": "2026.0.2",
+    "to": "2026.0.3",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 0,
+    "n_elements_removed": 1,
+    "category": "elements-removed"
+  },
+  {
+    "module": "onkologie",
+    "profile": "MII_PR_Onko_Weitere_Klassifikationen",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-weitere-klassifikationen",
+    "from": "2025.1.0",
+    "to": "2026.0.0",
+    "transition_type": "major",
+    "reason": "major+mii-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "de.medizininformatikinitiative.kerndatensatz.medikation": {
+        "from": "2025.0.x",
+        "to": "2026.0.x"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.biobank": {
+        "from": "2025.0.x",
+        "to": "2026.0.0"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.meta": {
+        "from": "2025.0.x",
+        "to": "2026.0.x"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.molgen": {
+        "from": "2025.0.x",
+        "to": "2026.0.x"
+      }
+    },
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 4,
+    "n_elements_removed": 0,
+    "category": "mixed"
+  },
+  {
+    "module": "patho",
+    "profile": "MII_PR_Patho_Composition",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-composition",
+    "from": "2025.0.2",
+    "to": "2026.0.0",
+    "transition_type": "major",
+    "reason": "major+ext-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "de.medizininformatikinitiative.kerndatensatz.diagnose": {
+        "from": "2025.0.0",
+        "to": "2025.0.x"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.biobank": {
+        "from": "2025.0.1",
+        "to": "2026.0.0"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.meta": {
+        "from": "2025.0.0",
+        "to": "2026.0.0"
+      },
+      "hl7.fhir.us.mcode": {
+        "from": "2.1.0",
+        "to": "2.1.x"
+      }
+    },
+    "ext_deps_changed": {
+      "hl7.fhir.us.mcode": {
+        "from": "2.1.0",
+        "to": "2.1.x"
+      }
+    },
+    "ext_deps_added": {
+      "de.gematik.isik": "5.1.0"
+    },
+    "n_elements_added": 13,
+    "n_elements_removed": 4,
+    "category": "mixed"
+  },
+  {
+    "module": "patho",
+    "profile": "MII_PR_Patho_Report",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-report",
+    "from": "2025.0.2",
+    "to": "2026.0.0",
+    "transition_type": "major",
+    "reason": "major+ext-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "de.medizininformatikinitiative.kerndatensatz.diagnose": {
+        "from": "2025.0.0",
+        "to": "2025.0.x"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.biobank": {
+        "from": "2025.0.1",
+        "to": "2026.0.0"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.meta": {
+        "from": "2025.0.0",
+        "to": "2026.0.0"
+      },
+      "hl7.fhir.us.mcode": {
+        "from": "2.1.0",
+        "to": "2.1.x"
+      }
+    },
+    "ext_deps_changed": {
+      "hl7.fhir.us.mcode": {
+        "from": "2.1.0",
+        "to": "2.1.x"
+      }
+    },
+    "ext_deps_added": {
+      "de.gematik.isik": "5.1.0"
+    },
+    "n_elements_added": 0,
+    "n_elements_removed": 0,
+    "category": "modified"
+  },
+  {
+    "module": "patho",
+    "profile": "MII_PR_Patho_Service_Request",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-service-request",
+    "from": "2025.0.2",
+    "to": "2026.0.0",
+    "transition_type": "major",
+    "reason": "major+ext-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "de.medizininformatikinitiative.kerndatensatz.diagnose": {
+        "from": "2025.0.0",
+        "to": "2025.0.x"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.biobank": {
+        "from": "2025.0.1",
+        "to": "2026.0.0"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.meta": {
+        "from": "2025.0.0",
+        "to": "2026.0.0"
+      },
+      "hl7.fhir.us.mcode": {
+        "from": "2.1.0",
+        "to": "2.1.x"
+      }
+    },
+    "ext_deps_changed": {
+      "hl7.fhir.us.mcode": {
+        "from": "2.1.0",
+        "to": "2.1.x"
+      }
+    },
+    "ext_deps_added": {
+      "de.gematik.isik": "5.1.0"
+    },
+    "n_elements_added": 1,
+    "n_elements_removed": 0,
+    "category": "mixed"
+  },
+  {
+    "module": "patho",
+    "profile": "MII_PR_Patho_Specimen",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen",
+    "from": "2025.0.2",
+    "to": "2026.0.0",
+    "transition_type": "major",
+    "reason": "major+ext-dep-update",
+    "severity": "expected",
+    "deps_changed": {
+      "de.medizininformatikinitiative.kerndatensatz.diagnose": {
+        "from": "2025.0.0",
+        "to": "2025.0.x"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.biobank": {
+        "from": "2025.0.1",
+        "to": "2026.0.0"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.meta": {
+        "from": "2025.0.0",
+        "to": "2026.0.0"
+      },
+      "hl7.fhir.us.mcode": {
+        "from": "2.1.0",
+        "to": "2.1.x"
+      }
+    },
+    "ext_deps_changed": {
+      "hl7.fhir.us.mcode": {
+        "from": "2.1.0",
+        "to": "2.1.x"
+      }
+    },
+    "ext_deps_added": {
+      "de.gematik.isik": "5.1.0"
+    },
+    "n_elements_added": 16,
+    "n_elements_removed": 2,
+    "category": "mixed"
+  },
+  {
+    "module": "person",
+    "profile": "PatientIn",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Patient",
+    "from": "0.0.2",
+    "to": "0.9.0",
+    "transition_type": "minor",
+    "reason": "dep-driven",
+    "severity": "neutral",
+    "deps_changed": {
+      "de.basisprofil.r4": {
+        "from": "0.9.1-alpha1",
+        "to": "0.9.1-alpha2"
+      }
+    },
+    "ext_deps_changed": {
+      "de.basisprofil.r4": {
+        "from": "0.9.1-alpha1",
+        "to": "0.9.1-alpha2"
+      }
+    },
+    "ext_deps_added": {},
+    "n_elements_added": 11,
+    "n_elements_removed": 3,
+    "category": "mixed"
+  },
+  {
+    "module": "person",
+    "profile": "PatientIn",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Patient",
+    "from": "0.9.0",
+    "to": "0.9.1",
+    "transition_type": "patch",
+    "reason": "dep-driven",
+    "severity": "neutral",
+    "deps_changed": {
+      "de.medizininformatikinitiative.kerndatensatz": {
+        "from": "0.0.1",
+        "to": "0.0.2"
+      },
+      "de.basisprofil.r4": {
+        "from": "0.9.1-alpha2",
+        "to": "0.9.5"
+      }
+    },
+    "ext_deps_changed": {
+      "de.basisprofil.r4": {
+        "from": "0.9.1-alpha2",
+        "to": "0.9.5"
+      }
+    },
+    "ext_deps_added": {},
+    "n_elements_added": 51,
+    "n_elements_removed": 23,
+    "category": "mixed"
+  },
+  {
+    "module": "person",
+    "profile": "PatientIn",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Patient",
+    "from": "0.9.1",
+    "to": "0.9.2",
+    "transition_type": "patch",
+    "reason": "dep-driven",
+    "severity": "neutral",
+    "deps_changed": {
+      "de.basisprofil.r4": {
+        "from": "0.9.5",
+        "to": "0.9.6"
+      }
+    },
+    "ext_deps_changed": {
+      "de.basisprofil.r4": {
+        "from": "0.9.5",
+        "to": "0.9.6"
+      }
+    },
+    "ext_deps_added": {},
+    "n_elements_added": 0,
+    "n_elements_removed": 9,
+    "category": "mixed"
+  },
+  {
+    "module": "person",
+    "profile": "PatientIn",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Patient",
+    "from": "1.0.2",
+    "to": "1.0.3",
+    "transition_type": "patch",
+    "reason": "dep-driven",
+    "severity": "neutral",
+    "deps_changed": {
+      "de.basisprofil.r4": {
+        "from": "0.9.6",
+        "to": "0.9.11"
+      }
+    },
+    "ext_deps_changed": {
+      "de.basisprofil.r4": {
+        "from": "0.9.6",
+        "to": "0.9.11"
+      }
+    },
+    "ext_deps_added": {},
+    "n_elements_added": 21,
+    "n_elements_removed": 4,
+    "category": "mixed"
+  },
+  {
+    "module": "person",
+    "profile": "ProbantIn",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/ResearchSubject",
+    "from": "0.0.1",
+    "to": "0.0.2",
+    "transition_type": "patch",
+    "reason": "dep-driven",
+    "severity": "neutral",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {
+      "de.basisprofil.r4": "0.9.1-alpha1"
+    },
+    "n_elements_added": 0,
+    "n_elements_removed": 3,
+    "category": "mixed"
+  },
+  {
+    "module": "person",
+    "profile": "Observation - Vitalstatus",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Vitalstatus",
+    "from": "0.0.2",
+    "to": "0.9.0",
+    "transition_type": "minor",
+    "reason": "dep-driven",
+    "severity": "neutral",
+    "deps_changed": {
+      "de.basisprofil.r4": {
+        "from": "0.9.1-alpha1",
+        "to": "0.9.1-alpha2"
+      }
+    },
+    "ext_deps_changed": {
+      "de.basisprofil.r4": {
+        "from": "0.9.1-alpha1",
+        "to": "0.9.1-alpha2"
+      }
+    },
+    "ext_deps_added": {},
+    "n_elements_added": 3,
+    "n_elements_removed": 3,
+    "category": "mixed"
+  },
+  {
+    "module": "person",
+    "profile": "PatientIn",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient",
+    "from": "1.0.7",
+    "to": "1.0.8",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 17,
+    "n_elements_removed": 18,
+    "category": "mixed"
+  },
+  {
+    "module": "person",
+    "profile": "PatientIn",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient",
+    "from": "1.0.8",
+    "to": "1.0.9",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 0,
+    "n_elements_removed": 0,
+    "category": "modified"
+  },
+  {
+    "module": "person",
+    "profile": "PatientIn",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient",
+    "from": "1.0.9",
+    "to": "1.0.10",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 0,
+    "n_elements_removed": 0,
+    "category": "modified"
+  },
+  {
+    "module": "person",
+    "profile": "PatientIn",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient",
+    "from": "1.0.13",
+    "to": "1.0.14",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 10,
+    "n_elements_removed": 29,
+    "category": "mixed"
+  },
+  {
+    "module": "person",
+    "profile": "PatientIn",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient",
+    "from": "1.0.17",
+    "to": "2024.0.0",
+    "transition_type": "major",
+    "reason": "consolidation",
+    "severity": "transition",
+    "deps_changed": {
+      "de.basisprofil.r4": {
+        "from": "0.9.13",
+        "to": "1.4.0"
+      }
+    },
+    "ext_deps_changed": {
+      "de.basisprofil.r4": {
+        "from": "0.9.13",
+        "to": "1.4.0"
+      }
+    },
+    "ext_deps_added": {},
+    "n_elements_added": 0,
+    "n_elements_removed": 13,
+    "category": "mixed"
+  },
+  {
+    "module": "person",
+    "profile": "PatientIn",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient",
+    "from": "2024.0.0",
+    "to": "2025.0.0",
+    "transition_type": "major",
+    "reason": "consolidation",
+    "severity": "transition",
+    "deps_changed": {
+      "de.basisprofil.r4": {
+        "from": "1.4.0",
+        "to": "1.5.x"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.meta": {
+        "from": "1.0.3",
+        "to": "2025.0.x"
+      }
+    },
+    "ext_deps_changed": {
+      "de.basisprofil.r4": {
+        "from": "1.4.0",
+        "to": "1.5.x"
+      }
+    },
+    "ext_deps_added": {},
+    "n_elements_added": 9,
+    "n_elements_removed": 18,
+    "category": "mixed"
+  },
+  {
+    "module": "person",
+    "profile": "MII_PR_Person_PatientPseudonymisiert",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/PatientPseudonymisiert",
+    "from": "2025.0.0",
+    "to": "2025.0.1",
+    "transition_type": "patch",
+    "reason": "consolidation",
+    "severity": "transition",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 11,
+    "n_elements_removed": 10,
+    "category": "mixed"
+  },
+  {
+    "module": "person",
+    "profile": "ProbantIn",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/ResearchSubject",
+    "from": "1.0.12",
+    "to": "1.0.13",
+    "transition_type": "patch",
+    "reason": "dep-driven",
+    "severity": "neutral",
+    "deps_changed": {
+      "de.basisprofil.r4": {
+        "from": "0.9.12",
+        "to": "0.9.13"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.meta": {
+        "from": "1.0.2",
+        "to": "1.0.3"
+      }
+    },
+    "ext_deps_changed": {
+      "de.basisprofil.r4": {
+        "from": "0.9.12",
+        "to": "0.9.13"
+      }
+    },
+    "ext_deps_added": {},
+    "n_elements_added": 1,
+    "n_elements_removed": 0,
+    "category": "mixed"
+  },
+  {
+    "module": "person",
+    "profile": "ProbantIn",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/ResearchSubject",
+    "from": "1.0.17",
+    "to": "2024.0.0",
+    "transition_type": "major",
+    "reason": "consolidation",
+    "severity": "transition",
+    "deps_changed": {
+      "de.basisprofil.r4": {
+        "from": "0.9.13",
+        "to": "1.4.0"
+      }
+    },
+    "ext_deps_changed": {
+      "de.basisprofil.r4": {
+        "from": "0.9.13",
+        "to": "1.4.0"
+      }
+    },
+    "ext_deps_added": {},
+    "n_elements_added": 0,
+    "n_elements_removed": 1,
+    "category": "mixed"
+  },
+  {
+    "module": "person",
+    "profile": "MII_PR_Person_Todesursache",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Todesursache",
+    "from": "2024.0.0",
+    "to": "2025.0.0",
+    "transition_type": "major",
+    "reason": "consolidation",
+    "severity": "transition",
+    "deps_changed": {
+      "de.basisprofil.r4": {
+        "from": "1.4.0",
+        "to": "1.5.x"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.meta": {
+        "from": "1.0.3",
+        "to": "2025.0.x"
+      }
+    },
+    "ext_deps_changed": {
+      "de.basisprofil.r4": {
+        "from": "1.4.0",
+        "to": "1.5.x"
+      }
+    },
+    "ext_deps_added": {},
+    "n_elements_added": 0,
+    "n_elements_removed": 0,
+    "category": "modified"
+  },
+  {
+    "module": "person",
+    "profile": "Observation - Vitalstatus",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus",
+    "from": "1.0.12",
+    "to": "1.0.13",
+    "transition_type": "patch",
+    "reason": "dep-driven",
+    "severity": "neutral",
+    "deps_changed": {
+      "de.basisprofil.r4": {
+        "from": "0.9.12",
+        "to": "0.9.13"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.meta": {
+        "from": "1.0.2",
+        "to": "1.0.3"
+      }
+    },
+    "ext_deps_changed": {
+      "de.basisprofil.r4": {
+        "from": "0.9.12",
+        "to": "0.9.13"
+      }
+    },
+    "ext_deps_added": {},
+    "n_elements_added": 1,
+    "n_elements_removed": 4,
+    "category": "mixed"
+  },
+  {
+    "module": "person",
+    "profile": "Observation - Vitalstatus",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus",
+    "from": "1.0.17",
+    "to": "2024.0.0",
+    "transition_type": "major",
+    "reason": "consolidation",
+    "severity": "transition",
+    "deps_changed": {
+      "de.basisprofil.r4": {
+        "from": "0.9.13",
+        "to": "1.4.0"
+      }
+    },
+    "ext_deps_changed": {
+      "de.basisprofil.r4": {
+        "from": "0.9.13",
+        "to": "1.4.0"
+      }
+    },
+    "ext_deps_added": {},
+    "n_elements_added": 2,
+    "n_elements_removed": 1,
+    "category": "mixed"
+  },
+  {
+    "module": "prozedur",
+    "profile": "Prozedur",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure",
+    "from": "1.0.1",
+    "to": "1.0.2",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 0,
+    "n_elements_removed": 0,
+    "category": "modified"
+  },
+  {
+    "module": "prozedur",
+    "profile": "Prozedur",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure",
+    "from": "1.0.8",
+    "to": "2024.0.0",
+    "transition_type": "major",
+    "reason": "consolidation",
+    "severity": "transition",
+    "deps_changed": {
+      "de.basisprofil.r4": {
+        "from": "0.9.13",
+        "to": "1.4.0"
+      }
+    },
+    "ext_deps_changed": {
+      "de.basisprofil.r4": {
+        "from": "0.9.13",
+        "to": "1.4.0"
+      }
+    },
+    "ext_deps_added": {},
+    "n_elements_added": 2,
+    "n_elements_removed": 3,
+    "category": "mixed"
+  },
+  {
+    "module": "seltene",
+    "profile": "MII_PR_Seltene_Kopfumfang",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-kopfumfang",
+    "from": "2026.0.0",
+    "to": "2026.0.1",
+    "transition_type": "patch",
+    "reason": "mii-dep-driven",
+    "severity": "neutral",
+    "deps_changed": {
+      "de.medizininformatikinitiative.kerndatensatz.studie": {
+        "from": "2026.0.0-ballot",
+        "to": "2026.0.2"
+      },
+      "de.medizininformatikinitiative.kerndatensatz.icu": {
+        "from": "2025.0.x",
+        "to": "2026.0.x"
+      }
+    },
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 3,
+    "n_elements_removed": 10,
+    "category": "mixed"
+  },
+  {
+    "module": "studie",
+    "profile": "MII_PR_Studie_EinAuschlussKriterium",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-pr-studie-ein-auschluss-kriterium",
+    "from": "0.0.3",
+    "to": "0.0.4",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 4,
+    "n_elements_removed": 4,
+    "category": "mixed"
+  },
+  {
+    "module": "studie",
+    "profile": "MII_PR_Studie_Register",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-pr-studie-register",
+    "from": "0.0.6",
+    "to": "1.0.0",
+    "transition_type": "major",
+    "reason": "major-own-decision",
+    "severity": "expected",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 0,
+    "n_elements_removed": 2,
+    "category": "elements-removed"
+  },
+  {
+    "module": "studie",
+    "profile": "MII_PR_Studie_Studie",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-pr-studie-studie",
+    "from": "0.0.1",
+    "to": "0.0.2",
+    "transition_type": "patch",
+    "reason": "patch-breaking",
+    "severity": "problematic",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 7,
+    "n_elements_removed": 5,
+    "category": "mixed"
+  },
+  {
+    "module": "studie",
+    "profile": "MII_PR_Studie_Studie",
+    "profile_url": "https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-pr-studie-studie",
+    "from": "0.0.6",
+    "to": "1.0.0",
+    "transition_type": "major",
+    "reason": "major-own-decision",
+    "severity": "expected",
+    "deps_changed": {},
+    "ext_deps_changed": {},
+    "ext_deps_added": {},
+    "n_elements_added": 5,
+    "n_elements_removed": 5,
+    "category": "mixed"
+  }
+]
