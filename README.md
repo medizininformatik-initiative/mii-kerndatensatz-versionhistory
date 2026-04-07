@@ -1,5 +1,14 @@
 # MII Kerndatensatz Version History
 
+> ⚠️ **WORK IN PROGRESS — Inhalte und Analysen noch nicht finalisiert**
+>
+> Dieses Repository ist in aktiver Entwicklung. Daten, Klassifikationen und
+> Visualisierungen sind **noch nicht reviewed** und können Fehler enthalten.
+> Insbesondere enthält die Analyse bekannte False-Positives durch Build-Pipeline-
+> Artefakte (nicht-reproduzierbare Snapshots), die noch manuell kuratiert werden
+> müssen. Nicht für produktive Entscheidungen verwenden, bevor die Inhalte
+> validiert sind.
+
 Retrospektive Analyse der publizierten FHIR-Profilversionen des MII Kerndatensatzes
 (2019–2026), mit Fokus auf **strukturelle Kompatibilität** zwischen Versionen.
 

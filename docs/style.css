@@ -67,6 +67,18 @@ main {
   padding: 24px;
 }
 
+.wip-banner {
+  background: #fef3c7;
+  border: 1px solid #fcd34d;
+  color: #78350f;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.wip-banner strong { color: #92400e; }
+
 section {
   background: var(--card);
   border: 1px solid var(--border);
