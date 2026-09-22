@@ -682,7 +682,8 @@ def run_pipeline(args: argparse.Namespace) -> dict:
 
         # Apply filters
         if args.stable_only:
-            versions = [v for v in versions if is_stable_version(v)]
+            versions = [v for v in versions
+                        if is_stable_version(v) or args.allow.get(package_id) == v]
         if args.since:
             since_key = parse_semver_key(args.since)
             versions = [v for v in versions if parse_semver_key(v) >= since_key]
@@ -1116,7 +1117,18 @@ def main():
         "--cache-only", action="store_true",
         help="Only use already-cached packages, don't download",
     )
+    parser.add_argument(
+        "--allow-versions",
+        help="JSON file (e.g. a BOM package.json) whose dependency versions are "
+             "included even when --stable-only would filter them (package-id -> version)",
+    )
     args = parser.parse_args()
+    args.allow = {}
+    if args.allow_versions:
+        with open(args.allow_versions, encoding="utf-8") as fh:
+            data = json.load(fh)
+        args.allow = data.get("dependencies", data)
+        print(f"Allow-Liste: {len(args.allow)} gepinnte Versionen aus {args.allow_versions}")
     run_pipeline(args)
 
 
