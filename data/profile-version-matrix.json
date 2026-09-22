@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T11:45:26Z",
+  "generated_at": "2026-09-22T12:09:31Z",
   "tool_version": "1.0.0",
   "parameters": {
     "stable_only": true,
@@ -5670,7 +5670,6 @@
         "2026.0.1",
         "2026.0.2",
         "2026.0.3",
-        "2027.0.0",
         "2027.0.0-ballot.3"
       ],
       "is_legacy": false,
@@ -12987,7 +12986,7 @@
           "name": "MII_PR_ICU_Beatmung",
           "first_seen": "2026.0.0",
           "last_seen": "2027.0.0-ballot.3",
-          "version_count": 6,
+          "version_count": 5,
           "compatibility_groups": [
             {
               "versions": [
@@ -12995,12 +12994,6 @@
                 "2026.0.1",
                 "2026.0.2",
                 "2026.0.3"
-              ],
-              "category": "identical"
-            },
-            {
-              "versions": [
-                "2027.0.0"
               ],
               "category": "identical"
             },
@@ -13053,30 +13046,16 @@
             },
             {
               "from": "2026.0.3",
-              "to": "2027.0.0",
+              "to": "2027.0.0-ballot.3",
               "category": "mixed",
               "elements_added": [
+                "Procedure",
                 "Procedure.encounter"
               ],
               "elements_removed": [],
               "elements_modified": [
                 "Procedure.recorder"
               ],
-              "ms_added": [],
-              "ms_removed": [],
-              "cardinality_changes": [],
-              "binding_changes": [],
-              "has_breaking": false
-            },
-            {
-              "from": "2027.0.0",
-              "to": "2027.0.0-ballot.3",
-              "category": "elements-added",
-              "elements_added": [
-                "Procedure"
-              ],
-              "elements_removed": [],
-              "elements_modified": [],
               "ms_added": [],
               "ms_removed": [],
               "cardinality_changes": [],
@@ -13229,7 +13208,7 @@
           "name": "MII_PR_ICU_Bilanz",
           "first_seen": "2026.0.0",
           "last_seen": "2027.0.0-ballot.3",
-          "version_count": 6,
+          "version_count": 5,
           "compatibility_groups": [
             {
               "versions": [
@@ -13241,8 +13220,7 @@
             {
               "versions": [
                 "2026.0.2",
-                "2026.0.3",
-                "2027.0.0"
+                "2026.0.3"
               ],
               "category": "canonical-only"
             },
@@ -13331,19 +13309,6 @@
             },
             {
               "from": "2026.0.3",
-              "to": "2027.0.0",
-              "category": "identical",
-              "elements_added": [],
-              "elements_removed": [],
-              "elements_modified": [],
-              "ms_added": [],
-              "ms_removed": [],
-              "cardinality_changes": [],
-              "binding_changes": [],
-              "has_breaking": false
-            },
-            {
-              "from": "2027.0.0",
               "to": "2027.0.0-ballot.3",
               "category": "elements-added",
               "elements_added": [
@@ -13397,13 +13362,12 @@
           "name": "MII_PR_ICU_Bilanz_Ausfuhr_Blutverlust",
           "first_seen": "2026.0.2",
           "last_seen": "2027.0.0-ballot.3",
-          "version_count": 4,
+          "version_count": 3,
           "compatibility_groups": [
             {
               "versions": [
                 "2026.0.2",
-                "2026.0.3",
-                "2027.0.0"
+                "2026.0.3"
               ],
               "category": "identical"
             },
@@ -13430,19 +13394,6 @@
             },
             {
               "from": "2026.0.3",
-              "to": "2027.0.0",
-              "category": "identical",
-              "elements_added": [],
-              "elements_removed": [],
-              "elements_modified": [],
-              "ms_added": [],
-              "ms_removed": [],
-              "cardinality_changes": [],
-              "binding_changes": [],
-              "has_breaking": false
-            },
-            {
-              "from": "2027.0.0",
               "to": "2027.0.0-ballot.3",
               "category": "elements-added",
               "elements_added": [
@@ -13464,7 +13415,7 @@
           "name": "MII_PR_ICU_Bilanz_Ausfuhr_Drainage_Generisch",
           "first_seen": "2026.0.0",
           "last_seen": "2027.0.0-ballot.3",
-          "version_count": 6,
+          "version_count": 5,
           "compatibility_groups": [
             {
               "versions": [
@@ -13476,8 +13427,7 @@
             {
               "versions": [
                 "2026.0.2",
-                "2026.0.3",
-                "2027.0.0"
+                "2026.0.3"
               ],
               "category": "canonical-only"
             },
@@ -13550,19 +13500,6 @@
             },
             {
               "from": "2026.0.3",
-              "to": "2027.0.0",
-              "category": "identical",
-              "elements_added": [],
-              "elements_removed": [],
-              "elements_modified": [],
-              "ms_added": [],
-              "ms_removed": [],
-              "cardinality_changes": [],
-              "binding_changes": [],
-              "has_breaking": false
-            },
-            {
-              "from": "2027.0.0",
               "to": "2027.0.0-ballot.3",
               "category": "elements-added",
               "elements_added": [
@@ -13648,7 +13585,7 @@
           "name": "MII_PR_ICU_Bilanz_Ausfuhr_Fluessigkeit_Gesamt",
           "first_seen": "2026.0.0",
           "last_seen": "2027.0.0-ballot.3",
-          "version_count": 6,
+          "version_count": 5,
           "compatibility_groups": [
             {
               "versions": [
@@ -13660,8 +13597,7 @@
             {
               "versions": [
                 "2026.0.2",
-                "2026.0.3",
-                "2027.0.0"
+                "2026.0.3"
               ],
               "category": "identical"
             },
@@ -13725,19 +13661,6 @@
             },
             {
               "from": "2026.0.3",
-              "to": "2027.0.0",
-              "category": "identical",
-              "elements_added": [],
-              "elements_removed": [],
-              "elements_modified": [],
-              "ms_added": [],
-              "ms_removed": [],
-              "cardinality_changes": [],
-              "binding_changes": [],
-              "has_breaking": false
-            },
-            {
-              "from": "2027.0.0",
               "to": "2027.0.0-ballot.3",
               "category": "elements-added",
               "elements_added": [
@@ -13759,7 +13682,7 @@
           "name": "MII_PR_ICU_Bilanz_Ausfuhr_Gallenfluessigkeit",
           "first_seen": "2026.0.0",
           "last_seen": "2027.0.0-ballot.3",
-          "version_count": 6,
+          "version_count": 5,
           "compatibility_groups": [
             {
               "versions": [
@@ -13771,8 +13694,7 @@
             {
               "versions": [
                 "2026.0.2",
-                "2026.0.3",
-                "2027.0.0"
+                "2026.0.3"
               ],
               "category": "identical"
             },
@@ -13836,19 +13758,6 @@
             },
             {
               "from": "2026.0.3",
-              "to": "2027.0.0",
-              "category": "identical",
-              "elements_added": [],
-              "elements_removed": [],
-              "elements_modified": [],
-              "ms_added": [],
-              "ms_removed": [],
-              "cardinality_changes": [],
-              "binding_changes": [],
-              "has_breaking": false
-            },
-            {
-              "from": "2027.0.0",
               "to": "2027.0.0-ballot.3",
               "category": "elements-added",
               "elements_added": [
@@ -13902,13 +13811,12 @@
           "name": "MII_PR_ICU_Bilanz_Ausfuhr_Haemofiltration_Einzelmesswerte",
           "first_seen": "2026.0.2",
           "last_seen": "2027.0.0-ballot.3",
-          "version_count": 4,
+          "version_count": 3,
           "compatibility_groups": [
             {
               "versions": [
                 "2026.0.2",
-                "2026.0.3",
-                "2027.0.0"
+                "2026.0.3"
               ],
               "category": "identical"
             },
@@ -13935,19 +13843,6 @@
             },
             {
               "from": "2026.0.3",
-              "to": "2027.0.0",
-              "category": "identical",
-              "elements_added": [],
-              "elements_removed": [],
-              "elements_modified": [],
-              "ms_added": [],
-              "ms_removed": [],
-              "cardinality_changes": [],
-              "binding_changes": [],
-              "has_breaking": false
-            },
-            {
-              "from": "2027.0.0",
               "to": "2027.0.0-ballot.3",
               "category": "elements-added",
               "elements_added": [
@@ -13969,7 +13864,7 @@
           "name": "MII_PR_ICU_Bilanz_Ausfuhr_Magensonde",
           "first_seen": "2026.0.0",
           "last_seen": "2027.0.0-ballot.3",
-          "version_count": 6,
+          "version_count": 5,
           "compatibility_groups": [
             {
               "versions": [
@@ -13981,8 +13876,7 @@
             {
               "versions": [
                 "2026.0.2",
-                "2026.0.3",
-                "2027.0.0"
+                "2026.0.3"
               ],
               "category": "identical"
             },
@@ -14046,19 +13940,6 @@
             },
             {
               "from": "2026.0.3",
-              "to": "2027.0.0",
-              "category": "identical",
-              "elements_added": [],
-              "elements_removed": [],
-              "elements_modified": [],
-              "ms_added": [],
-              "ms_removed": [],
-              "cardinality_changes": [],
-              "binding_changes": [],
-              "has_breaking": false
-            },
-            {
-              "from": "2027.0.0",
               "to": "2027.0.0-ballot.3",
               "category": "elements-added",
               "elements_added": [
@@ -14080,13 +13961,12 @@
           "name": "MII_PR_ICU_Bilanz_Ausfuhr_OP_Drainage",
           "first_seen": "2026.0.2",
           "last_seen": "2027.0.0-ballot.3",
-          "version_count": 4,
+          "version_count": 3,
           "compatibility_groups": [
             {
               "versions": [
                 "2026.0.2",
-                "2026.0.3",
-                "2027.0.0"
+                "2026.0.3"
               ],
               "category": "identical"
             },
@@ -14113,19 +13993,6 @@
             },
             {
               "from": "2026.0.3",
-              "to": "2027.0.0",
-              "category": "identical",
-              "elements_added": [],
-              "elements_removed": [],
-              "elements_modified": [],
-              "ms_added": [],
-              "ms_removed": [],
-              "cardinality_changes": [],
-              "binding_changes": [],
-              "has_breaking": false
-            },
-            {
-              "from": "2027.0.0",
               "to": "2027.0.0-ballot.3",
               "category": "elements-added",
               "elements_added": [
@@ -14179,7 +14046,7 @@
           "name": "MII_PR_ICU_Bilanz_Ausfuhr_Pankreasdrainage",
           "first_seen": "2026.0.0",
           "last_seen": "2027.0.0-ballot.3",
-          "version_count": 6,
+          "version_count": 5,
           "compatibility_groups": [
             {
               "versions": [
@@ -14191,8 +14058,7 @@
             {
               "versions": [
                 "2026.0.2",
-                "2026.0.3",
-                "2027.0.0"
+                "2026.0.3"
               ],
               "category": "identical"
             },
@@ -14257,19 +14123,6 @@
             },
             {
               "from": "2026.0.3",
-              "to": "2027.0.0",
-              "category": "identical",
-              "elements_added": [],
-              "elements_removed": [],
-              "elements_modified": [],
-              "ms_added": [],
-              "ms_removed": [],
-              "cardinality_changes": [],
-              "binding_changes": [],
-              "has_breaking": false
-            },
-            {
-              "from": "2027.0.0",
               "to": "2027.0.0-ballot.3",
               "category": "elements-added",
               "elements_added": [
@@ -14291,7 +14144,7 @@
           "name": "MII_PR_ICU_Bilanz_Ausfuhr_Stuhlgang",
           "first_seen": "2026.0.0",
           "last_seen": "2027.0.0-ballot.3",
-          "version_count": 6,
+          "version_count": 5,
           "compatibility_groups": [
             {
               "versions": [
@@ -14303,8 +14156,7 @@
             {
               "versions": [
                 "2026.0.2",
-                "2026.0.3",
-                "2027.0.0"
+                "2026.0.3"
               ],
               "category": "identical"
             },
@@ -14374,19 +14226,6 @@
             },
             {
               "from": "2026.0.3",
-              "to": "2027.0.0",
-              "category": "identical",
-              "elements_added": [],
-              "elements_removed": [],
-              "elements_modified": [],
-              "ms_added": [],
-              "ms_removed": [],
-              "cardinality_changes": [],
-              "binding_changes": [],
-              "has_breaking": false
-            },
-            {
-              "from": "2027.0.0",
               "to": "2027.0.0-ballot.3",
               "category": "elements-added",
               "elements_added": [
@@ -14408,7 +14247,7 @@
           "name": "MII_PR_ICU_Bilanz_Ausfuhr_Urin",
           "first_seen": "2026.0.0",
           "last_seen": "2027.0.0-ballot.3",
-          "version_count": 6,
+          "version_count": 5,
           "compatibility_groups": [
             {
               "versions": [
@@ -14420,8 +14259,7 @@
             {
               "versions": [
                 "2026.0.2",
-                "2026.0.3",
-                "2027.0.0"
+                "2026.0.3"
               ],
               "category": "identical"
             },
@@ -14485,19 +14323,6 @@
             },
             {
               "from": "2026.0.3",
-              "to": "2027.0.0",
-              "category": "identical",
-              "elements_added": [],
-              "elements_removed": [],
-              "elements_modified": [],
-              "ms_added": [],
-              "ms_removed": [],
-              "cardinality_changes": [],
-              "binding_changes": [],
-              "has_breaking": false
-            },
-            {
-              "from": "2027.0.0",
               "to": "2027.0.0-ballot.3",
               "category": "elements-added",
               "elements_added": [
@@ -14519,7 +14344,7 @@
           "name": "MII_PR_ICU_Bilanz_Ausfuhr_Wunddrainage",
           "first_seen": "2026.0.0",
           "last_seen": "2027.0.0-ballot.3",
-          "version_count": 6,
+          "version_count": 5,
           "compatibility_groups": [
             {
               "versions": [
@@ -14531,8 +14356,7 @@
             {
               "versions": [
                 "2026.0.2",
-                "2026.0.3",
-                "2027.0.0"
+                "2026.0.3"
               ],
               "category": "identical"
             },
@@ -14596,19 +14420,6 @@
             },
             {
               "from": "2026.0.3",
-              "to": "2027.0.0",
-              "category": "identical",
-              "elements_added": [],
-              "elements_removed": [],
-              "elements_modified": [],
-              "ms_added": [],
-              "ms_removed": [],
-              "cardinality_changes": [],
-              "binding_changes": [],
-              "has_breaking": false
-            },
-            {
-              "from": "2027.0.0",
               "to": "2027.0.0-ballot.3",
               "category": "elements-added",
               "elements_added": [
@@ -14711,7 +14522,7 @@
           "name": "MII_PR_ICU_Bilanz_Einfuhr_Enterale_Fluessigkeit",
           "first_seen": "2026.0.0",
           "last_seen": "2027.0.0-ballot.3",
-          "version_count": 6,
+          "version_count": 5,
           "compatibility_groups": [
             {
               "versions": [
@@ -14723,8 +14534,7 @@
             {
               "versions": [
                 "2026.0.2",
-                "2026.0.3",
-                "2027.0.0"
+                "2026.0.3"
               ],
               "category": "identical"
             },
@@ -14788,19 +14598,6 @@
             },
             {
               "from": "2026.0.3",
-              "to": "2027.0.0",
-              "category": "identical",
-              "elements_added": [],
-              "elements_removed": [],
-              "elements_modified": [],
-              "ms_added": [],
-              "ms_removed": [],
-              "cardinality_changes": [],
-              "binding_changes": [],
-              "has_breaking": false
-            },
-            {
-              "from": "2027.0.0",
               "to": "2027.0.0-ballot.3",
               "category": "elements-added",
               "elements_added": [
@@ -14822,7 +14619,7 @@
           "name": "MII_PR_ICU_Bilanz_Einfuhr_Fluessigkeit_Gesamt",
           "first_seen": "2026.0.0",
           "last_seen": "2027.0.0-ballot.3",
-          "version_count": 6,
+          "version_count": 5,
           "compatibility_groups": [
             {
               "versions": [
@@ -14834,8 +14631,7 @@
             {
               "versions": [
                 "2026.0.2",
-                "2026.0.3",
-                "2027.0.0"
+                "2026.0.3"
               ],
               "category": "identical"
             },
@@ -14907,19 +14703,6 @@
             },
             {
               "from": "2026.0.3",
-              "to": "2027.0.0",
-              "category": "identical",
-              "elements_added": [],
-              "elements_removed": [],
-              "elements_modified": [],
-              "ms_added": [],
-              "ms_removed": [],
-              "cardinality_changes": [],
-              "binding_changes": [],
-              "has_breaking": false
-            },
-            {
-              "from": "2027.0.0",
               "to": "2027.0.0-ballot.3",
               "category": "elements-added",
               "elements_added": [
@@ -15169,13 +14952,12 @@
           "name": "MII_PR_ICU_Bilanz_Tagesbilanz_Fluessigkeit",
           "first_seen": "2026.0.2",
           "last_seen": "2027.0.0-ballot.3",
-          "version_count": 4,
+          "version_count": 3,
           "compatibility_groups": [
             {
               "versions": [
                 "2026.0.2",
-                "2026.0.3",
-                "2027.0.0"
+                "2026.0.3"
               ],
               "category": "identical"
             },
@@ -15202,19 +14984,6 @@
             },
             {
               "from": "2026.0.3",
-              "to": "2027.0.0",
-              "category": "identical",
-              "elements_added": [],
-              "elements_removed": [],
-              "elements_modified": [],
-              "ms_added": [],
-              "ms_removed": [],
-              "cardinality_changes": [],
-              "binding_changes": [],
-              "has_breaking": false
-            },
-            {
-              "from": "2027.0.0",
               "to": "2027.0.0-ballot.3",
               "category": "elements-added",
               "elements_added": [
@@ -15466,12 +15235,11 @@
           "name": "MII_PR_ICU_Device",
           "first_seen": "2026.0.3",
           "last_seen": "2027.0.0-ballot.3",
-          "version_count": 3,
+          "version_count": 2,
           "compatibility_groups": [
             {
               "versions": [
-                "2026.0.3",
-                "2027.0.0"
+                "2026.0.3"
               ],
               "category": "identical"
             },
@@ -15485,19 +15253,6 @@
           "pairwise_comparisons": [
             {
               "from": "2026.0.3",
-              "to": "2027.0.0",
-              "category": "identical",
-              "elements_added": [],
-              "elements_removed": [],
-              "elements_modified": [],
-              "ms_added": [],
-              "ms_removed": [],
-              "cardinality_changes": [],
-              "binding_changes": [],
-              "has_breaking": false
-            },
-            {
-              "from": "2027.0.0",
               "to": "2027.0.0-ballot.3",
               "category": "elements-added",
               "elements_added": [
@@ -15611,12 +15366,11 @@
           "name": "MII_PR_ICU_Devicemetric_Eingestellte_Gemessene_Parameter_Extrakorporale_Verfahren",
           "first_seen": "2026.0.3",
           "last_seen": "2027.0.0-ballot.3",
-          "version_count": 3,
+          "version_count": 2,
           "compatibility_groups": [
             {
               "versions": [
-                "2026.0.3",
-                "2027.0.0"
+                "2026.0.3"
               ],
               "category": "identical"
             },
@@ -15630,19 +15384,6 @@
           "pairwise_comparisons": [
             {
               "from": "2026.0.3",
-              "to": "2027.0.0",
-              "category": "identical",
-              "elements_added": [],
-              "elements_removed": [],
-              "elements_modified": [],
-              "ms_added": [],
-              "ms_removed": [],
-              "cardinality_changes": [],
-              "binding_changes": [],
-              "has_breaking": false
-            },
-            {
-              "from": "2027.0.0",
               "to": "2027.0.0-ballot.3",
               "category": "elements-added",
               "elements_added": [
@@ -15664,12 +15405,11 @@
           "name": "MII_PR_ICU_Devicemetric_Eingestellte_Gemessene_Parameter_Beatmung",
           "first_seen": "2026.0.3",
           "last_seen": "2027.0.0-ballot.3",
-          "version_count": 3,
+          "version_count": 2,
           "compatibility_groups": [
             {
               "versions": [
-                "2026.0.3",
-                "2027.0.0"
+                "2026.0.3"
               ],
               "category": "identical"
             },
@@ -15683,19 +15423,6 @@
           "pairwise_comparisons": [
             {
               "from": "2026.0.3",
-              "to": "2027.0.0",
-              "category": "identical",
-              "elements_added": [],
-              "elements_removed": [],
-              "elements_modified": [],
-              "ms_added": [],
-              "ms_removed": [],
-              "cardinality_changes": [],
-              "binding_changes": [],
-              "has_breaking": false
-            },
-            {
-              "from": "2027.0.0",
               "to": "2027.0.0-ballot.3",
               "category": "elements-added",
               "elements_added": [
@@ -15809,14 +15536,13 @@
           "name": "MII_PR_ICU_ECT_Arterieller_Druck",
           "first_seen": "2026.0.0",
           "last_seen": "2027.0.0-ballot.3",
-          "version_count": 5,
+          "version_count": 4,
           "compatibility_groups": [
             {
               "versions": [
                 "2026.0.0",
                 "2026.0.1",
-                "2026.0.3",
-                "2027.0.0"
+                "2026.0.3"
               ],
               "category": "canonical-only"
             },
@@ -15856,19 +15582,6 @@
             },
             {
               "from": "2026.0.3",
-              "to": "2027.0.0",
-              "category": "identical",
-              "elements_added": [],
-              "elements_removed": [],
-              "elements_modified": [],
-              "ms_added": [],
-              "ms_removed": [],
-              "cardinality_changes": [],
-              "binding_changes": [],
-              "has_breaking": false
-            },
-            {
-              "from": "2027.0.0",
               "to": "2027.0.0-ballot.3",
               "category": "elements-added",
               "elements_added": [
@@ -15890,7 +15603,7 @@
           "name": "MII_PR_ICU_ECT_Blutfluss_Cardiovasculaeres_Geraet",
           "first_seen": "2026.0.0",
           "last_seen": "2027.0.0-ballot.3",
-          "version_count": 5,
+          "version_count": 4,
           "compatibility_groups": [
             {
               "versions": [
@@ -15901,8 +15614,7 @@
             },
             {
               "versions": [
-                "2026.0.3",
-                "2027.0.0"
+                "2026.0.3"
               ],
               "category": "identical"
             },
@@ -15944,19 +15656,6 @@
             },
             {
               "from": "2026.0.3",
-              "to": "2027.0.0",
-              "category": "identical",
-              "elements_added": [],
-              "elements_removed": [],
-              "elements_modified": [],
-              "ms_added": [],
-              "ms_removed": [],
-              "cardinality_changes": [],
-              "binding_changes": [],
-              "has_breaking": false
-            },
-            {
-              "from": "2027.0.0",
               "to": "2027.0.0-ballot.3",
               "category": "elements-added",
               "elements_added": [
@@ -15978,7 +15677,7 @@
           "name": "MII_PR_ICU_ECT_Blutfluss_Extrakorporaler_Gasaustausch",
           "first_seen": "2026.0.0",
           "last_seen": "2027.0.0-ballot.3",
-          "version_count": 5,
+          "version_count": 4,
           "compatibility_groups": [
             {
               "versions": [
@@ -15989,8 +15688,7 @@
             },
             {
               "versions": [
-                "2026.0.3",
-                "2027.0.0"
+                "2026.0.3"
               ],
               "category": "identical"
             },
@@ -16032,19 +15730,6 @@
             },
             {
               "from": "2026.0.3",
-              "to": "2027.0.0",
-              "category": "identical",
-              "elements_added": [],
-              "elements_removed": [],
-              "elements_modified": [],
-              "ms_added": [],
-              "ms_removed": [],
-              "cardinality_changes": [],
-              "binding_changes": [],
-              "has_breaking": false
-            },
-            {
-              "from": "2027.0.0",
               "to": "2027.0.0-ballot.3",
               "category": "elements-added",
               "elements_added": [
@@ -16066,7 +15751,7 @@
           "name": "MII_PR_ICU_ECT_Blutflussindex_Extrakorporaler_Gasaustausch",
           "first_seen": "2026.0.0",
           "last_seen": "2027.0.0-ballot.3",
-          "version_count": 5,
+          "version_count": 4,
           "compatibility_groups": [
             {
               "versions": [
@@ -16077,8 +15762,7 @@
             },
             {
               "versions": [
-                "2026.0.3",
-                "2027.0.0"
+                "2026.0.3"
               ],
               "category": "identical"
             },
@@ -16120,19 +15804,6 @@
             },
             {
               "from": "2026.0.3",
-              "to": "2027.0.0",
-              "category": "identical",
-              "elements_added": [],
-              "elements_removed": [],
-              "elements_modified": [],
-              "ms_added": [],
-              "ms_removed": [],
-              "cardinality_changes": [],
-              "binding_changes": [],
-              "has_breaking": false
-            },
-            {
-              "from": "2027.0.0",
               "to": "2027.0.0-ballot.3",
               "category": "elements-added",
               "elements_added": [
@@ -16154,7 +15825,7 @@
           "name": "MII_PR_ICU_ECT_Dauer_Extrakorporaler_Gasaustausch",
           "first_seen": "2026.0.0",
           "last_seen": "2027.0.0-ballot.3",
-          "version_count": 5,
+          "version_count": 4,
           "compatibility_groups": [
             {
               "versions": [
@@ -16165,8 +15836,7 @@
             },
             {
               "versions": [
-                "2026.0.3",
-                "2027.0.0"
+                "2026.0.3"
               ],
               "category": "identical"
             },
@@ -16208,19 +15878,6 @@
             },
             {
               "from": "2026.0.3",
-              "to": "2027.0.0",
-              "category": "identical",
-              "elements_added": [],
-              "elements_removed": [],
-              "elements_modified": [],
-              "ms_added": [],
-              "ms_removed": [],
-              "cardinality_changes": [],
-              "binding_changes": [],
-              "has_breaking": false
-            },
-            {
-              "from": "2027.0.0",
               "to": "2027.0.0-ballot.3",
               "category": "elements-added",
               "elements_added": [
@@ -16242,7 +15899,7 @@
           "name": "MII_PR_ICU_ECT_Dauer_Haemodialysesitzung",
           "first_seen": "2026.0.0",
           "last_seen": "2027.0.0-ballot.3",
-          "version_count": 5,
+          "version_count": 4,
           "compatibility_groups": [
             {
               "versions": [
@@ -16253,8 +15910,7 @@
             },
             {
               "versions": [
-                "2026.0.3",
-                "2027.0.0"
+                "2026.0.3"
               ],
               "category": "identical"
             },
@@ -16296,19 +15952,6 @@
             },
             {
               "from": "2026.0.3",
-              "to": "2027.0.0",
-              "category": "identical",
-              "elements_added": [],
-              "elements_removed": [],
-              "elements_modified": [],
-              "ms_added": [],
-              "ms_removed": [],
-              "cardinality_changes": [],
-              "binding_changes": [],
-              "has_breaking": false
-            },
-            {
-              "from": "2027.0.0",
               "to": "2027.0.0-ballot.3",
               "category": "elements-added",
               "elements_added": [
@@ -16394,14 +16037,13 @@
           "name": "MII_PR_ICU_ECT_Gasfluss",
           "first_seen": "2026.0.0",
           "last_seen": "2027.0.0-ballot.3",
-          "version_count": 5,
+          "version_count": 4,
           "compatibility_groups": [
             {
               "versions": [
                 "2026.0.0",
                 "2026.0.1",
-                "2026.0.3",
-                "2027.0.0"
+                "2026.0.3"
               ],
               "category": "canonical-only"
             },
@@ -16441,19 +16083,6 @@
             },
             {
               "from": "2026.0.3",
-              "to": "2027.0.0",
-              "category": "identical",
-              "elements_added": [],
-              "elements_removed": [],
-              "elements_modified": [],
-              "ms_added": [],
-              "ms_removed": [],
-              "cardinality_changes": [],
-              "binding_changes": [],
-              "has_breaking": false
-            },
-            {
-              "from": "2027.0.0",
               "to": "2027.0.0-ballot.3",
               "category": "elements-added",
               "elements_added": [
@@ -16475,7 +16104,7 @@
           "name": "MII_PR_ICU_ECT_Haemodialyse_Blutfluss",
           "first_seen": "2026.0.0",
           "last_seen": "2027.0.0-ballot.3",
-          "version_count": 5,
+          "version_count": 4,
           "compatibility_groups": [
             {
               "versions": [
@@ -16486,8 +16115,7 @@
             },
             {
               "versions": [
-                "2026.0.3",
-                "2027.0.0"
+                "2026.0.3"
               ],
               "category": "identical"
             },
@@ -16529,19 +16157,6 @@
             },
             {
               "from": "2026.0.3",
-              "to": "2027.0.0",
-              "category": "identical",
-              "elements_added": [],
-              "elements_removed": [],
-              "elements_modified": [],
-              "ms_added": [],
-              "ms_removed": [],
-              "cardinality_changes": [],
-              "binding_changes": [],
-              "has_breaking": false
-            },
-            {
-              "from": "2027.0.0",
               "to": "2027.0.0-ballot.3",
               "category": "elements-added",
               "elements_added": [
@@ -16563,7 +16178,7 @@
           "name": "MII_PR_ICU_ECT_Ionisiertes_Kalzium_Nierenersatzverfahren",
           "first_seen": "2026.0.0",
           "last_seen": "2027.0.0-ballot.3",
-          "version_count": 5,
+          "version_count": 4,
           "compatibility_groups": [
             {
               "versions": [
@@ -16574,8 +16189,7 @@
             },
             {
               "versions": [
-                "2026.0.3",
-                "2027.0.0"
+                "2026.0.3"
               ],
               "category": "identical"
             },
@@ -16617,19 +16231,6 @@
             },
             {
               "from": "2026.0.3",
-              "to": "2027.0.0",
-              "category": "identical",
-              "elements_added": [],
-              "elements_removed": [],
-              "elements_modified": [],
-              "ms_added": [],
-              "ms_removed": [],
-              "cardinality_changes": [],
-              "binding_changes": [],
-              "has_breaking": false
-            },
-            {
-              "from": "2027.0.0",
               "to": "2027.0.0-ballot.3",
               "category": "elements-added",
               "elements_added": [
@@ -16683,7 +16284,7 @@
           "name": "MII_PR_ICU_ECT_Substituatfluss",
           "first_seen": "2026.0.0",
           "last_seen": "2027.0.0-ballot.3",
-          "version_count": 5,
+          "version_count": 4,
           "compatibility_groups": [
             {
               "versions": [
@@ -16694,8 +16295,7 @@
             },
             {
               "versions": [
-                "2026.0.3",
-                "2027.0.0"
+                "2026.0.3"
               ],
               "category": "identical"
             },
@@ -16737,19 +16337,6 @@
             },
             {
               "from": "2026.0.3",
-              "to": "2027.0.0",
-              "category": "identical",
-              "elements_added": [],
-              "elements_removed": [],
-              "elements_modified": [],
-              "ms_added": [],
-              "ms_removed": [],
-              "cardinality_changes": [],
-              "binding_changes": [],
-              "has_breaking": false
-            },
-            {
-              "from": "2027.0.0",
               "to": "2027.0.0-ballot.3",
               "category": "elements-added",
               "elements_added": [
@@ -16771,7 +16358,7 @@
           "name": "MII_PR_ICU_ECT_Substituatvolumen",
           "first_seen": "2026.0.0",
           "last_seen": "2027.0.0-ballot.3",
-          "version_count": 5,
+          "version_count": 4,
           "compatibility_groups": [
             {
               "versions": [
@@ -16782,8 +16369,7 @@
             },
             {
               "versions": [
-                "2026.0.3",
-                "2027.0.0"
+                "2026.0.3"
               ],
               "category": "identical"
             },
@@ -16828,19 +16414,6 @@
             },
             {
               "from": "2026.0.3",
-              "to": "2027.0.0",
-              "category": "identical",
-              "elements_added": [],
-              "elements_removed": [],
-              "elements_modified": [],
-              "ms_added": [],
-              "ms_removed": [],
-              "cardinality_changes": [],
-              "binding_changes": [],
-              "has_breaking": false
-            },
-            {
-              "from": "2027.0.0",
               "to": "2027.0.0-ballot.3",
               "category": "elements-added",
               "elements_added": [
@@ -16862,7 +16435,7 @@
           "name": "MII_PR_ICU_ECT_Venoeser_Druck",
           "first_seen": "2026.0.0",
           "last_seen": "2027.0.0-ballot.3",
-          "version_count": 5,
+          "version_count": 4,
           "compatibility_groups": [
             {
               "versions": [
@@ -16873,8 +16446,7 @@
             },
             {
               "versions": [
-                "2026.0.3",
-                "2027.0.0"
+                "2026.0.3"
               ],
               "category": "identical"
             },
@@ -16916,19 +16488,6 @@
             },
             {
               "from": "2026.0.3",
-              "to": "2027.0.0",
-              "category": "identical",
-              "elements_added": [],
-              "elements_removed": [],
-              "elements_modified": [],
-              "ms_added": [],
-              "ms_removed": [],
-              "cardinality_changes": [],
-              "binding_changes": [],
-              "has_breaking": false
-            },
-            {
-              "from": "2027.0.0",
               "to": "2027.0.0-ballot.3",
               "category": "elements-added",
               "elements_added": [
@@ -17226,7 +16785,7 @@
           "name": "MII_PR_ICU_Extrakorporales_Verfahren",
           "first_seen": "2026.0.0",
           "last_seen": "2027.0.0-ballot.3",
-          "version_count": 6,
+          "version_count": 5,
           "compatibility_groups": [
             {
               "versions": [
@@ -17234,12 +16793,6 @@
                 "2026.0.1",
                 "2026.0.2",
                 "2026.0.3"
-              ],
-              "category": "identical"
-            },
-            {
-              "versions": [
-                "2027.0.0"
               ],
               "category": "identical"
             },
@@ -17292,25 +16845,11 @@
             },
             {
               "from": "2026.0.3",
-              "to": "2027.0.0",
-              "category": "elements-added",
-              "elements_added": [
-                "Procedure.encounter"
-              ],
-              "elements_removed": [],
-              "elements_modified": [],
-              "ms_added": [],
-              "ms_removed": [],
-              "cardinality_changes": [],
-              "binding_changes": [],
-              "has_breaking": false
-            },
-            {
-              "from": "2027.0.0",
               "to": "2027.0.0-ballot.3",
               "category": "elements-added",
               "elements_added": [
-                "Procedure"
+                "Procedure",
+                "Procedure.encounter"
               ],
               "elements_removed": [],
               "elements_modified": [],
@@ -17962,7 +17501,7 @@
           "name": "MII_PR_ICU_MUV_Arterieller_Blutdruck",
           "first_seen": "2026.0.0",
           "last_seen": "2027.0.0-ballot.3",
-          "version_count": 6,
+          "version_count": 5,
           "compatibility_groups": [
             {
               "versions": [
@@ -17974,8 +17513,7 @@
             {
               "versions": [
                 "2026.0.2",
-                "2026.0.3",
-                "2027.0.0"
+                "2026.0.3"
               ],
               "category": "identical"
             },
@@ -18066,19 +17604,6 @@
             },
             {
               "from": "2026.0.3",
-              "to": "2027.0.0",
-              "category": "identical",
-              "elements_added": [],
-              "elements_removed": [],
-              "elements_modified": [],
-              "ms_added": [],
-              "ms_removed": [],
-              "cardinality_changes": [],
-              "binding_changes": [],
-              "has_breaking": false
-            },
-            {
-              "from": "2027.0.0",
               "to": "2027.0.0-ballot.3",
               "category": "elements-added",
               "elements_added": [
@@ -18109,7 +17634,7 @@
           "name": "MII_PR_ICU_MUV_Atemfrequenz",
           "first_seen": "2026.0.0",
           "last_seen": "2027.0.0-ballot.3",
-          "version_count": 6,
+          "version_count": 5,
           "compatibility_groups": [
             {
               "versions": [
@@ -18121,8 +17646,7 @@
             {
               "versions": [
                 "2026.0.2",
-                "2026.0.3",
-                "2027.0.0"
+                "2026.0.3"
               ],
               "category": "identical"
             },
@@ -18185,19 +17709,6 @@
             },
             {
               "from": "2026.0.3",
-              "to": "2027.0.0",
-              "category": "identical",
-              "elements_added": [],
-              "elements_removed": [],
-              "elements_modified": [],
-              "ms_added": [],
-              "ms_removed": [],
-              "cardinality_changes": [],
-              "binding_changes": [],
-              "has_breaking": false
-            },
-            {
-              "from": "2027.0.0",
               "to": "2027.0.0-ballot.3",
               "category": "elements-added",
               "elements_added": [
@@ -18219,15 +17730,14 @@
           "name": "MII_PR_ICU_MUV_Herzfrequenz",
           "first_seen": "2026.0.0",
           "last_seen": "2027.0.0-ballot.3",
-          "version_count": 6,
+          "version_count": 5,
           "compatibility_groups": [
             {
               "versions": [
                 "2026.0.0",
                 "2026.0.1",
                 "2026.0.2",
-                "2026.0.3",
-                "2027.0.0"
+                "2026.0.3"
               ],
               "category": "identical"
             },
@@ -18280,19 +17790,6 @@
             },
             {
               "from": "2026.0.3",
-              "to": "2027.0.0",
-              "category": "identical",
-              "elements_added": [],
-              "elements_removed": [],
-              "elements_modified": [],
-              "ms_added": [],
-              "ms_removed": [],
-              "cardinality_changes": [],
-              "binding_changes": [],
-              "has_breaking": false
-            },
-            {
-              "from": "2027.0.0",
               "to": "2027.0.0-ballot.3",
               "category": "elements-added",
               "elements_added": [
@@ -18314,7 +17811,7 @@
           "name": "MII_PR_ICU_MUV_Koerpergewicht",
           "first_seen": "2026.0.0",
           "last_seen": "2027.0.0-ballot.3",
-          "version_count": 6,
+          "version_count": 5,
           "compatibility_groups": [
             {
               "versions": [
@@ -18327,7 +17824,6 @@
               "versions": [
                 "2026.0.2",
                 "2026.0.3",
-                "2027.0.0",
                 "2027.0.0-ballot.3"
               ],
               "category": "canonical-only"
@@ -18411,19 +17907,6 @@
             },
             {
               "from": "2026.0.3",
-              "to": "2027.0.0",
-              "category": "identical",
-              "elements_added": [],
-              "elements_removed": [],
-              "elements_modified": [],
-              "ms_added": [],
-              "ms_removed": [],
-              "cardinality_changes": [],
-              "binding_changes": [],
-              "has_breaking": false
-            },
-            {
-              "from": "2027.0.0",
               "to": "2027.0.0-ballot.3",
               "category": "identical",
               "elements_added": [],
@@ -18443,7 +17926,7 @@
           "name": "MII_PR_ICU_MUV_Koerpergroesse",
           "first_seen": "2026.0.0",
           "last_seen": "2027.0.0-ballot.3",
-          "version_count": 6,
+          "version_count": 5,
           "compatibility_groups": [
             {
               "versions": [
@@ -18455,8 +17938,7 @@
             {
               "versions": [
                 "2026.0.2",
-                "2026.0.3",
-                "2027.0.0"
+                "2026.0.3"
               ],
               "category": "identical"
             },
@@ -18541,19 +18023,6 @@
             },
             {
               "from": "2026.0.3",
-              "to": "2027.0.0",
-              "category": "identical",
-              "elements_added": [],
-              "elements_removed": [],
-              "elements_modified": [],
-              "ms_added": [],
-              "ms_removed": [],
-              "cardinality_changes": [],
-              "binding_changes": [],
-              "has_breaking": false
-            },
-            {
-              "from": "2027.0.0",
               "to": "2027.0.0-ballot.3",
               "category": "elements-added",
               "elements_added": [
@@ -18575,12 +18044,11 @@
           "name": "MII_PR_ICU_MUV_Koerperlaenge",
           "first_seen": "2026.0.3",
           "last_seen": "2027.0.0-ballot.3",
-          "version_count": 3,
+          "version_count": 2,
           "compatibility_groups": [
             {
               "versions": [
                 "2026.0.3",
-                "2027.0.0",
                 "2027.0.0-ballot.3"
               ],
               "category": "identical"
@@ -18589,19 +18057,6 @@
           "pairwise_comparisons": [
             {
               "from": "2026.0.3",
-              "to": "2027.0.0",
-              "category": "identical",
-              "elements_added": [],
-              "elements_removed": [],
-              "elements_modified": [],
-              "ms_added": [],
-              "ms_removed": [],
-              "cardinality_changes": [],
-              "binding_changes": [],
-              "has_breaking": false
-            },
-            {
-              "from": "2027.0.0",
               "to": "2027.0.0-ballot.3",
               "category": "identical",
               "elements_added": [],
@@ -18621,7 +18076,7 @@
           "name": "MII_PR_ICU_MUV_Kopfumfang",
           "first_seen": "2026.0.0",
           "last_seen": "2027.0.0-ballot.3",
-          "version_count": 6,
+          "version_count": 5,
           "compatibility_groups": [
             {
               "versions": [
@@ -18633,8 +18088,7 @@
             {
               "versions": [
                 "2026.0.2",
-                "2026.0.3",
-                "2027.0.0"
+                "2026.0.3"
               ],
               "category": "identical"
             },
@@ -18713,19 +18167,6 @@
             },
             {
               "from": "2026.0.3",
-              "to": "2027.0.0",
-              "category": "identical",
-              "elements_added": [],
-              "elements_removed": [],
-              "elements_modified": [],
-              "ms_added": [],
-              "ms_removed": [],
-              "cardinality_changes": [],
-              "binding_changes": [],
-              "has_breaking": false
-            },
-            {
-              "from": "2027.0.0",
               "to": "2027.0.0-ballot.3",
               "category": "elements-added",
               "elements_added": [
@@ -18764,7 +18205,7 @@
           "name": "MII_PR_ICU_Parameter_Von_Beatmung",
           "first_seen": "2026.0.0",
           "last_seen": "2027.0.0-ballot.3",
-          "version_count": 6,
+          "version_count": 5,
           "compatibility_groups": [
             {
               "versions": [
@@ -18777,7 +18218,6 @@
             {
               "versions": [
                 "2026.0.3",
-                "2027.0.0",
                 "2027.0.0-ballot.3"
               ],
               "category": "canonical-only"
@@ -18857,19 +18297,6 @@
             },
             {
               "from": "2026.0.3",
-              "to": "2027.0.0",
-              "category": "identical",
-              "elements_added": [],
-              "elements_removed": [],
-              "elements_modified": [],
-              "ms_added": [],
-              "ms_removed": [],
-              "cardinality_changes": [],
-              "binding_changes": [],
-              "has_breaking": false
-            },
-            {
-              "from": "2027.0.0",
               "to": "2027.0.0-ballot.3",
               "category": "canonical-only",
               "elements_added": [],
@@ -18889,7 +18316,7 @@
           "name": "MII_PR_ICU_Parameter_Von_Extrakorporalen_Verfahren",
           "first_seen": "2026.0.0",
           "last_seen": "2027.0.0-ballot.3",
-          "version_count": 6,
+          "version_count": 5,
           "compatibility_groups": [
             {
               "versions": [
@@ -18902,7 +18329,6 @@
             {
               "versions": [
                 "2026.0.3",
-                "2027.0.0",
                 "2027.0.0-ballot.3"
               ],
               "category": "identical"
@@ -18958,19 +18384,6 @@
             },
             {
               "from": "2026.0.3",
-              "to": "2027.0.0",
-              "category": "identical",
-              "elements_added": [],
-              "elements_removed": [],
-              "elements_modified": [],
-              "ms_added": [],
-              "ms_removed": [],
-              "cardinality_changes": [],
-              "binding_changes": [],
-              "has_breaking": false
-            },
-            {
-              "from": "2027.0.0",
               "to": "2027.0.0-ballot.3",
               "category": "identical",
               "elements_added": [],
@@ -19941,12 +19354,11 @@
           "name": "MII_PR_ICU_VENT_Atemwegsdruck_Bei_Mittlerem_Expiratorischem_Gasfluss",
           "first_seen": "2026.0.3",
           "last_seen": "2027.0.0-ballot.3",
-          "version_count": 3,
+          "version_count": 2,
           "compatibility_groups": [
             {
               "versions": [
-                "2026.0.3",
-                "2027.0.0"
+                "2026.0.3"
               ],
               "category": "identical"
             },
@@ -19960,19 +19372,6 @@
           "pairwise_comparisons": [
             {
               "from": "2026.0.3",
-              "to": "2027.0.0",
-              "category": "identical",
-              "elements_added": [],
-              "elements_removed": [],
-              "elements_modified": [],
-              "ms_added": [],
-              "ms_removed": [],
-              "cardinality_changes": [],
-              "binding_changes": [],
-              "has_breaking": false
-            },
-            {
-              "from": "2027.0.0",
               "to": "2027.0.0-ballot.3",
               "category": "elements-added",
               "elements_added": [
@@ -19994,12 +19393,11 @@
           "name": "MII_PR_ICU_VENT_Atemwegsdruck_Bei_Null_Expiratorischem_Gasfluss",
           "first_seen": "2026.0.3",
           "last_seen": "2027.0.0-ballot.3",
-          "version_count": 3,
+          "version_count": 2,
           "compatibility_groups": [
             {
               "versions": [
-                "2026.0.3",
-                "2027.0.0"
+                "2026.0.3"
               ],
               "category": "identical"
             },
@@ -20013,19 +19411,6 @@
           "pairwise_comparisons": [
             {
               "from": "2026.0.3",
-              "to": "2027.0.0",
-              "category": "identical",
-              "elements_added": [],
-              "elements_removed": [],
-              "elements_modified": [],
-              "ms_added": [],
-              "ms_removed": [],
-              "cardinality_changes": [],
-              "binding_changes": [],
-              "has_breaking": false
-            },
-            {
-              "from": "2027.0.0",
               "to": "2027.0.0-ballot.3",
               "category": "elements-added",
               "elements_added": [
@@ -20079,7 +19464,7 @@
           "name": "MII_PR_ICU_VENT_Atemzugvolumen_Einstellung",
           "first_seen": "2026.0.0",
           "last_seen": "2027.0.0-ballot.3",
-          "version_count": 5,
+          "version_count": 4,
           "compatibility_groups": [
             {
               "versions": [
@@ -20090,8 +19475,7 @@
             },
             {
               "versions": [
-                "2026.0.3",
-                "2027.0.0"
+                "2026.0.3"
               ],
               "category": "identical"
             },
@@ -20137,19 +19521,6 @@
             },
             {
               "from": "2026.0.3",
-              "to": "2027.0.0",
-              "category": "identical",
-              "elements_added": [],
-              "elements_removed": [],
-              "elements_modified": [],
-              "ms_added": [],
-              "ms_removed": [],
-              "cardinality_changes": [],
-              "binding_changes": [],
-              "has_breaking": false
-            },
-            {
-              "from": "2027.0.0",
               "to": "2027.0.0-ballot.3",
               "category": "elements-added",
               "elements_added": [
@@ -20171,7 +19542,7 @@
           "name": "MII_PR_ICU_VENT_Atemzugvolumen_Waehrend_Beatmung",
           "first_seen": "2026.0.0",
           "last_seen": "2027.0.0-ballot.3",
-          "version_count": 5,
+          "version_count": 4,
           "compatibility_groups": [
             {
               "versions": [
@@ -20182,8 +19553,7 @@
             },
             {
               "versions": [
-                "2026.0.3",
-                "2027.0.0"
+                "2026.0.3"
               ],
               "category": "identical"
             },
@@ -20228,19 +19598,6 @@
             },
             {
               "from": "2026.0.3",
-              "to": "2027.0.0",
-              "category": "identical",
-              "elements_added": [],
-              "elements_removed": [],
-              "elements_modified": [],
-              "ms_added": [],
-              "ms_removed": [],
-              "cardinality_changes": [],
-              "binding_changes": [],
-              "has_breaking": false
-            },
-            {
-              "from": "2027.0.0",
               "to": "2027.0.0-ballot.3",
               "category": "elements-added",
               "elements_added": [
@@ -20326,12 +19683,11 @@
           "name": "MII_PR_ICU_VENT_Beatmungsvolumen_Pro_Minute_Maschineller_Beatmung",
           "first_seen": "2026.0.3",
           "last_seen": "2027.0.0-ballot.3",
-          "version_count": 3,
+          "version_count": 2,
           "compatibility_groups": [
             {
               "versions": [
-                "2026.0.3",
-                "2027.0.0"
+                "2026.0.3"
               ],
               "category": "identical"
             },
@@ -20345,19 +19701,6 @@
           "pairwise_comparisons": [
             {
               "from": "2026.0.3",
-              "to": "2027.0.0",
-              "category": "identical",
-              "elements_added": [],
-              "elements_removed": [],
-              "elements_modified": [],
-              "ms_added": [],
-              "ms_removed": [],
-              "cardinality_changes": [],
-              "binding_changes": [],
-              "has_breaking": false
-            },
-            {
-              "from": "2027.0.0",
               "to": "2027.0.0-ballot.3",
               "category": "elements-added",
               "elements_added": [
@@ -20379,7 +19722,7 @@
           "name": "MII_PR_ICU_VENT_Beatmungszeit_Hohem_Druck",
           "first_seen": "2026.0.0",
           "last_seen": "2027.0.0-ballot.3",
-          "version_count": 5,
+          "version_count": 4,
           "compatibility_groups": [
             {
               "versions": [
@@ -20390,8 +19733,7 @@
             },
             {
               "versions": [
-                "2026.0.3",
-                "2027.0.0"
+                "2026.0.3"
               ],
               "category": "identical"
             },
@@ -20436,19 +19778,6 @@
             },
             {
               "from": "2026.0.3",
-              "to": "2027.0.0",
-              "category": "identical",
-              "elements_added": [],
-              "elements_removed": [],
-              "elements_modified": [],
-              "ms_added": [],
-              "ms_removed": [],
-              "cardinality_changes": [],
-              "binding_changes": [],
-              "has_breaking": false
-            },
-            {
-              "from": "2027.0.0",
               "to": "2027.0.0-ballot.3",
               "category": "elements-added",
               "elements_added": [
@@ -20470,7 +19799,7 @@
           "name": "MII_PR_ICU_VENT_Beatmungszeit_Niedrigem_Druck",
           "first_seen": "2026.0.0",
           "last_seen": "2027.0.0-ballot.3",
-          "version_count": 5,
+          "version_count": 4,
           "compatibility_groups": [
             {
               "versions": [
@@ -20481,8 +19810,7 @@
             },
             {
               "versions": [
-                "2026.0.3",
-                "2027.0.0"
+                "2026.0.3"
               ],
               "category": "identical"
             },
@@ -20527,19 +19855,6 @@
             },
             {
               "from": "2026.0.3",
-              "to": "2027.0.0",
-              "category": "identical",
-              "elements_added": [],
-              "elements_removed": [],
-              "elements_modified": [],
-              "ms_added": [],
-              "ms_removed": [],
-              "cardinality_changes": [],
-              "binding_changes": [],
-              "has_breaking": false
-            },
-            {
-              "from": "2027.0.0",
               "to": "2027.0.0-ballot.3",
               "category": "elements-added",
               "elements_added": [
@@ -20593,7 +19908,7 @@
           "name": "MII_PR_ICU_VENT_Druckdifferenz_Beatmung",
           "first_seen": "2026.0.0",
           "last_seen": "2027.0.0-ballot.3",
-          "version_count": 5,
+          "version_count": 4,
           "compatibility_groups": [
             {
               "versions": [
@@ -20604,8 +19919,7 @@
             },
             {
               "versions": [
-                "2026.0.3",
-                "2027.0.0"
+                "2026.0.3"
               ],
               "category": "identical"
             },
@@ -20650,19 +19964,6 @@
             },
             {
               "from": "2026.0.3",
-              "to": "2027.0.0",
-              "category": "identical",
-              "elements_added": [],
-              "elements_removed": [],
-              "elements_modified": [],
-              "ms_added": [],
-              "ms_removed": [],
-              "cardinality_changes": [],
-              "binding_changes": [],
-              "has_breaking": false
-            },
-            {
-              "from": "2027.0.0",
               "to": "2027.0.0-ballot.3",
               "category": "elements-added",
               "elements_added": [
@@ -20684,7 +19985,7 @@
           "name": "MII_PR_ICU_VENT_Dynamische_Kompliance",
           "first_seen": "2026.0.0",
           "last_seen": "2027.0.0-ballot.3",
-          "version_count": 5,
+          "version_count": 4,
           "compatibility_groups": [
             {
               "versions": [
@@ -20695,8 +19996,7 @@
             },
             {
               "versions": [
-                "2026.0.3",
-                "2027.0.0"
+                "2026.0.3"
               ],
               "category": "identical"
             },
@@ -20741,19 +20041,6 @@
             },
             {
               "from": "2026.0.3",
-              "to": "2027.0.0",
-              "category": "identical",
-              "elements_added": [],
-              "elements_removed": [],
-              "elements_modified": [],
-              "ms_added": [],
-              "ms_removed": [],
-              "cardinality_changes": [],
-              "binding_changes": [],
-              "has_breaking": false
-            },
-            {
-              "from": "2027.0.0",
               "to": "2027.0.0-ballot.3",
               "category": "elements-added",
               "elements_added": [
@@ -20775,7 +20062,7 @@
           "name": "MII_PR_ICU_VENT_Eingestellter_Inspiratorischer_Gasfluss",
           "first_seen": "2026.0.0",
           "last_seen": "2027.0.0-ballot.3",
-          "version_count": 5,
+          "version_count": 4,
           "compatibility_groups": [
             {
               "versions": [
@@ -20786,8 +20073,7 @@
             },
             {
               "versions": [
-                "2026.0.3",
-                "2027.0.0"
+                "2026.0.3"
               ],
               "category": "identical"
             },
@@ -20833,19 +20119,6 @@
             },
             {
               "from": "2026.0.3",
-              "to": "2027.0.0",
-              "category": "identical",
-              "elements_added": [],
-              "elements_removed": [],
-              "elements_modified": [],
-              "ms_added": [],
-              "ms_removed": [],
-              "cardinality_changes": [],
-              "binding_changes": [],
-              "has_breaking": false
-            },
-            {
-              "from": "2027.0.0",
               "to": "2027.0.0-ballot.3",
               "category": "elements-added",
               "elements_added": [
@@ -20867,7 +20140,7 @@
           "name": "MII_PR_ICU_VENT_Einstellung_Ausatmungszeit_Beatmung",
           "first_seen": "2026.0.0",
           "last_seen": "2027.0.0-ballot.3",
-          "version_count": 5,
+          "version_count": 4,
           "compatibility_groups": [
             {
               "versions": [
@@ -20878,8 +20151,7 @@
             },
             {
               "versions": [
-                "2026.0.3",
-                "2027.0.0"
+                "2026.0.3"
               ],
               "category": "identical"
             },
@@ -20923,19 +20195,6 @@
             },
             {
               "from": "2026.0.3",
-              "to": "2027.0.0",
-              "category": "identical",
-              "elements_added": [],
-              "elements_removed": [],
-              "elements_modified": [],
-              "ms_added": [],
-              "ms_removed": [],
-              "cardinality_changes": [],
-              "binding_changes": [],
-              "has_breaking": false
-            },
-            {
-              "from": "2027.0.0",
               "to": "2027.0.0-ballot.3",
               "category": "elements-added",
               "elements_added": [
@@ -20957,7 +20216,7 @@
           "name": "MII_PR_ICU_VENT_Einstellung_Einatmungszeit_Beatmung",
           "first_seen": "2026.0.0",
           "last_seen": "2027.0.0-ballot.3",
-          "version_count": 5,
+          "version_count": 4,
           "compatibility_groups": [
             {
               "versions": [
@@ -20968,8 +20227,7 @@
             },
             {
               "versions": [
-                "2026.0.3",
-                "2027.0.0"
+                "2026.0.3"
               ],
               "category": "identical"
             },
@@ -21013,19 +20271,6 @@
             },
             {
               "from": "2026.0.3",
-              "to": "2027.0.0",
-              "category": "identical",
-              "elements_added": [],
-              "elements_removed": [],
-              "elements_modified": [],
-              "ms_added": [],
-              "ms_removed": [],
-              "cardinality_changes": [],
-              "binding_changes": [],
-              "has_breaking": false
-            },
-            {
-              "from": "2027.0.0",
               "to": "2027.0.0-ballot.3",
               "category": "elements-added",
               "elements_added": [
@@ -21047,12 +20292,11 @@
           "name": "MII_PR_ICU_VENT_Endexpiratorischer_Kohlendioxidpartialdruck",
           "first_seen": "2026.0.3",
           "last_seen": "2027.0.0-ballot.3",
-          "version_count": 3,
+          "version_count": 2,
           "compatibility_groups": [
             {
               "versions": [
-                "2026.0.3",
-                "2027.0.0"
+                "2026.0.3"
               ],
               "category": "identical"
             },
@@ -21066,19 +20310,6 @@
           "pairwise_comparisons": [
             {
               "from": "2026.0.3",
-              "to": "2027.0.0",
-              "category": "identical",
-              "elements_added": [],
-              "elements_removed": [],
-              "elements_modified": [],
-              "ms_added": [],
-              "ms_removed": [],
-              "cardinality_changes": [],
-              "binding_changes": [],
-              "has_breaking": false
-            },
-            {
-              "from": "2027.0.0",
               "to": "2027.0.0-ballot.3",
               "category": "elements-added",
               "elements_added": [
@@ -21132,7 +20363,7 @@
           "name": "MII_PR_ICU_VENT_Exspiratorischer_Gasfluss",
           "first_seen": "2026.0.0",
           "last_seen": "2027.0.0-ballot.3",
-          "version_count": 5,
+          "version_count": 4,
           "compatibility_groups": [
             {
               "versions": [
@@ -21143,8 +20374,7 @@
             },
             {
               "versions": [
-                "2026.0.3",
-                "2027.0.0"
+                "2026.0.3"
               ],
               "category": "identical"
             },
@@ -21190,19 +20420,6 @@
             },
             {
               "from": "2026.0.3",
-              "to": "2027.0.0",
-              "category": "identical",
-              "elements_added": [],
-              "elements_removed": [],
-              "elements_modified": [],
-              "ms_added": [],
-              "ms_removed": [],
-              "cardinality_changes": [],
-              "binding_changes": [],
-              "has_breaking": false
-            },
-            {
-              "from": "2027.0.0",
               "to": "2027.0.0-ballot.3",
               "category": "elements-added",
               "elements_added": [
@@ -21224,7 +20441,7 @@
           "name": "MII_PR_ICU_VENT_Exspiratorischer_Sauerstoffpartialdruck",
           "first_seen": "2026.0.0",
           "last_seen": "2027.0.0-ballot.3",
-          "version_count": 5,
+          "version_count": 4,
           "compatibility_groups": [
             {
               "versions": [
@@ -21235,8 +20452,7 @@
             },
             {
               "versions": [
-                "2026.0.3",
-                "2027.0.0"
+                "2026.0.3"
               ],
               "category": "identical"
             },
@@ -21282,19 +20498,6 @@
             },
             {
               "from": "2026.0.3",
-              "to": "2027.0.0",
-              "category": "identical",
-              "elements_added": [],
-              "elements_removed": [],
-              "elements_modified": [],
-              "ms_added": [],
-              "ms_removed": [],
-              "cardinality_changes": [],
-              "binding_changes": [],
-              "has_breaking": false
-            },
-            {
-              "from": "2027.0.0",
               "to": "2027.0.0-ballot.3",
               "category": "elements-added",
               "elements_added": [
@@ -21316,7 +20519,7 @@
           "name": "MII_PR_ICU_VENT_Horowitz_In_Arteriellem_Blut",
           "first_seen": "2026.0.0",
           "last_seen": "2027.0.0-ballot.3",
-          "version_count": 5,
+          "version_count": 4,
           "compatibility_groups": [
             {
               "versions": [
@@ -21327,8 +20530,7 @@
             },
             {
               "versions": [
-                "2026.0.3",
-                "2027.0.0"
+                "2026.0.3"
               ],
               "category": "identical"
             },
@@ -21375,19 +20577,6 @@
             },
             {
               "from": "2026.0.3",
-              "to": "2027.0.0",
-              "category": "identical",
-              "elements_added": [],
-              "elements_removed": [],
-              "elements_modified": [],
-              "ms_added": [],
-              "ms_removed": [],
-              "cardinality_changes": [],
-              "binding_changes": [],
-              "has_breaking": false
-            },
-            {
-              "from": "2027.0.0",
               "to": "2027.0.0-ballot.3",
               "category": "elements-added",
               "elements_added": [
@@ -21409,7 +20598,7 @@
           "name": "MII_PR_ICU_VENT_Inspiratorische_Sauerstofffraktion",
           "first_seen": "2026.0.0",
           "last_seen": "2027.0.0-ballot.3",
-          "version_count": 5,
+          "version_count": 4,
           "compatibility_groups": [
             {
               "versions": [
@@ -21420,8 +20609,7 @@
             },
             {
               "versions": [
-                "2026.0.3",
-                "2027.0.0"
+                "2026.0.3"
               ],
               "category": "identical"
             },
@@ -21478,19 +20666,6 @@
             },
             {
               "from": "2026.0.3",
-              "to": "2027.0.0",
-              "category": "identical",
-              "elements_added": [],
-              "elements_removed": [],
-              "elements_modified": [],
-              "ms_added": [],
-              "ms_removed": [],
-              "cardinality_changes": [],
-              "binding_changes": [],
-              "has_breaking": false
-            },
-            {
-              "from": "2027.0.0",
               "to": "2027.0.0-ballot.3",
               "category": "elements-added",
               "elements_added": [
@@ -21576,7 +20751,7 @@
           "name": "MII_PR_ICU_VENT_Inspiratorischer_Gasfluss",
           "first_seen": "2026.0.0",
           "last_seen": "2027.0.0-ballot.3",
-          "version_count": 5,
+          "version_count": 4,
           "compatibility_groups": [
             {
               "versions": [
@@ -21587,8 +20762,7 @@
             },
             {
               "versions": [
-                "2026.0.3",
-                "2027.0.0"
+                "2026.0.3"
               ],
               "category": "identical"
             },
@@ -21634,19 +20808,6 @@
             },
             {
               "from": "2026.0.3",
-              "to": "2027.0.0",
-              "category": "identical",
-              "elements_added": [],
-              "elements_removed": [],
-              "elements_modified": [],
-              "ms_added": [],
-              "ms_removed": [],
-              "cardinality_changes": [],
-              "binding_changes": [],
-              "has_breaking": false
-            },
-            {
-              "from": "2027.0.0",
               "to": "2027.0.0-ballot.3",
               "category": "elements-added",
               "elements_added": [
@@ -21668,7 +20829,7 @@
           "name": "MII_PR_ICU_VENT_Maximaler_Beatmungsdruck",
           "first_seen": "2026.0.0",
           "last_seen": "2027.0.0-ballot.3",
-          "version_count": 5,
+          "version_count": 4,
           "compatibility_groups": [
             {
               "versions": [
@@ -21679,8 +20840,7 @@
             },
             {
               "versions": [
-                "2026.0.3",
-                "2027.0.0"
+                "2026.0.3"
               ],
               "category": "identical"
             },
@@ -21734,19 +20894,6 @@
             },
             {
               "from": "2026.0.3",
-              "to": "2027.0.0",
-              "category": "identical",
-              "elements_added": [],
-              "elements_removed": [],
-              "elements_modified": [],
-              "ms_added": [],
-              "ms_removed": [],
-              "cardinality_changes": [],
-              "binding_changes": [],
-              "has_breaking": false
-            },
-            {
-              "from": "2027.0.0",
               "to": "2027.0.0-ballot.3",
               "category": "elements-added",
               "elements_added": [
@@ -21785,7 +20932,7 @@
           "name": "MII_PR_ICU_VENT_Mechanische_Atemfrequenz_Beatmet",
           "first_seen": "2026.0.0",
           "last_seen": "2027.0.0-ballot.3",
-          "version_count": 5,
+          "version_count": 4,
           "compatibility_groups": [
             {
               "versions": [
@@ -21796,8 +20943,7 @@
             },
             {
               "versions": [
-                "2026.0.3",
-                "2027.0.0"
+                "2026.0.3"
               ],
               "category": "identical"
             },
@@ -21842,19 +20988,6 @@
             },
             {
               "from": "2026.0.3",
-              "to": "2027.0.0",
-              "category": "identical",
-              "elements_added": [],
-              "elements_removed": [],
-              "elements_modified": [],
-              "ms_added": [],
-              "ms_removed": [],
-              "cardinality_changes": [],
-              "binding_changes": [],
-              "has_breaking": false
-            },
-            {
-              "from": "2027.0.0",
               "to": "2027.0.0-ballot.3",
               "category": "elements-added",
               "elements_added": [
@@ -21932,12 +21065,11 @@
           "name": "MII_PR_ICU_VENT_Mittlerer_Inspiratorischer_Beatmungsdruck",
           "first_seen": "2026.0.3",
           "last_seen": "2027.0.0-ballot.3",
-          "version_count": 3,
+          "version_count": 2,
           "compatibility_groups": [
             {
               "versions": [
-                "2026.0.3",
-                "2027.0.0"
+                "2026.0.3"
               ],
               "category": "identical"
             },
@@ -21951,19 +21083,6 @@
           "pairwise_comparisons": [
             {
               "from": "2026.0.3",
-              "to": "2027.0.0",
-              "category": "identical",
-              "elements_added": [],
-              "elements_removed": [],
-              "elements_modified": [],
-              "ms_added": [],
-              "ms_removed": [],
-              "cardinality_changes": [],
-              "binding_changes": [],
-              "has_breaking": false
-            },
-            {
-              "from": "2027.0.0",
               "to": "2027.0.0-ballot.3",
               "category": "elements-added",
               "elements_added": [
@@ -22017,12 +21136,11 @@
           "name": "MII_PR_ICU_VENT_Plateau_Beatmungsdruck",
           "first_seen": "2026.0.3",
           "last_seen": "2027.0.0-ballot.3",
-          "version_count": 3,
+          "version_count": 2,
           "compatibility_groups": [
             {
               "versions": [
-                "2026.0.3",
-                "2027.0.0"
+                "2026.0.3"
               ],
               "category": "identical"
             },
@@ -22036,19 +21154,6 @@
           "pairwise_comparisons": [
             {
               "from": "2026.0.3",
-              "to": "2027.0.0",
-              "category": "identical",
-              "elements_added": [],
-              "elements_removed": [],
-              "elements_modified": [],
-              "ms_added": [],
-              "ms_removed": [],
-              "cardinality_changes": [],
-              "binding_changes": [],
-              "has_breaking": false
-            },
-            {
-              "from": "2027.0.0",
               "to": "2027.0.0-ballot.3",
               "category": "elements-added",
               "elements_added": [
@@ -22070,12 +21175,11 @@
           "name": "MII_PR_ICU_VENT_Positiv_Endexpiratorischer_Druck",
           "first_seen": "2026.0.3",
           "last_seen": "2027.0.0-ballot.3",
-          "version_count": 3,
+          "version_count": 2,
           "compatibility_groups": [
             {
               "versions": [
-                "2026.0.3",
-                "2027.0.0"
+                "2026.0.3"
               ],
               "category": "identical"
             },
@@ -22089,19 +21193,6 @@
           "pairwise_comparisons": [
             {
               "from": "2026.0.3",
-              "to": "2027.0.0",
-              "category": "identical",
-              "elements_added": [],
-              "elements_removed": [],
-              "elements_modified": [],
-              "ms_added": [],
-              "ms_removed": [],
-              "cardinality_changes": [],
-              "binding_changes": [],
-              "has_breaking": false
-            },
-            {
-              "from": "2027.0.0",
               "to": "2027.0.0-ballot.3",
               "category": "elements-added",
               "elements_added": [
@@ -22155,7 +21246,7 @@
           "name": "MII_PR_ICU_VENT_Spontane_Atemfrequenz_Beatmet",
           "first_seen": "2026.0.0",
           "last_seen": "2027.0.0-ballot.3",
-          "version_count": 5,
+          "version_count": 4,
           "compatibility_groups": [
             {
               "versions": [
@@ -22166,8 +21257,7 @@
             },
             {
               "versions": [
-                "2026.0.3",
-                "2027.0.0"
+                "2026.0.3"
               ],
               "category": "identical"
             },
@@ -22227,19 +21317,6 @@
             },
             {
               "from": "2026.0.3",
-              "to": "2027.0.0",
-              "category": "identical",
-              "elements_added": [],
-              "elements_removed": [],
-              "elements_modified": [],
-              "ms_added": [],
-              "ms_removed": [],
-              "cardinality_changes": [],
-              "binding_changes": [],
-              "has_breaking": false
-            },
-            {
-              "from": "2027.0.0",
               "to": "2027.0.0-ballot.3",
               "category": "elements-added",
               "elements_added": [
@@ -22261,7 +21338,7 @@
           "name": "MII_PR_ICU_VENT_Spontane_Mechanische_Atemfrequenz_Beatmet",
           "first_seen": "2026.0.0",
           "last_seen": "2027.0.0-ballot.3",
-          "version_count": 5,
+          "version_count": 4,
           "compatibility_groups": [
             {
               "versions": [
@@ -22272,8 +21349,7 @@
             },
             {
               "versions": [
-                "2026.0.3",
-                "2027.0.0"
+                "2026.0.3"
               ],
               "category": "identical"
             },
@@ -22317,19 +21393,6 @@
             },
             {
               "from": "2026.0.3",
-              "to": "2027.0.0",
-              "category": "identical",
-              "elements_added": [],
-              "elements_removed": [],
-              "elements_modified": [],
-              "ms_added": [],
-              "ms_removed": [],
-              "cardinality_changes": [],
-              "binding_changes": [],
-              "has_breaking": false
-            },
-            {
-              "from": "2027.0.0",
               "to": "2027.0.0-ballot.3",
               "category": "elements-added",
               "elements_added": [
@@ -22351,7 +21414,7 @@
           "name": "MII_PR_ICU_VENT_Spontanes_Atemzugvolumen",
           "first_seen": "2026.0.0",
           "last_seen": "2027.0.0-ballot.3",
-          "version_count": 5,
+          "version_count": 4,
           "compatibility_groups": [
             {
               "versions": [
@@ -22362,8 +21425,7 @@
             },
             {
               "versions": [
-                "2026.0.3",
-                "2027.0.0"
+                "2026.0.3"
               ],
               "category": "identical"
             },
@@ -22418,19 +21480,6 @@
             },
             {
               "from": "2026.0.3",
-              "to": "2027.0.0",
-              "category": "identical",
-              "elements_added": [],
-              "elements_removed": [],
-              "elements_modified": [],
-              "ms_added": [],
-              "ms_removed": [],
-              "cardinality_changes": [],
-              "binding_changes": [],
-              "has_breaking": false
-            },
-            {
-              "from": "2027.0.0",
               "to": "2027.0.0-ballot.3",
               "category": "elements-added",
               "elements_added": [
@@ -22484,12 +21533,11 @@
           "name": "MII_PR_ICU_VENT_Spontanes_Plus_Mechanisches_Atemzugvolumen",
           "first_seen": "2026.0.3",
           "last_seen": "2027.0.0-ballot.3",
-          "version_count": 3,
+          "version_count": 2,
           "compatibility_groups": [
             {
               "versions": [
-                "2026.0.3",
-                "2027.0.0"
+                "2026.0.3"
               ],
               "category": "identical"
             },
@@ -22503,19 +21551,6 @@
           "pairwise_comparisons": [
             {
               "from": "2026.0.3",
-              "to": "2027.0.0",
-              "category": "identical",
-              "elements_added": [],
-              "elements_removed": [],
-              "elements_modified": [],
-              "ms_added": [],
-              "ms_removed": [],
-              "cardinality_changes": [],
-              "binding_changes": [],
-              "has_breaking": false
-            },
-            {
-              "from": "2027.0.0",
               "to": "2027.0.0-ballot.3",
               "category": "elements-added",
               "elements_added": [
@@ -22537,7 +21572,7 @@
           "name": "MII_PR_ICU_VENT_Unterstuezungsdruck_Beatmung",
           "first_seen": "2026.0.0",
           "last_seen": "2027.0.0-ballot.3",
-          "version_count": 5,
+          "version_count": 4,
           "compatibility_groups": [
             {
               "versions": [
@@ -22548,8 +21583,7 @@
             },
             {
               "versions": [
-                "2026.0.3",
-                "2027.0.0"
+                "2026.0.3"
               ],
               "category": "identical"
             },
@@ -22594,19 +21628,6 @@
             },
             {
               "from": "2026.0.3",
-              "to": "2027.0.0",
-              "category": "identical",
-              "elements_added": [],
-              "elements_removed": [],
-              "elements_modified": [],
-              "ms_added": [],
-              "ms_removed": [],
-              "cardinality_changes": [],
-              "binding_changes": [],
-              "has_breaking": false
-            },
-            {
-              "from": "2027.0.0",
               "to": "2027.0.0-ballot.3",
               "category": "elements-added",
               "elements_added": [
@@ -22628,7 +21649,7 @@
           "name": "MII_PR_ICU_VENT_Zeitverhaeltnis_Ein_Ausatmung",
           "first_seen": "2026.0.0",
           "last_seen": "2027.0.0-ballot.3",
-          "version_count": 5,
+          "version_count": 4,
           "compatibility_groups": [
             {
               "versions": [
@@ -22639,8 +21660,7 @@
             },
             {
               "versions": [
-                "2026.0.3",
-                "2027.0.0"
+                "2026.0.3"
               ],
               "category": "identical"
             },
@@ -22685,19 +21705,6 @@
             },
             {
               "from": "2026.0.3",
-              "to": "2027.0.0",
-              "category": "identical",
-              "elements_added": [],
-              "elements_removed": [],
-              "elements_modified": [],
-              "ms_added": [],
-              "ms_removed": [],
-              "cardinality_changes": [],
-              "binding_changes": [],
-              "has_breaking": false
-            },
-            {
-              "from": "2027.0.0",
               "to": "2027.0.0-ballot.3",
               "category": "elements-added",
               "elements_added": [
@@ -58258,236 +57265,6 @@
   },
   "lineage": [
     {
-      "profile_name": "Versorgungsfall",
-      "resource_type": "Encounter",
-      "legacy_package": "fall",
-      "legacy_url": "https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Encounter/Versorgungsfall",
-      "base_url": "https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung",
-      "url_changed": true,
-      "legacy_versions": [
-        "0.9.0",
-        "0.9.1"
-      ],
-      "base_versions": [
-        "2026.0.0",
-        "2026.0.1",
-        "2027.0.0-ballot"
-      ],
-      "transition": {
-        "from": "fall@0.9.1",
-        "to": "base@2026.0.0",
-        "category": "mixed",
-        "has_breaking": true,
-        "elements_added": [
-          "Encounter.account",
-          "Encounter.diagnosis.rank",
-          "Encounter.diagnosis.use.coding:DiagnosesubTyp",
-          "Encounter.diagnosis.use.coding:Diagnosetyp",
-          "Encounter.extension",
-          "Encounter.extension:Aufnahmegrund",
-          "Encounter.extension:Aufnahmegrund.extension:DritteStelle",
-          "Encounter.extension:Aufnahmegrund.extension:ErsteUndZweiteStelle",
-          "Encounter.extension:Aufnahmegrund.extension:VierteStelle",
-          "Encounter.extension:plannedEndDate",
-          "Encounter.extension:plannedStartDate",
-          "Encounter.hospitalization",
-          "Encounter.hospitalization.admitSource",
-          "Encounter.hospitalization.dischargeDisposition",
-          "Encounter.hospitalization.dischargeDisposition.extension:Entlassungsgrund",
-          "Encounter.identifier:Aufnahmenummer",
-          "Encounter.identifier:Aufnahmenummer.system",
-          "Encounter.identifier:Aufnahmenummer.type",
-          "Encounter.identifier:Aufnahmenummer.type.coding",
-          "Encounter.identifier:Aufnahmenummer.type.coding:vn-type",
-          "Encounter.identifier:Aufnahmenummer.type.coding:vn-type.code",
-          "Encounter.identifier:Aufnahmenummer.type.coding:vn-type.system",
-          "Encounter.identifier:Aufnahmenummer.value",
-          "Encounter.location",
-          "Encounter.location.physicalType",
-          "Encounter.location:Bett",
-          "Encounter.location:Bett.physicalType",
-          "Encounter.location:Bett.status",
-          "Encounter.location:Station",
-          "Encounter.location:Station.physicalType",
-          "Encounter.location:Station.status",
-          "Encounter.location:Zimmer",
-          "Encounter.location:Zimmer.physicalType",
-          "Encounter.location:Zimmer.status",
-          "Encounter.partOf",
-          "Encounter.serviceProvider",
-          "Encounter.serviceType",
-          "Encounter.serviceType.coding",
-          "Encounter.serviceType.coding:ErweiterterFachabteilungsschluessel",
-          "Encounter.serviceType.coding:ErweiterterFachabteilungsschluessel.code",
-          "Encounter.serviceType.coding:ErweiterterFachabteilungsschluessel.system",
-          "Encounter.serviceType.coding:Fachabteilungsschluessel",
-          "Encounter.serviceType.coding:Fachabteilungsschluessel.code",
-          "Encounter.serviceType.coding:Fachabteilungsschluessel.system",
-          "Encounter.type",
-          "Encounter.type:KontaktArt",
-          "Encounter.type:Kontaktebene"
-        ],
-        "elements_removed": [
-          "Encounter.class.code",
-          "Encounter.class.system",
-          "Encounter.diagnosis.use.coding:aufnahmeDiagnose",
-          "Encounter.diagnosis.use.coding:aufnahmeDiagnose.code",
-          "Encounter.diagnosis.use.coding:aufnahmeDiagnose.system",
-          "Encounter.identifier:versorgungsfallNr",
-          "Encounter.identifier:versorgungsfallNr.assigner",
-          "Encounter.identifier:versorgungsfallNr.system",
-          "Encounter.identifier:versorgungsfallNr.type",
-          "Encounter.identifier:versorgungsfallNr.type.coding",
-          "Encounter.identifier:versorgungsfallNr.type.coding:vn",
-          "Encounter.identifier:versorgungsfallNr.type.coding:vn.code",
-          "Encounter.identifier:versorgungsfallNr.type.coding:vn.system",
-          "Encounter.identifier:versorgungsfallNr.value"
-        ],
-        "elements_modified": [
-          "Encounter.diagnosis",
-          "Encounter.diagnosis.condition",
-          "Encounter.diagnosis.use",
-          "Encounter.identifier",
-          "Encounter.period",
-          "Encounter.period.start",
-          "Encounter.status",
-          "Encounter.subject"
-        ]
-      }
-    },
-    {
-      "profile_name": "KontaktGesundheitseinrichtung",
-      "resource_type": "Encounter",
-      "legacy_package": "fall",
-      "legacy_url": "https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung",
-      "base_url": "https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung",
-      "url_changed": false,
-      "legacy_versions": [
-        "0.9.2",
-        "0.9.3",
-        "0.9.4",
-        "1.0.0",
-        "1.0.1",
-        "2024.0.0",
-        "2024.0.1",
-        "2025.0.0",
-        "2025.0.1"
-      ],
-      "base_versions": [
-        "2026.0.0",
-        "2026.0.1",
-        "2027.0.0-ballot"
-      ],
-      "transition": {
-        "from": "fall@2025.0.1",
-        "to": "base@2026.0.0",
-        "category": "elements-added",
-        "has_breaking": false,
-        "elements_added": [
-          "Encounter.account",
-          "Encounter.extension"
-        ],
-        "elements_removed": [],
-        "elements_modified": []
-      }
-    },
-    {
-      "profile_name": "Prozedur",
-      "resource_type": "Procedure",
-      "legacy_package": "prozedur",
-      "legacy_url": "https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Procedure",
-      "base_url": "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure",
-      "url_changed": true,
-      "legacy_versions": [
-        "0.9.0",
-        "0.9.1",
-        "0.9.2"
-      ],
-      "base_versions": [
-        "2026.0.0",
-        "2026.0.1",
-        "2027.0.0-ballot"
-      ],
-      "transition": {
-        "from": "prozedur@0.9.2",
-        "to": "base@2026.0.0",
-        "category": "mixed",
-        "has_breaking": true,
-        "elements_added": [
-          "Procedure",
-          "Procedure.bodySite.coding",
-          "Procedure.bodySite.coding:snomed-ct",
-          "Procedure.bodySite.coding:snomed-ct.code",
-          "Procedure.bodySite.coding:snomed-ct.system",
-          "Procedure.bodySite.coding:snomed-ct.version",
-          "Procedure.code.coding:ops.extension:Seitenlokalisation",
-          "Procedure.encounter",
-          "Procedure.extension:Dokumentationsdatum",
-          "Procedure.performed[x]:performedDateTime",
-          "Procedure.performed[x]:performedPeriod"
-        ],
-        "elements_removed": [
-          "Procedure.code.coding:ops.extension",
-          "Procedure.code.coding:ops.extension:seitenlokalisation",
-          "Procedure.extension:recordedDate"
-        ],
-        "elements_modified": [
-          "Procedure.bodySite",
-          "Procedure.category",
-          "Procedure.category.coding",
-          "Procedure.category.coding:sct",
-          "Procedure.code.coding:ops",
-          "Procedure.code.coding:ops.code",
-          "Procedure.code.coding:ops.system",
-          "Procedure.code.coding:ops.version",
-          "Procedure.code.coding:sct",
-          "Procedure.extension",
-          "Procedure.extension:durchfuehrungsabsicht",
-          "Procedure.subject"
-        ]
-      }
-    },
-    {
-      "profile_name": "Prozedur",
-      "resource_type": "Procedure",
-      "legacy_package": "prozedur",
-      "legacy_url": "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure",
-      "base_url": "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure",
-      "url_changed": false,
-      "legacy_versions": [
-        "0.9.3",
-        "0.9.4",
-        "1.0.0",
-        "1.0.1",
-        "1.0.2",
-        "1.0.3",
-        "1.0.4",
-        "1.0.5",
-        "1.0.6",
-        "1.0.7",
-        "1.0.8",
-        "2024.0.0",
-        "2025.0.0",
-        "2025.0.1"
-      ],
-      "base_versions": [
-        "2026.0.0",
-        "2026.0.1",
-        "2027.0.0-ballot"
-      ],
-      "transition": {
-        "from": "prozedur@2025.0.1",
-        "to": "base@2026.0.0",
-        "category": "elements-added",
-        "has_breaking": false,
-        "elements_added": [
-          "Procedure.encounter"
-        ],
-        "elements_removed": [],
-        "elements_modified": []
-      }
-    },
-    {
       "profile_name": "Diagnose",
       "resource_type": "Condition",
       "legacy_package": "diagnose",
@@ -58891,6 +57668,236 @@
         "category": "canonical-only",
         "has_breaking": false,
         "elements_added": [],
+        "elements_removed": [],
+        "elements_modified": []
+      }
+    },
+    {
+      "profile_name": "Prozedur",
+      "resource_type": "Procedure",
+      "legacy_package": "prozedur",
+      "legacy_url": "https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Procedure",
+      "base_url": "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure",
+      "url_changed": true,
+      "legacy_versions": [
+        "0.9.0",
+        "0.9.1",
+        "0.9.2"
+      ],
+      "base_versions": [
+        "2026.0.0",
+        "2026.0.1",
+        "2027.0.0-ballot"
+      ],
+      "transition": {
+        "from": "prozedur@0.9.2",
+        "to": "base@2026.0.0",
+        "category": "mixed",
+        "has_breaking": true,
+        "elements_added": [
+          "Procedure",
+          "Procedure.bodySite.coding",
+          "Procedure.bodySite.coding:snomed-ct",
+          "Procedure.bodySite.coding:snomed-ct.code",
+          "Procedure.bodySite.coding:snomed-ct.system",
+          "Procedure.bodySite.coding:snomed-ct.version",
+          "Procedure.code.coding:ops.extension:Seitenlokalisation",
+          "Procedure.encounter",
+          "Procedure.extension:Dokumentationsdatum",
+          "Procedure.performed[x]:performedDateTime",
+          "Procedure.performed[x]:performedPeriod"
+        ],
+        "elements_removed": [
+          "Procedure.code.coding:ops.extension",
+          "Procedure.code.coding:ops.extension:seitenlokalisation",
+          "Procedure.extension:recordedDate"
+        ],
+        "elements_modified": [
+          "Procedure.bodySite",
+          "Procedure.category",
+          "Procedure.category.coding",
+          "Procedure.category.coding:sct",
+          "Procedure.code.coding:ops",
+          "Procedure.code.coding:ops.code",
+          "Procedure.code.coding:ops.system",
+          "Procedure.code.coding:ops.version",
+          "Procedure.code.coding:sct",
+          "Procedure.extension",
+          "Procedure.extension:durchfuehrungsabsicht",
+          "Procedure.subject"
+        ]
+      }
+    },
+    {
+      "profile_name": "Prozedur",
+      "resource_type": "Procedure",
+      "legacy_package": "prozedur",
+      "legacy_url": "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure",
+      "base_url": "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure",
+      "url_changed": false,
+      "legacy_versions": [
+        "0.9.3",
+        "0.9.4",
+        "1.0.0",
+        "1.0.1",
+        "1.0.2",
+        "1.0.3",
+        "1.0.4",
+        "1.0.5",
+        "1.0.6",
+        "1.0.7",
+        "1.0.8",
+        "2024.0.0",
+        "2025.0.0",
+        "2025.0.1"
+      ],
+      "base_versions": [
+        "2026.0.0",
+        "2026.0.1",
+        "2027.0.0-ballot"
+      ],
+      "transition": {
+        "from": "prozedur@2025.0.1",
+        "to": "base@2026.0.0",
+        "category": "elements-added",
+        "has_breaking": false,
+        "elements_added": [
+          "Procedure.encounter"
+        ],
+        "elements_removed": [],
+        "elements_modified": []
+      }
+    },
+    {
+      "profile_name": "Versorgungsfall",
+      "resource_type": "Encounter",
+      "legacy_package": "fall",
+      "legacy_url": "https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Encounter/Versorgungsfall",
+      "base_url": "https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung",
+      "url_changed": true,
+      "legacy_versions": [
+        "0.9.0",
+        "0.9.1"
+      ],
+      "base_versions": [
+        "2026.0.0",
+        "2026.0.1",
+        "2027.0.0-ballot"
+      ],
+      "transition": {
+        "from": "fall@0.9.1",
+        "to": "base@2026.0.0",
+        "category": "mixed",
+        "has_breaking": true,
+        "elements_added": [
+          "Encounter.account",
+          "Encounter.diagnosis.rank",
+          "Encounter.diagnosis.use.coding:DiagnosesubTyp",
+          "Encounter.diagnosis.use.coding:Diagnosetyp",
+          "Encounter.extension",
+          "Encounter.extension:Aufnahmegrund",
+          "Encounter.extension:Aufnahmegrund.extension:DritteStelle",
+          "Encounter.extension:Aufnahmegrund.extension:ErsteUndZweiteStelle",
+          "Encounter.extension:Aufnahmegrund.extension:VierteStelle",
+          "Encounter.extension:plannedEndDate",
+          "Encounter.extension:plannedStartDate",
+          "Encounter.hospitalization",
+          "Encounter.hospitalization.admitSource",
+          "Encounter.hospitalization.dischargeDisposition",
+          "Encounter.hospitalization.dischargeDisposition.extension:Entlassungsgrund",
+          "Encounter.identifier:Aufnahmenummer",
+          "Encounter.identifier:Aufnahmenummer.system",
+          "Encounter.identifier:Aufnahmenummer.type",
+          "Encounter.identifier:Aufnahmenummer.type.coding",
+          "Encounter.identifier:Aufnahmenummer.type.coding:vn-type",
+          "Encounter.identifier:Aufnahmenummer.type.coding:vn-type.code",
+          "Encounter.identifier:Aufnahmenummer.type.coding:vn-type.system",
+          "Encounter.identifier:Aufnahmenummer.value",
+          "Encounter.location",
+          "Encounter.location.physicalType",
+          "Encounter.location:Bett",
+          "Encounter.location:Bett.physicalType",
+          "Encounter.location:Bett.status",
+          "Encounter.location:Station",
+          "Encounter.location:Station.physicalType",
+          "Encounter.location:Station.status",
+          "Encounter.location:Zimmer",
+          "Encounter.location:Zimmer.physicalType",
+          "Encounter.location:Zimmer.status",
+          "Encounter.partOf",
+          "Encounter.serviceProvider",
+          "Encounter.serviceType",
+          "Encounter.serviceType.coding",
+          "Encounter.serviceType.coding:ErweiterterFachabteilungsschluessel",
+          "Encounter.serviceType.coding:ErweiterterFachabteilungsschluessel.code",
+          "Encounter.serviceType.coding:ErweiterterFachabteilungsschluessel.system",
+          "Encounter.serviceType.coding:Fachabteilungsschluessel",
+          "Encounter.serviceType.coding:Fachabteilungsschluessel.code",
+          "Encounter.serviceType.coding:Fachabteilungsschluessel.system",
+          "Encounter.type",
+          "Encounter.type:KontaktArt",
+          "Encounter.type:Kontaktebene"
+        ],
+        "elements_removed": [
+          "Encounter.class.code",
+          "Encounter.class.system",
+          "Encounter.diagnosis.use.coding:aufnahmeDiagnose",
+          "Encounter.diagnosis.use.coding:aufnahmeDiagnose.code",
+          "Encounter.diagnosis.use.coding:aufnahmeDiagnose.system",
+          "Encounter.identifier:versorgungsfallNr",
+          "Encounter.identifier:versorgungsfallNr.assigner",
+          "Encounter.identifier:versorgungsfallNr.system",
+          "Encounter.identifier:versorgungsfallNr.type",
+          "Encounter.identifier:versorgungsfallNr.type.coding",
+          "Encounter.identifier:versorgungsfallNr.type.coding:vn",
+          "Encounter.identifier:versorgungsfallNr.type.coding:vn.code",
+          "Encounter.identifier:versorgungsfallNr.type.coding:vn.system",
+          "Encounter.identifier:versorgungsfallNr.value"
+        ],
+        "elements_modified": [
+          "Encounter.diagnosis",
+          "Encounter.diagnosis.condition",
+          "Encounter.diagnosis.use",
+          "Encounter.identifier",
+          "Encounter.period",
+          "Encounter.period.start",
+          "Encounter.status",
+          "Encounter.subject"
+        ]
+      }
+    },
+    {
+      "profile_name": "KontaktGesundheitseinrichtung",
+      "resource_type": "Encounter",
+      "legacy_package": "fall",
+      "legacy_url": "https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung",
+      "base_url": "https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung",
+      "url_changed": false,
+      "legacy_versions": [
+        "0.9.2",
+        "0.9.3",
+        "0.9.4",
+        "1.0.0",
+        "1.0.1",
+        "2024.0.0",
+        "2024.0.1",
+        "2025.0.0",
+        "2025.0.1"
+      ],
+      "base_versions": [
+        "2026.0.0",
+        "2026.0.1",
+        "2027.0.0-ballot"
+      ],
+      "transition": {
+        "from": "fall@2025.0.1",
+        "to": "base@2026.0.0",
+        "category": "elements-added",
+        "has_breaking": false,
+        "elements_added": [
+          "Encounter.account",
+          "Encounter.extension"
+        ],
         "elements_removed": [],
         "elements_modified": []
       }

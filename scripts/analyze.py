@@ -681,6 +681,8 @@ def run_pipeline(args: argparse.Namespace) -> dict:
             time.sleep(0.3)  # Rate limit
 
         # Apply filters
+        versions = [v for v in versions
+                    if v not in getattr(args, "ignore", {}).get(package_id, ())]
         if args.stable_only:
             versions = [v for v in versions
                         if is_stable_version(v) or args.allow.get(package_id) == v]
@@ -1122,6 +1124,11 @@ def main():
         help="JSON file (e.g. a BOM package.json) whose dependency versions are "
              "included even when --stable-only would filter them (package-id -> version)",
     )
+    parser.add_argument(
+        "--ignore-versions",
+        help="JSON file (BOM ignored-versions.json): package-id -> {version: grund} "
+             "to exclude even when they look stable",
+    )
     args = parser.parse_args()
     args.allow = {}
     if args.allow_versions:
@@ -1129,6 +1136,13 @@ def main():
             data = json.load(fh)
         args.allow = data.get("dependencies", data)
         print(f"Allow-Liste: {len(args.allow)} gepinnte Versionen aus {args.allow_versions}")
+    args.ignore = {}
+    if args.ignore_versions:
+        with open(args.ignore_versions, encoding="utf-8") as fh:
+            raw = json.load(fh)
+        args.ignore = {k: set(v.keys() if isinstance(v, dict) else v)
+                       for k, v in raw.items() if not k.startswith("_")}
+        print(f"Ignore-Liste: {sum(len(v) for v in args.ignore.values())} Versionen aus {args.ignore_versions}")
     run_pipeline(args)
 
 

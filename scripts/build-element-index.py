@@ -18,6 +18,21 @@ from pathlib import Path
 from collections import defaultdict
 
 CACHE = Path(".cache/fhir-packages/tarballs")
+
+# Optionale Steuerdateien: --allow-versions <BOM package.json>, --ignore-versions <ignored-versions.json>
+import argparse as _ap
+_p = _ap.ArgumentParser()
+_p.add_argument("--allow-versions")
+_p.add_argument("--ignore-versions")
+_args, _ = _p.parse_known_args()
+ALLOW, IGNORE = {}, {}
+if _args.allow_versions:
+    _d = json.load(open(_args.allow_versions, encoding="utf-8"))
+    ALLOW = _d.get("dependencies", _d)
+if _args.ignore_versions:
+    _d = json.load(open(_args.ignore_versions, encoding="utf-8"))
+    IGNORE = {k: set(v.keys() if isinstance(v, dict) else v)
+              for k, v in _d.items() if not k.startswith("_")}
 MII_PREFIX = "de.medizininformatikinitiative.kerndatensatz."
 OUTPUT = Path("output/version-comparison/profile-element-index.json")
 
@@ -163,7 +178,9 @@ def main():
             [f.stem for f in pkg_dir.glob("*.tgz") if f.stat().st_size > 0],
             key=parse_semver_key,
         )
-        stable = [v for v in versions if is_stable(v)]
+        stable = [v for v in versions
+                  if (is_stable(v) or ALLOW.get(pkg_dir.name) == v)
+                  and v not in IGNORE.get(pkg_dir.name, set())]
         if not stable:
             continue
 
