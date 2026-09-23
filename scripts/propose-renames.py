@@ -21,7 +21,7 @@ from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[1]
 INDEX = REPO / "data" / "profile-element-index.json"
-OUT = REPO / "data" / "rename-candidates-2027.csv"
+OUT = REPO / "data" / "rename-candidates.csv"
 
 
 def elem_set(profile):

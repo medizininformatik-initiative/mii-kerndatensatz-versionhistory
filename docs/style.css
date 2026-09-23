@@ -532,3 +532,9 @@ footer a:hover { text-decoration: underline; }
 .fd-old { color: var(--muted); text-decoration: line-through; word-break: break-word; }
 .fd-arrow { color: var(--muted); }
 .fd-new { color: var(--fg); font-weight: 600; word-break: break-word; }
+
+.detail-row .hint {
+  margin-top: 4px; font-size: 10.5px; line-height: 1.45;
+  color: var(--muted); font-weight: 400; max-width: 320px;
+}
+.detail-row .hint code { font-size: 10px; }

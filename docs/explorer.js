@@ -625,9 +625,19 @@ function renderTransition(tx) {
       <span class="value"><span class="pill ${tx.cat}">${tx.cat}</span></span>
     </div>
     <div class="detail-row">
-      <span class="label">Breaking</span>
+      <span class="label">Strukturell breaking</span>
       <span class="value">${tx.breaking ? '<span class="pill breaking">ja</span>' : "nein"}</span>
     </div>
+    ${tx.instance_breaking ? `
+    <div class="detail-row">
+      <span class="label">Für Instanzen breaking</span>
+      <span class="value"><span class="pill breaking">ja</span>
+        <div class="hint">Die Canonical-URL hat sich geändert: Instanzen mit
+        <code>meta.profile</code> auf die alte URL validieren nicht mehr, ebenso
+        brechen abgeleitete Profile und Bindings auf die alte URL.
+        <code>id</code> und <code>name</code> allein wären unkritisch —
+        instanzrelevant ist nur die URL.</div></span>
+    </div>` : ""}
     <div class="detail-row">
       <span class="label">Elemente</span>
       <span class="value">+${tx.n_add} / −${tx.n_rem} / ~${tx.n_mod}</span>

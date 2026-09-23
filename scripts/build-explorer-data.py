@@ -188,14 +188,28 @@ def main():
     def _vkey(v):
         return [int(x) if x.isdigit() else x for x in _re.split(r"[.\-]", v)]
 
-    ren_path = REPO_ROOT / "data" / "rename-candidates-2027.csv"
+    def _norm_name(n):
+        """Profilname ohne die wechselnden Namenspraefixe der MII-Module."""
+        n = _re.sub(r"^(SD_MII_|MII_PR_|MII_|SD_)", "", n or "")
+        return _re.sub(r"[_\-]", "", n).lower()
+
+    ren_path = REPO_ROOT / "data" / "rename-candidates.csv"
     if ren_path.exists():
         links = []
         for r in _csv.DictReader(open(ren_path, encoding="utf-8")):
             conf = (r.get("confirmed") or "").strip().lower()
             if not r.get("new_url") or conf == "no":
                 continue
-            if conf == "yes" or r.get("jaccard") == "1.0":
+            try:
+                jac = float(r.get("jaccard") or 0)
+            except ValueError:
+                jac = 0.0
+            same_name = _norm_name(r.get("old_name")) == _norm_name(r.get("new_name"))
+            # Identitaet und Strukturaenderung sind orthogonal: derselbe
+            # Profilname (auch nach Praefix-Wechsel SD_ -> MII_PR_) bedeutet
+            # dieselbe Linie, egal wie stark sich die Struktur geaendert hat.
+            # Bei abweichendem Namen braucht es Strukturgleichheit als Beleg.
+            if conf == "yes" or same_name or jac == 1.0:
                 links.append(r)
         parent = {}
         def find(u):
@@ -238,9 +252,13 @@ def main():
                     primary["transitions"].append({
                         "from": r["old_version"], "to": r["new_version"],
                         "cat": "renamed", "breaking": False,
+                        "instance_breaking": True,
+                        "jaccard": r.get("jaccard") or None,
                         "n_add": 0, "n_rem": 0, "n_mod": 0,
                         "severity": None,
-                        "reason": f"Canonical-Rename (inhaltsgleich): {r['old_url']} -> {r['new_url']}",
+                        "reason": (f"Canonical-Rename: {r['old_url']} -> {r['new_url']}"
+                                   + (f" · Strukturähnlichkeit {r['jaccard']}"
+                                      if r.get("jaccard") else "")),
                     })
                     seen_tx.add((r["old_version"], r["new_version"]))
             for m in rest:
