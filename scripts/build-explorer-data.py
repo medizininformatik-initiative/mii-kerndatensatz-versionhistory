@@ -281,6 +281,40 @@ def main():
             elif r["klasse"] == "doppel-governance":
                 prof["isik_twin"] = info
 
+    # Modulübergreifende Nachfolger-Hinweise (Kandidaten, nicht kuratiert):
+    # verschwundene Profile, deren Inhalt in einem anderen Modul aufgegangen
+    # sein duerfte. Bewusst nur als Hinweis am Profil, keine Lane-Verschmelzung.
+    cross_path = REPO_ROOT / "data" / "cross-module-candidates.csv"
+    if cross_path.exists():
+        by_url = {p_["url"]: p_ for p_ in profiles}
+        aka_idx = {a: p_ for p_ in profiles for a in p_.get("aka", [])}
+        for r in _csv.DictReader(open(cross_path, encoding="utf-8")):
+            prof = by_url.get(r["old_url"]) or aka_idx.get(r["old_url"])
+            if not prof:
+                continue
+            conf = (r.get("confirmed") or "").strip().lower()
+            if conf == "no":
+                continue
+            try:
+                score = float(r.get("score") or 0)
+            except ValueError:
+                score = 0.0
+            try:
+                nsim = float(r.get("name_similarity") or 0)
+            except ValueError:
+                nsim = 0.0
+            # Struktur-Score allein traegt nicht: ohne Naehe im fachlichen
+            # Namenskern ist ein Treffer meist Zufall (lange Namen, gemeinsame
+            # Wortbestandteile). Deshalb beide Signale verlangen.
+            if conf != "yes" and r["evidence"] != "inherited" and not (score >= 0.55 and nsim >= 0.6):
+                continue
+            prof["successor"] = {
+                "module": r["target_module"], "name": r["target_name"],
+                "url": r["target_url"], "evidence": r["evidence"],
+                "score": r.get("score"), "name_similarity": r.get("name_similarity"),
+                "confirmed": conf == "yes",
+            }
+
     # ─ Lineage ─────────────────────────────────────────────────────────
     lineage = []
     for entry in matrix.get("lineage", []):

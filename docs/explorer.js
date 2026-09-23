@@ -503,6 +503,13 @@ function showStationDetail(profileUrl, version) {
   let html = `
     <div class="detail-title">${escapeHtml(p.name)}</div>
     <div class="detail-subtitle">Version <strong style="color:var(--fg)">${version}</strong></div>
+    ${p.successor ? `<div class="successor-hint">
+      Inhalt vermutlich aufgegangen in <strong>${escapeHtml(p.successor.module)}</strong> /
+      ${escapeHtml(p.successor.name)}
+      <span class="fd-kind">${p.successor.evidence === "inherited" ? "erbt davon" : "Ähnlichkeit " + (p.successor.score || "?")}</span>
+      ${p.successor.confirmed ? '<span class="fd-flag" style="background:#10b981">kuratiert</span>'
+        : '<span class="fd-kind">unbestätigt</span>'}
+    </div>` : ""}
   `;
 
   if (group) {

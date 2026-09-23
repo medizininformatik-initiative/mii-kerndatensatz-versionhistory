@@ -538,3 +538,9 @@ footer a:hover { text-decoration: underline; }
   color: var(--muted); font-weight: 400; max-width: 320px;
 }
 .detail-row .hint code { font-size: 10px; }
+
+.successor-hint {
+  margin: 8px 0 0; padding: 7px 9px; border-radius: 6px;
+  background: rgba(139, 92, 246, .10); border-left: 3px solid var(--governance);
+  font-size: 11px; line-height: 1.5;
+}
