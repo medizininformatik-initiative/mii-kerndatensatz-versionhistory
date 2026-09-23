@@ -321,7 +321,9 @@ h4 {
 .subway-line.mixed { stroke: var(--mixed); }
 .subway-line.renamed { stroke: var(--renamed); stroke-dasharray: 7 4; }
 .subway-line.governance-migration { stroke: var(--governance); stroke-dasharray: 3 4; stroke-width: 3; }
-.governance-label { font-size: 10px; fill: var(--governance); font-weight: 600; }
+.governance-arrow { fill: var(--governance); }
+.governance-badge { fill: var(--governance); }
+.governance-label { font-size: 10px; fill: #fff; font-weight: 600; }
 .pill.renamed { background: var(--renamed); color: #fff; }
 .pill.governance-migration { background: var(--governance); color: #fff; }
 .subway-line.sole-version { stroke: var(--identical); }

@@ -33,25 +33,21 @@ def parse_semver_key(v: str) -> tuple:
     return tuple(result)
 
 
+# Pre-CalVer-Versionen (vor 2024) auf ihr Release-Jahr abgebildet;
+# CalVer-Versionen tragen das Jahr selbst und werden generisch gelesen —
+# eine feste Liste hier hat frueher jede neue Generation auf 2021 geworfen.
+LEGACY_YEARS = (("0.0", 2019), ("0.9", 2020), ("1.0", 2021), ("2.0", 2022), ("1.", 2022))
+
+
 def version_year(v: str) -> int:
-    """Heuristic: map version string to approximate release year."""
-    if v.startswith("0.0"):
-        return 2019
-    if v.startswith("0.9"):
-        return 2020
-    if v.startswith("1.0"):
-        return 2021
-    if v.startswith("2.0"):
-        return 2022
-    if v.startswith("2024"):
-        return 2024
-    if v.startswith("2025"):
-        return 2025
-    if v.startswith("2026"):
-        return 2026
-    if v.startswith("1."):
-        return 2022
-    return 2021
+    """Map a version string to its release year (CalVer-aware)."""
+    m = re.match(r"(20\d\d)\.", v)
+    if m:
+        return int(m.group(1))
+    for prefix, year in LEGACY_YEARS:
+        if v.startswith(prefix):
+            return year
+    return 2023
 
 
 def fractional_year(v: str) -> float:

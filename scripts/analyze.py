@@ -683,12 +683,23 @@ def run_pipeline(args: argparse.Namespace) -> dict:
         # Apply filters
         versions = [v for v in versions
                     if v not in getattr(args, "ignore", {}).get(package_id, ())]
+        unfiltered = list(versions)
         if args.stable_only:
+            # Alphas gelten als publizierte Meilensteine und bleiben drin;
+            # rc-Staende sind Churn und bleiben draussen (Entscheidung 2026-09-23).
             versions = [v for v in versions
-                        if is_stable_version(v) or args.allow.get(package_id) == v]
+                        if is_stable_version(v) or "alpha" in v.lower()
+                        or args.allow.get(package_id) == v]
         if args.since:
             since_key = parse_semver_key(args.since)
             versions = [v for v in versions if parse_semver_key(v) >= since_key]
+        nonrc = [v for v in unfiltered if "rc" not in v.lower()]
+        if len(versions) < 2 <= len(nonrc):
+            # Junge Module: lieber die Vorabstaende (alpha/ballot, ohne rc)
+            # zeigen als eine Ein-Punkt-Lane ohne Historie.
+            versions = nonrc
+            print(f"  {short_name}: zu wenig stabile/gepinnte Versionen — "
+                  f"nehme {len(nonrc)} publizierte Staende (ohne rc) auf")
 
         if versions:
             all_versions[short_name] = versions

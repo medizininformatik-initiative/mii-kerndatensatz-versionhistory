@@ -178,9 +178,12 @@ def main():
             [f.stem for f in pkg_dir.glob("*.tgz") if f.stat().st_size > 0],
             key=parse_semver_key,
         )
-        stable = [v for v in versions
-                  if (is_stable(v) or ALLOW.get(pkg_dir.name) == v)
-                  and v not in IGNORE.get(pkg_dir.name, set())]
+        pool = [v for v in versions if v not in IGNORE.get(pkg_dir.name, set())]
+        stable = [v for v in pool
+                  if is_stable(v) or "alpha" in v.lower() or ALLOW.get(pkg_dir.name) == v]
+        nonrc = [v for v in pool if "rc" not in v.lower()]
+        if len(stable) < 2 <= len(nonrc):
+            stable = nonrc
         if not stable:
             continue
 

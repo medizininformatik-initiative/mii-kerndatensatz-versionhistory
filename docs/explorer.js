@@ -229,7 +229,8 @@ function drawSubwayMap(moduleShort) {
   const availableW = Math.max(800, versions.length * 60) - LEFT - RIGHT;
   const COL_W = Math.max(40, availableW / Math.max(1, versions.length - 1 || 1));
 
-  const W = LEFT + (versions.length - 1) * COL_W + RIGHT + 20;
+  const singleCol = versions.length === 1;
+  const W = Math.max(LEFT + (versions.length - 1) * COL_W + RIGHT + 20, singleCol ? 720 : 0);
   const H = TOP + profiles.length * ROW_H + BOTTOM;
 
   svg.setAttribute("viewBox", `0 0 ${W} ${H}`);
@@ -238,7 +239,7 @@ function drawSubwayMap(moduleShort) {
   // Position of each version on the x-axis
   const versionX = {};
   versions.forEach((v, i) => {
-    versionX[v] = LEFT + i * COL_W;
+    versionX[v] = singleCol ? LEFT + (W - LEFT - RIGHT) / 2 : LEFT + i * COL_W;
   });
 
   // ── Background: year separators + version labels ──────────────
@@ -383,8 +384,23 @@ function drawSubwayMap(moduleShort) {
       t1.textContent = `Governance-Übergang nach ISiK 6\n${p.governance.target_url}\nStruktur-Jaccard ${p.governance.jaccard || "?"} — reine URL-Zuordnung, keine Konformitätsaussage`;
       seg.appendChild(t1);
       svg.appendChild(seg);
+      // MII->ISiK-Uebergabe-Marker: Pfeilspitze + Badge (eigenes Symbol, kein gematik-Logo)
+      const ax = x0 + 46;
+      const arrow = svgEl("path", {
+        d: `M ${ax} ${y - 5} L ${ax + 7} ${y} L ${ax} ${y + 5} Z`,
+        class: "governance-arrow",
+      });
+      svg.appendChild(arrow);
+      const badge = svgEl("rect", {
+        x: ax + 9, y: y - 9, width: 44, height: 18, rx: 9,
+        class: "governance-badge",
+      });
+      const t2 = svgEl("title", {});
+      t2.textContent = `Governance-Übergang nach ISiK 6\n${p.governance.target_url}\nStruktur-Jaccard ${p.governance.jaccard || "?"} — reine URL-Zuordnung, keine Konformitätsaussage`;
+      badge.appendChild(t2);
+      svg.appendChild(badge);
       const lbl = svgEl("text", {
-        x: x0 + 52, y: y + 4, class: "governance-label",
+        x: ax + 31, y: y + 3.5, class: "governance-label", "text-anchor": "middle",
       });
       lbl.textContent = "ISiK 6";
       svg.appendChild(lbl);
