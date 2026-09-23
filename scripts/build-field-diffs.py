@@ -15,8 +15,10 @@ nachgeladen (nicht Teil der data.json, damit der Erststart schlank bleibt).
 """
 
 import argparse
+import difflib
 import json
 import os
+import re
 import sys
 from pathlib import Path
 
@@ -58,6 +60,97 @@ def short(v, limit=90):
     s = "—" if v is None else (json.dumps(v, ensure_ascii=False)
                                if isinstance(v, (dict, list)) else str(v))
     return s if len(s) <= limit else s[:limit - 1] + "…"
+
+
+# Positionsmarker: reine Stringaehnlichkeit verwechselt "lebensphase-bis"
+# mit "Lebensphase-Beginn" (gemeinsames "b"). Anfang/Ende im Pfad sind das
+# verlaesslichere Signal.
+START_MARKERS = ("onset", "start", "beginn", "begin", "anfang", "von", "from")
+END_MARKERS = ("abatement", "ende", "end", "bis", "schluss", "stop", "to")
+
+
+def position_bias(path):
+    """+1 = spricht fuer Anfang, -1 = fuer Ende, 0 = neutral.
+
+    Ausgewertet wird nur das BLATTSEGMENT: der Pfadpraefix traegt regelmaessig
+    Gegensignale (Condition.onset[x]:onsetPeriod.end… enthaelt zweimal 'onset'
+    und würde 'end' neutralisieren).
+    """
+    leaf = re.split(r"[.:]", path)[-1]
+    words = [w for w in re.split(r"[^a-z]+", leaf.lower()) if w]
+    score = 0
+    for w in words:
+        if any(w.startswith(m) for m in START_MARKERS):
+            score += 1
+        if any(w.startswith(m) for m in END_MARKERS):
+            score -= 1
+    return (score > 0) - (score < 0)
+
+
+def subtree_roots(ids):
+    """Maximale Wurzeln einer ID-Menge: Elemente ohne Elternteil in der Menge."""
+    idset = set(ids)
+    return [i for i in ids
+            if not any(i.startswith(o + ".") for o in idset if o != i)]
+
+
+def rel_children(root, all_ids):
+    """Relative Kindpfade unter einer Wurzel."""
+    return {i[len(root):] for i in all_ids if i.startswith(root + ".")}
+
+
+def detect_moves(removed, old_ids, new_ids, old_el, new_el):
+    """Erkennt verschobene Teilbaeume: gleiche relative Kinderstruktur an
+    anderer Stelle. Das Ziel kann neu sein oder schon existiert haben —
+    beides ist ein Move, kein Wegfall."""
+    moves, consumed = [], set()
+    # Nicht nur maximale Wurzeln pruefen: ein Teilbaum kann aufgeteilt worden
+    # sein (onsetPeriod.start -> onsetAge, onsetPeriod.end -> abatementAge),
+    # dann passt nur ein tieferer Knoten auf ein Ziel. Grosse Teilbaeume
+    # zuerst, damit die Zuordnung so weit oben wie moeglich greift.
+    cand_roots = sorted(removed, key=lambda r: (-len(rel_children(r, old_ids)), r))
+    for root in cand_roots:
+        if root in consumed:
+            continue
+        kids = rel_children(root, old_ids)
+        if not kids:
+            continue  # Blätter ohne Teilbaum sind zu schwach als Move-Beleg
+        leaf = root.split(".")[-1]
+        cands = []
+        for cand in new_ids:
+            # Ziel muss anderswo liegen als die entfernte Wurzel; ob es schon
+            # vorher existierte, ist egal — gerade dann ist es eine
+            # Konsolidierung auf ein bestehendes Element.
+            if cand == root or cand.startswith(root + "."):
+                continue
+            if rel_children(cand, new_ids) != kids:
+                continue
+            if not kids and cand.split(".")[-1] != leaf:
+                continue
+            sim = difflib.SequenceMatcher(None, leaf.lower(),
+                                          cand.split(".")[-1].lower()).ratio()
+            # Widersprechende Positionsmarker (Anfang vs. Ende) schliessen
+            # einen Move aus — das ist verlaesslicher als Namensaehnlichkeit.
+            pb_from, pb_to = position_bias(root), position_bias(cand)
+            if pb_from * pb_to < 0:
+                continue
+            bonus = 0.25 if (pb_from and pb_to and pb_from * pb_to > 0) else 0.0
+            cands.append((sim + bonus, cand))
+        if not cands:
+            continue
+        cands.sort(reverse=True)
+        sim, target = cands[0]
+        if not kids and sim < 0.5:
+            continue
+        moves.append({
+            "from": root, "to": target,
+            "children": len(kids),
+            "target_is_new": target not in old_ids,
+            "leaf_similarity": round(sim, 2),
+        })
+        consumed.add(root)
+        consumed.update(i for i in removed if i.startswith(root + "."))
+    return moves, consumed
 
 
 def diff_element(old, new):
@@ -126,14 +219,23 @@ def main():
                     if fields:
                         changed.append({"id": eid, "fields": fields})
                 key = f"{v_old}|{v_new}"
-                ar = addrem.get(url, {}).get(key, {})
+                ar = dict(addrem.get(url, {}).get(key, {}))
+                # Verschobene Teilbaeume aus add/remove herausrechnen
+                if ar.get("removed"):
+                    moves, consumed = detect_moves(
+                        ar["removed"], set(o_el), set(n_el_map), o_el, n_el_map)
+                    if moves:
+                        ar["moved"] = moves
+                        ar["removed"] = [i for i in ar["removed"] if i not in consumed]
+                        tgt = {m["to"] for m in moves}
+                        ar["added"] = [i for i in (ar.get("added") or [])
+                                       if not any(i == t or i.startswith(t + ".") for t in tgt)]
                 if not changed and not ar:
                     continue
                 entry = {"changed": changed}
-                if ar.get("added"):
-                    entry["added"] = ar["added"]
-                if ar.get("removed"):
-                    entry["removed"] = ar["removed"]
+                for k in ("moved", "added", "removed"):
+                    if ar.get(k):
+                        entry[k] = ar[k]
                 result.setdefault(url, {})[key] = entry
                 n_tx += 1
                 n_el += len(changed)

@@ -28,7 +28,7 @@ let SELECTED_SEGMENT = null;  // { profileUrl, from, to }
 // ── Initialization ────────────────────────────────────────────────
 
 async function load() {
-  const res = await fetch("data.json?v=05c18c05");
+  const res = await fetch("data.json?v=936f41a4");
   DATA = await res.json();
 
   // Header meta
@@ -548,7 +548,7 @@ let FIELD_DIFFS_PENDING = null;
 function loadFieldDiffs() {
   if (FIELD_DIFFS) return Promise.resolve(FIELD_DIFFS);
   if (!FIELD_DIFFS_PENDING) {
-    FIELD_DIFFS_PENDING = fetch("field-diffs.json?v=05c18c05")
+    FIELD_DIFFS_PENDING = fetch("field-diffs.json?v=936f41a4")
       .then(r => r.ok ? r.json() : {})
       .catch(() => ({}))
       .then(d => { FIELD_DIFFS = d; return d; });
@@ -580,11 +580,26 @@ function renderFieldDiff(entry) {
   const removed = Array.isArray(entry) ? [] : (entry.removed || []);
   const added = Array.isArray(entry) ? [] : (entry.added || []);
 
-  let out = renderElementList(removed, "removed", "Entfernte Elemente")
-          + renderElementList(added, "added", "Neue Elemente");
+  const moved = Array.isArray(entry) ? [] : (entry.moved || []);
+  let out = "";
+  if (moved.length) {
+    const items = moved.map(m => `<li>
+      <code class="mv-from">${escapeHtml(m.from)}</code>
+      <span class="mv-arrow">↳</span>
+      <code class="mv-to">${escapeHtml(m.to)}</code>
+      <span class="fd-kind">${m.children} Unterelemente</span>
+      <span class="fd-kind">${m.target_is_new ? "Ziel neu" : "Ziel bestand bereits"}</span>
+    </li>`).join("");
+    out += `<details class="el-list moved" open>
+      <summary>Verschoben <strong>${moved.length}</strong>
+        <span class="fd-kind">automatisierbar abbildbar</span></summary>
+      <ul>${items}</ul></details>`;
+  }
+  out += renderElementList(removed, "removed", "Entfernte Elemente")
+       + renderElementList(added, "added", "Neue Elemente");
 
   if (!changed.length) {
-    return out + (removed.length || added.length ? "" :
+    return out + (removed.length || added.length || moved.length ? "" :
       `<div class="field-diff-empty">Keine Detailangaben vorhanden.</div>`);
   }
   const rows = changed.map(el => {

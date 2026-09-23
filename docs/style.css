@@ -554,3 +554,9 @@ footer a:hover { text-decoration: underline; }
 .el-list ul { margin: 5px 0 0; padding-left: 16px; }
 .el-list li { margin: 1px 0; word-break: break-all; line-height: 1.4; }
 .el-list code { font-size: 10.5px; }
+
+.el-list.moved > summary { background: rgba(245, 158, 11, .14); color: #92400e; }
+.el-list.moved li { margin: 5px 0; }
+.mv-from { color: #b45309; }
+.mv-to { color: #047857; font-weight: 600; }
+.mv-arrow { margin: 0 4px; color: var(--muted); }
