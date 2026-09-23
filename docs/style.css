@@ -515,12 +515,13 @@ footer a:hover { text-decoration: underline; }
 .fd-element { margin-bottom: 10px; }
 .fd-id {
   display: block; font-size: 11px; color: var(--fg);
-  word-break: break-all; margin-bottom: 3px;
+  overflow-wrap: anywhere; margin-bottom: 4px; font-weight: 600;
 }
-.fd-table { width: 100%; border-collapse: collapse; font-size: 11px; }
-.fd-table td { padding: 2px 4px; vertical-align: top; }
-.fd-table tr.tighter { background: rgba(239, 68, 68, .07); }
-.fd-field { white-space: nowrap; color: var(--muted); }
+.fd-row { padding: 4px 6px; border-radius: 5px; margin-bottom: 3px; font-size: 11px; }
+.fd-row.tighter { background: rgba(239, 68, 68, .07); }
+.fd-head { color: var(--muted); font-weight: 600; margin-bottom: 1px; }
+.fd-vals { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px; }
+.fd-vals > span { overflow-wrap: anywhere; min-width: 0; }
 .fd-kind {
   display: inline-block; margin-left: 4px; padding: 0 5px; border-radius: 8px;
   background: rgba(127,127,127,.15); font-size: 9px; text-transform: uppercase;
@@ -529,9 +530,9 @@ footer a:hover { text-decoration: underline; }
   display: inline-block; margin-left: 4px; padding: 0 5px; border-radius: 8px;
   background: #ef4444; color: #fff; font-size: 9px; font-weight: 700;
 }
-.fd-old { color: var(--muted); text-decoration: line-through; word-break: break-word; }
+.fd-old { color: var(--muted); text-decoration: line-through; }
 .fd-arrow { color: var(--muted); }
-.fd-new { color: var(--fg); font-weight: 600; word-break: break-word; }
+.fd-new { color: var(--fg); font-weight: 600; }
 
 .detail-row .hint {
   margin-top: 4px; font-size: 10.5px; line-height: 1.45;
@@ -552,7 +553,7 @@ footer a:hover { text-decoration: underline; }
 .el-list.removed > summary { background: rgba(239, 68, 68, .12); color: #b91c1c; }
 .el-list.added > summary { background: rgba(16, 185, 129, .12); color: #047857; }
 .el-list ul { margin: 5px 0 0; padding-left: 16px; }
-.el-list li { margin: 1px 0; word-break: break-all; line-height: 1.4; }
+.el-list li { margin: 3px 0; overflow-wrap: anywhere; line-height: 1.45; }
 .el-list code { font-size: 10.5px; }
 
 .el-list.moved > summary { background: rgba(245, 158, 11, .14); color: #92400e; }

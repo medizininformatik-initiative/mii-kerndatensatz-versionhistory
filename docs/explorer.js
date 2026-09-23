@@ -28,7 +28,7 @@ let SELECTED_SEGMENT = null;  // { profileUrl, from, to }
 // ── Initialization ────────────────────────────────────────────────
 
 async function load() {
-  const res = await fetch("data.json?v=ebbda4c1");
+  const res = await fetch("data.json?v=4eb7a7cd");
   DATA = await res.json();
 
   // Header meta
@@ -557,7 +557,7 @@ let FIELD_DIFFS_PENDING = null;
 function loadFieldDiffs() {
   if (FIELD_DIFFS) return Promise.resolve(FIELD_DIFFS);
   if (!FIELD_DIFFS_PENDING) {
-    FIELD_DIFFS_PENDING = fetch("field-diffs.json?v=ebbda4c1")
+    FIELD_DIFFS_PENDING = fetch("field-diffs.json?v=4eb7a7cd")
       .then(r => r.ok ? r.json() : {})
       .catch(() => ({}))
       .then(d => { FIELD_DIFFS = d; return d; });
@@ -621,18 +621,23 @@ function renderFieldDiff(entry) {
     return out + (removed.length || added.length || moved.length ? "" :
       `<div class="field-diff-empty">Keine Detailangaben vorhanden.</div>`);
   }
+  // Kein Tabellenlayout: im schmalen Panel bleiben fuer die Werte sonst nur
+  // wenige Zeichen, lange Bindings brechen zeichenweise um. Stattdessen pro
+  // Feld eine Kopfzeile und darunter alt -> neu ueber die volle Breite.
   const rows = changed.map(el => {
     const fields = el.fields.map(f => `
-      <tr class="${f.tighter ? "tighter" : ""}">
-        <td class="fd-field">${escapeHtml(f.field)}
-          <span class="fd-kind">${escapeHtml(KIND_LABEL[f.kind] || f.kind)}</span>
-          ${f.tighter ? '<span class="fd-flag" title="Verschärfung — bestehende Instanzen können ungültig werden">verschärft</span>' : ""}</td>
-        <td class="fd-old">${escapeHtml(f.from)}</td>
-        <td class="fd-arrow">&rarr;</td>
-        <td class="fd-new">${escapeHtml(f.to)}</td>
-      </tr>`).join("");
+      <div class="fd-row ${f.tighter ? "tighter" : ""}">
+        <div class="fd-head">${escapeHtml(f.field)}${f.tighter
+          ? ' <span class="fd-flag" title="Verschärfung — bestehende Instanzen können ungültig werden">verschärft</span>'
+          : ""}</div>
+        <div class="fd-vals">
+          <span class="fd-old">${escapeHtml(f.from)}</span>
+          <span class="fd-arrow">&rarr;</span>
+          <span class="fd-new">${escapeHtml(f.to)}</span>
+        </div>
+      </div>`).join("");
     return `<div class="fd-element"><code class="fd-id">${escapeHtml(el.id)}</code>
-      <table class="fd-table">${fields}</table></div>`;
+      ${fields}</div>`;
   }).join("");
   const nTighter = changed.reduce((a, el) => a + el.fields.filter(f => f.tighter).length, 0);
   const head = `<div class="detail-row"><span class="label">Geänderte Elemente</span>
