@@ -28,7 +28,7 @@ let SELECTED_SEGMENT = null;  // { profileUrl, from, to }
 // ── Initialization ────────────────────────────────────────────────
 
 async function load() {
-  const res = await fetch("data.json?v=48dc46d9");
+  const res = await fetch("data.json?v=ebbda4c1");
   DATA = await res.json();
 
   // Header meta
@@ -318,15 +318,24 @@ function drawSubwayMap(moduleShort) {
         x1: x1, y1: y, x2: x2, y2: y,
         class: "subway-line " + cat,
       });
-      line.style.cursor = "pointer";
-      line.addEventListener("click", e => {
+      const titleEl = svgEl("title", {});
+      titleEl.textContent = `${a.v} → ${b.v}: ${cat}`
+        + (tx && tx.breaking ? " (breaking)" : "")
+        + "\nKlick zeigt die Detailänderungen";
+      line.appendChild(titleEl);
+      svg.appendChild(line);
+
+      // Unsichtbare, breitere Trefferflaeche — eine 2px-Linie ist mit der
+      // Maus kaum zu treffen, die Detailansicht haengt aber genau daran.
+      const hit = svgEl("line", {
+        x1: x1, y1: y, x2: x2, y2: y, class: "subway-hit",
+      });
+      hit.appendChild(titleEl.cloneNode(true));
+      hit.addEventListener("click", e => {
         e.stopPropagation();
         showSegmentDetail(p.url, a.v, b.v);
       });
-      const titleEl = svgEl("title", {});
-      titleEl.textContent = `${a.v} → ${b.v}: ${cat}` + (tx && tx.breaking ? " (breaking)" : "");
-      line.appendChild(titleEl);
-      svg.appendChild(line);
+      svg.appendChild(hit);
     }
 
     // Draw stations
@@ -548,7 +557,7 @@ let FIELD_DIFFS_PENDING = null;
 function loadFieldDiffs() {
   if (FIELD_DIFFS) return Promise.resolve(FIELD_DIFFS);
   if (!FIELD_DIFFS_PENDING) {
-    FIELD_DIFFS_PENDING = fetch("field-diffs.json?v=48dc46d9")
+    FIELD_DIFFS_PENDING = fetch("field-diffs.json?v=ebbda4c1")
       .then(r => r.ok ? r.json() : {})
       .catch(() => ({}))
       .then(d => { FIELD_DIFFS = d; return d; });

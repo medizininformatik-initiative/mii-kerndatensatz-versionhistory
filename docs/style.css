@@ -562,3 +562,10 @@ footer a:hover { text-decoration: underline; }
 .mv-arrow { margin: 0 4px; color: var(--muted); }
 
 .fd-kind.empty-el { background: rgba(127,127,127,.12); font-style: italic; cursor: help; }
+
+/* Breitere, unsichtbare Klickflaeche ueber den duennen Streckenlinien */
+.subway-hit {
+  stroke: transparent; stroke-width: 16; cursor: pointer;
+  pointer-events: stroke;
+}
+.subway-hit:hover + .subway-line, .subway-line:hover { stroke-width: 5; }
