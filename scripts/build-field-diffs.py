@@ -25,18 +25,23 @@ INDEX = REPO / "data" / "profile-element-index.json"
 OUT = REPO / "docs" / "field-diffs.json"
 
 # Fingerprint-Feld -> Anzeigename und Art der Aenderung
+# Feldnamen wie im Element-Index (snake_case, siehe build-element-index.py)
 FIELDS = [
     ("min", "Kardinalität min", "cardinality"),
     ("max", "Kardinalität max", "cardinality"),
-    ("mustSupport", "Must Support", "ms"),
+    ("must_support", "Must Support", "ms"),
     ("types", "Typ", "type"),
-    ("typeProfiles", "Typ-Profil", "type"),
-    ("targetProfiles", "Referenzziel", "type"),
-    ("bindingStrength", "Binding-Stärke", "binding"),
-    ("bindingValueSet", "Binding-ValueSet", "binding"),
-    ("fixedValue", "fixed", "value"),
-    ("patternValue", "pattern", "value"),
-    ("slicing", "Slicing", "slicing"),
+    ("type_profiles", "Typ-Profil", "type"),
+    ("target_profiles", "Referenzziel", "type"),
+    ("binding_strength", "Binding-Stärke", "binding"),
+    ("binding_value_set", "Binding-ValueSet", "binding"),
+    ("fixed_value", "fixed", "value"),
+    ("fixed_kind", "fixed-Typ", "value"),
+    ("pattern_value", "pattern", "value"),
+    ("pattern_kind", "pattern-Typ", "value"),
+    ("slice_name", "Slice-Name", "slicing"),
+    ("slicing_discriminators", "Slicing-Diskriminator", "slicing"),
+    ("slicing_rules", "Slicing-Regel", "slicing"),
 ]
 # Aenderungen, die eine bestehende Instanz ungueltig machen koennen
 TIGHTENING = {"cardinality", "binding", "value", "type"}
@@ -67,13 +72,13 @@ def diff_element(old, new):
             change["tighter"] = True
         if key == "max" and o == "*" and n not in ("*", None):
             change["tighter"] = True
-        if key == "mustSupport" and n and not o:
+        if key == "must_support" and n and not o:
             change["tighter"] = True
-        if key == "bindingStrength":
+        if key == "binding_strength":
             order = {"example": 0, "preferred": 1, "extensible": 2, "required": 3}
             if order.get(str(n), -1) > order.get(str(o), -1):
                 change["tighter"] = True
-        if key in ("fixedValue", "patternValue") and o is None and n is not None:
+        if key in ("fixed_value", "pattern_value") and o is None and n is not None:
             change["tighter"] = True
         out.append(change)
     return out
