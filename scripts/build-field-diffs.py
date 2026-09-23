@@ -22,6 +22,7 @@ from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[1]
 INDEX = REPO / "data" / "profile-element-index.json"
+MATRIX = REPO / "data" / "profile-version-matrix.json"
 OUT = REPO / "docs" / "field-diffs.json"
 
 # Fingerprint-Feld -> Anzeigename und Art der Aenderung
@@ -91,6 +92,21 @@ def main():
     a = ap.parse_args()
 
     idx = json.load(open(INDEX, encoding="utf-8"))
+    # Hinzugefuegte/entfernte Element-IDs kommen aus der Matrix — sie ist die
+    # Quelle der im Explorer angezeigten Zaehlungen, also muessen die Listen
+    # dazu passen. Der Element-Index liefert nur die Feldaenderungen an
+    # Elementen, die in beiden Versionen existieren.
+    addrem = {}
+    if MATRIX.exists():
+        mtx = json.load(open(MATRIX, encoding="utf-8"))
+        for _short, pkg in mtx.get("packages", {}).items():
+            for url, prof in pkg.get("profiles", {}).items():
+                for pw in prof.get("pairwise_comparisons", []):
+                    add = pw.get("elements_added") or []
+                    rem = pw.get("elements_removed") or []
+                    if add or rem:
+                        addrem.setdefault(url, {})[f"{pw['from']}|{pw['to']}"] = {
+                            "added": add, "removed": rem}
     result = {}
     n_tx = n_el = 0
     for mod, data in sorted(idx.items()):
@@ -109,11 +125,32 @@ def main():
                     fields = diff_element(o_el[eid], n_el_map[eid])
                     if fields:
                         changed.append({"id": eid, "fields": fields})
-                if not changed:
+                key = f"{v_old}|{v_new}"
+                ar = addrem.get(url, {}).get(key, {})
+                if not changed and not ar:
                     continue
-                result.setdefault(url, {})[f"{v_old}|{v_new}"] = changed
+                entry = {"changed": changed}
+                if ar.get("added"):
+                    entry["added"] = ar["added"]
+                if ar.get("removed"):
+                    entry["removed"] = ar["removed"]
+                result.setdefault(url, {})[key] = entry
                 n_tx += 1
                 n_el += len(changed)
+
+    # Uebergaenge, die nur Elemente hinzugefuegt/entfernt haben und deshalb
+    # oben nicht erfasst wurden (kein gemeinsames Element mit Feldaenderung)
+    for url, txs in addrem.items():
+        for key, ar in txs.items():
+            if key in result.get(url, {}):
+                continue
+            entry = {"changed": []}
+            if ar.get("added"):
+                entry["added"] = ar["added"]
+            if ar.get("removed"):
+                entry["removed"] = ar["removed"]
+            result.setdefault(url, {})[key] = entry
+            n_tx += 1
 
     OUT.parent.mkdir(exist_ok=True)
     json.dump(result, open(OUT, "w", encoding="utf-8"), ensure_ascii=False,

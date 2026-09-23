@@ -28,7 +28,7 @@ let SELECTED_SEGMENT = null;  // { profileUrl, from, to }
 // ── Initialization ────────────────────────────────────────────────
 
 async function load() {
-  const res = await fetch("data.json?v=28e02f3d");
+  const res = await fetch("data.json?v=05c18c05");
   DATA = await res.json();
 
   // Header meta
@@ -548,7 +548,7 @@ let FIELD_DIFFS_PENDING = null;
 function loadFieldDiffs() {
   if (FIELD_DIFFS) return Promise.resolve(FIELD_DIFFS);
   if (!FIELD_DIFFS_PENDING) {
-    FIELD_DIFFS_PENDING = fetch("field-diffs.json?v=28e02f3d")
+    FIELD_DIFFS_PENDING = fetch("field-diffs.json?v=05c18c05")
       .then(r => r.ok ? r.json() : {})
       .catch(() => ({}))
       .then(d => { FIELD_DIFFS = d; return d; });
@@ -561,10 +561,31 @@ const KIND_LABEL = {
   binding: "Binding", value: "Wert", slicing: "Slicing",
 };
 
-function renderFieldDiff(changed) {
-  if (!changed || !changed.length) {
-    return `<div class="field-diff-empty">Keine Feldänderungen an fortbestehenden Elementen —
-      die Änderung besteht aus hinzugefügten bzw. entfernten Elementen.</div>`;
+function renderElementList(ids, cls, label) {
+  if (!ids || !ids.length) return "";
+  const items = ids.map(i => `<li><code>${escapeHtml(i)}</code></li>`).join("");
+  const open = ids.length <= 12 ? " open" : "";
+  return `<details class="el-list ${cls}"${open}>
+    <summary>${label} <strong>${ids.length}</strong></summary>
+    <ul>${items}</ul></details>`;
+}
+
+function renderFieldDiff(entry) {
+  if (!entry) {
+    return `<div class="field-diff-empty">Für diesen Übergang liegen keine
+      Detaildaten vor.</div>`;
+  }
+  // Altes Format (nur Liste) weiter unterstuetzen
+  const changed = Array.isArray(entry) ? entry : (entry.changed || []);
+  const removed = Array.isArray(entry) ? [] : (entry.removed || []);
+  const added = Array.isArray(entry) ? [] : (entry.added || []);
+
+  let out = renderElementList(removed, "removed", "Entfernte Elemente")
+          + renderElementList(added, "added", "Neue Elemente");
+
+  if (!changed.length) {
+    return out + (removed.length || added.length ? "" :
+      `<div class="field-diff-empty">Keine Detailangaben vorhanden.</div>`);
   }
   const rows = changed.map(el => {
     const fields = el.fields.map(f => `
@@ -582,7 +603,7 @@ function renderFieldDiff(changed) {
   const nTighter = changed.reduce((a, el) => a + el.fields.filter(f => f.tighter).length, 0);
   const head = `<div class="detail-row"><span class="label">Geänderte Elemente</span>
     <span class="value">${changed.length}${nTighter ? ` · <strong>${nTighter} Verschärfung(en)</strong>` : ""}</span></div>`;
-  return head + rows;
+  return out + head + rows;
 }
 
 function showSegmentDetail(profileUrl, fromVer, toVer) {

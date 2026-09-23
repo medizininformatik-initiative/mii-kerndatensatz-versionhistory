@@ -544,3 +544,13 @@ footer a:hover { text-decoration: underline; }
   background: rgba(139, 92, 246, .10); border-left: 3px solid var(--governance);
   font-size: 11px; line-height: 1.5;
 }
+
+.el-list { margin: 6px 0 10px; font-size: 11px; }
+.el-list > summary {
+  cursor: pointer; padding: 4px 7px; border-radius: 5px; font-weight: 600;
+}
+.el-list.removed > summary { background: rgba(239, 68, 68, .12); color: #b91c1c; }
+.el-list.added > summary { background: rgba(16, 185, 129, .12); color: #047857; }
+.el-list ul { margin: 5px 0 0; padding-left: 16px; }
+.el-list li { margin: 1px 0; word-break: break-all; line-height: 1.4; }
+.el-list code { font-size: 10.5px; }
