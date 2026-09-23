@@ -28,7 +28,7 @@ let SELECTED_SEGMENT = null;  // { profileUrl, from, to }
 // ── Initialization ────────────────────────────────────────────────
 
 async function load() {
-  const res = await fetch("data.json?v=936f41a4");
+  const res = await fetch("data.json?v=48dc46d9");
   DATA = await res.json();
 
   // Header meta
@@ -548,7 +548,7 @@ let FIELD_DIFFS_PENDING = null;
 function loadFieldDiffs() {
   if (FIELD_DIFFS) return Promise.resolve(FIELD_DIFFS);
   if (!FIELD_DIFFS_PENDING) {
-    FIELD_DIFFS_PENDING = fetch("field-diffs.json?v=936f41a4")
+    FIELD_DIFFS_PENDING = fetch("field-diffs.json?v=48dc46d9")
       .then(r => r.ok ? r.json() : {})
       .catch(() => ({}))
       .then(d => { FIELD_DIFFS = d; return d; });
@@ -563,7 +563,17 @@ const KIND_LABEL = {
 
 function renderElementList(ids, cls, label) {
   if (!ids || !ids.length) return "";
-  const items = ids.map(i => `<li><code>${escapeHtml(i)}</code></li>`).join("");
+  // Eintraege sind entweder blanke IDs (aelteres Format) oder {id, props}
+  const items = ids.map(i => {
+    const id = typeof i === "string" ? i : i.id;
+    const props = (typeof i === "string" ? [] : (i.props || []));
+    const detail = props.length
+      ? props.map(t => `<span class="fd-kind">${escapeHtml(t)}</span>`).join(" ")
+      : (cls === "added"
+          ? `<span class="fd-kind empty-el" title="Das Element steht im Differential, legt aber keine Kardinalität, kein Must Support, kein Binding und keine Invariante fest — meist ein leerer Container aus dem Build">ohne Constraints</span>`
+          : "");
+    return `<li><code>${escapeHtml(id)}</code>${detail ? " " + detail : ""}</li>`;
+  }).join("");
   const open = ids.length <= 12 ? " open" : "";
   return `<details class="el-list ${cls}"${open}>
     <summary>${label} <strong>${ids.length}</strong></summary>

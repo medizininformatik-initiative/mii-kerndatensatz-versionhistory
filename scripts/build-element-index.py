@@ -74,6 +74,14 @@ def extract_fingerprint(elem: dict) -> dict:
         "must_support": elem.get("mustSupport", False),
     }
 
+    # Invarianten: ohne sie wirken Elemente "leer", die nur eine Constraint
+    # tragen (z.B. DocumentReference in dokument 2027.0.0-ballot.2)
+    if elem.get("constraint"):
+        fp["constraints"] = sorted(
+            c.get("key") for c in elem["constraint"] if c.get("key"))
+    if elem.get("condition"):
+        fp["conditions"] = sorted(elem["condition"])
+
     # Slice info
     if "sliceName" in elem:
         fp["slice_name"] = elem["sliceName"]

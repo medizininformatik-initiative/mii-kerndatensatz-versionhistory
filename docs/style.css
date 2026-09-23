@@ -560,3 +560,5 @@ footer a:hover { text-decoration: underline; }
 .mv-from { color: #b45309; }
 .mv-to { color: #047857; font-weight: 600; }
 .mv-arrow { margin: 0 4px; color: var(--muted); }
+
+.fd-kind.empty-el { background: rgba(127,127,127,.12); font-style: italic; cursor: help; }

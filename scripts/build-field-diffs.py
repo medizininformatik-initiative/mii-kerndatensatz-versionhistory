@@ -45,6 +45,8 @@ FIELDS = [
     ("slice_name", "Slice-Name", "slicing"),
     ("slicing_discriminators", "Slicing-Diskriminator", "slicing"),
     ("slicing_rules", "Slicing-Regel", "slicing"),
+    ("constraints", "Invarianten", "constraint"),
+    ("conditions", "Bedingungen", "constraint"),
 ]
 # Aenderungen, die eine bestehende Instanz ungueltig machen koennen
 TIGHTENING = {"cardinality", "binding", "value", "type"}
@@ -153,6 +155,22 @@ def detect_moves(removed, old_ids, new_ids, old_el, new_el):
     return moves, consumed
 
 
+SKIP_PROPS = {"id", "path", "base_path"}
+
+
+def describe(el):
+    """Kurzbeschreibung der Eigenschaften eines Elements fuer added-Listen."""
+    if not el:
+        return []
+    out = []
+    for key, label, _kind in FIELDS:
+        v = el.get(key)
+        if v in (None, False, [], {}):
+            continue
+        out.append(f"{label}: {short(v, 60)}")
+    return out
+
+
 def diff_element(old, new):
     """Liste der geaenderten Felder eines Elements."""
     out = []
@@ -233,9 +251,14 @@ def main():
                 if not changed and not ar:
                     continue
                 entry = {"changed": changed}
-                for k in ("moved", "added", "removed"):
+                for k in ("moved", "removed"):
                     if ar.get(k):
                         entry[k] = ar[k]
+                if ar.get("added"):
+                    # Element-IDs allein sagen wenig ("+1: DocumentReference") —
+                    # die mitgebrachten Constraints machen es lesbar.
+                    entry["added"] = [{"id": i, "props": describe(n_el_map.get(i))}
+                                      for i in ar["added"]]
                 result.setdefault(url, {})[key] = entry
                 n_tx += 1
                 n_el += len(changed)
