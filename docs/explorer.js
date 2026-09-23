@@ -534,6 +534,50 @@ function showStationDetail(profileUrl, version) {
   panel.innerHTML = html;
 }
 
+// Feld-Diffs werden erst bei Bedarf nachgeladen (148 KB, nicht im Erststart)
+let FIELD_DIFFS = null;
+let FIELD_DIFFS_PENDING = null;
+
+function loadFieldDiffs() {
+  if (FIELD_DIFFS) return Promise.resolve(FIELD_DIFFS);
+  if (!FIELD_DIFFS_PENDING) {
+    FIELD_DIFFS_PENDING = fetch("field-diffs.json")
+      .then(r => r.ok ? r.json() : {})
+      .catch(() => ({}))
+      .then(d => { FIELD_DIFFS = d; return d; });
+  }
+  return FIELD_DIFFS_PENDING;
+}
+
+const KIND_LABEL = {
+  cardinality: "Kardinalität", ms: "Must Support", type: "Typ",
+  binding: "Binding", value: "Wert", slicing: "Slicing",
+};
+
+function renderFieldDiff(changed) {
+  if (!changed || !changed.length) {
+    return `<div class="field-diff-empty">Keine Feldänderungen an fortbestehenden Elementen —
+      die Änderung besteht aus hinzugefügten bzw. entfernten Elementen.</div>`;
+  }
+  const rows = changed.map(el => {
+    const fields = el.fields.map(f => `
+      <tr class="${f.tighter ? "tighter" : ""}">
+        <td class="fd-field">${escapeHtml(f.field)}
+          <span class="fd-kind">${escapeHtml(KIND_LABEL[f.kind] || f.kind)}</span>
+          ${f.tighter ? '<span class="fd-flag" title="Verschärfung — bestehende Instanzen können ungültig werden">verschärft</span>' : ""}</td>
+        <td class="fd-old">${escapeHtml(f.from)}</td>
+        <td class="fd-arrow">&rarr;</td>
+        <td class="fd-new">${escapeHtml(f.to)}</td>
+      </tr>`).join("");
+    return `<div class="fd-element"><code class="fd-id">${escapeHtml(el.id)}</code>
+      <table class="fd-table">${fields}</table></div>`;
+  }).join("");
+  const nTighter = changed.reduce((a, el) => a + el.fields.filter(f => f.tighter).length, 0);
+  const head = `<div class="detail-row"><span class="label">Geänderte Elemente</span>
+    <span class="value">${changed.length}${nTighter ? ` · <strong>${nTighter} Verschärfung(en)</strong>` : ""}</span></div>`;
+  return head + rows;
+}
+
 function showSegmentDetail(profileUrl, fromVer, toVer) {
   const p = DATA.profiles.find(x => x.url === profileUrl);
   if (!p) return;
@@ -551,8 +595,27 @@ function showSegmentDetail(profileUrl, fromVer, toVer) {
     <div class="detail-title">${escapeHtml(p.name)}</div>
     <div class="detail-subtitle">${fromVer} &rarr; ${toVer}</div>
     ${renderTransition(tx)}
+    <div class="detail-section-title">Was sich geändert hat</div>
+    <div id="field-diff-body" class="field-diff-loading">lädt …</div>
   `;
   panel.innerHTML = html;
+
+  loadFieldDiffs().then(diffs => {
+    // Panel koennte inzwischen weitergeklickt sein
+    if (!SELECTED_SEGMENT || SELECTED_SEGMENT.profileUrl !== profileUrl
+        || SELECTED_SEGMENT.from !== fromVer || SELECTED_SEGMENT.to !== toVer) return;
+    const body = document.getElementById("field-diff-body");
+    if (!body) return;
+    let changed = (diffs[profileUrl] || {})[`${fromVer}|${toVer}`];
+    if (!changed && p.aka) {
+      for (const alt of p.aka) {
+        changed = (diffs[alt] || {})[`${fromVer}|${toVer}`];
+        if (changed) break;
+      }
+    }
+    body.className = "field-diff";
+    body.innerHTML = renderFieldDiff(changed);
+  });
 }
 
 function renderTransition(tx) {

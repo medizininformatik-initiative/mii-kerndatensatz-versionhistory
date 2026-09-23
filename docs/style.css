@@ -503,3 +503,32 @@ footer a:hover { text-decoration: underline; }
   .kpi-strip { grid-template-columns: repeat(2, 1fr); }
   h1 { font-size: 18px; }
 }
+
+
+/* ── Feld-genaue Diffs im Detailpanel ───────────────────────────── */
+.detail-section-title {
+  margin: 16px 0 8px; font-size: 12px; font-weight: 700;
+  text-transform: uppercase; letter-spacing: .04em; color: var(--muted);
+}
+.field-diff-loading { font-size: 12px; color: var(--muted); }
+.field-diff-empty { font-size: 12px; color: var(--muted); line-height: 1.5; }
+.fd-element { margin-bottom: 10px; }
+.fd-id {
+  display: block; font-size: 11px; color: var(--fg);
+  word-break: break-all; margin-bottom: 3px;
+}
+.fd-table { width: 100%; border-collapse: collapse; font-size: 11px; }
+.fd-table td { padding: 2px 4px; vertical-align: top; }
+.fd-table tr.tighter { background: rgba(239, 68, 68, .07); }
+.fd-field { white-space: nowrap; color: var(--muted); }
+.fd-kind {
+  display: inline-block; margin-left: 4px; padding: 0 5px; border-radius: 8px;
+  background: rgba(127,127,127,.15); font-size: 9px; text-transform: uppercase;
+}
+.fd-flag {
+  display: inline-block; margin-left: 4px; padding: 0 5px; border-radius: 8px;
+  background: #ef4444; color: #fff; font-size: 9px; font-weight: 700;
+}
+.fd-old { color: var(--muted); text-decoration: line-through; word-break: break-word; }
+.fd-arrow { color: var(--muted); }
+.fd-new { color: var(--fg); font-weight: 600; word-break: break-word; }
