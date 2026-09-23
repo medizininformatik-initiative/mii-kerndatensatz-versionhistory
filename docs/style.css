@@ -11,6 +11,8 @@
   --removed: #f59e0b;
   --modified: #a855f7;
   --mixed: #ec4899;
+  --renamed: #f59e0b;
+  --governance: #8b5cf6;
   --breaking: #ef4444;
   --legacy: #9ca3af;
   --card: white;
@@ -190,6 +192,8 @@ h4 {
 .swatch.elements-removed { background: var(--removed); }
 .swatch.modified { background: var(--modified); }
 .swatch.mixed { background: var(--mixed); }
+.swatch.renamed { background: var(--renamed); }
+.swatch.governance-migration { background: var(--governance); }
 .station-sample {
   display: inline-block;
   width: 12px;
@@ -315,6 +319,11 @@ h4 {
 .subway-line.elements-removed { stroke: var(--removed); }
 .subway-line.modified { stroke: var(--modified); }
 .subway-line.mixed { stroke: var(--mixed); }
+.subway-line.renamed { stroke: var(--renamed); stroke-dasharray: 7 4; }
+.subway-line.governance-migration { stroke: var(--governance); stroke-dasharray: 3 4; stroke-width: 3; }
+.governance-label { font-size: 10px; fill: var(--governance); font-weight: 600; }
+.pill.renamed { background: var(--renamed); color: #fff; }
+.pill.governance-migration { background: var(--governance); color: #fff; }
 .subway-line.sole-version { stroke: var(--identical); }
 .subway-line:hover { stroke-width: 8; cursor: pointer; }
 

@@ -370,6 +370,25 @@ function drawSubwayMap(moduleShort) {
 
       svg.appendChild(station);
     });
+
+    // Governance-Terminal: Profil nach ISiK 6 uebergegangen
+    if (p.governance && versionsInProfile.length) {
+      const last = versionsInProfile[versionsInProfile.length - 1];
+      const x0 = versionX[last.v];
+      const seg = svgEl("line", {
+        x1: x0, y1: y, x2: x0 + 46, y2: y,
+        class: "subway-line governance-migration",
+      });
+      const t1 = svgEl("title", {});
+      t1.textContent = `Governance-Übergang nach ISiK 6\n${p.governance.target_url}\nStruktur-Jaccard ${p.governance.jaccard || "?"} — reine URL-Zuordnung, keine Konformitätsaussage`;
+      seg.appendChild(t1);
+      svg.appendChild(seg);
+      const lbl = svgEl("text", {
+        x: x0 + 52, y: y + 4, class: "governance-label",
+      });
+      lbl.textContent = "ISiK 6";
+      svg.appendChild(lbl);
+    }
   });
 }
 

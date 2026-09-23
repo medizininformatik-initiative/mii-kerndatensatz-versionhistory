@@ -183,6 +183,90 @@ def main():
                 "transitions": transitions,
             })
 
+    # ─ Renames & Governance (2027-Werkzeuge) ──────────────────────────
+    # Inhaltsgleiche Canonical-Renames (Jaccard 1.0 bzw. kuratiert confirmed=yes)
+    # werden zu EINER Lane verschmolzen; ICU-Profile, die nach ISiK 6
+    # uebergegangen sind, bekommen ein governance-migration-Terminal.
+    import csv as _csv, re as _re
+
+    def _vkey(v):
+        return [int(x) if x.isdigit() else x for x in _re.split(r"[.\-]", v)]
+
+    ren_path = REPO_ROOT / "data" / "rename-candidates-2027.csv"
+    if ren_path.exists():
+        links = []
+        for r in _csv.DictReader(open(ren_path, encoding="utf-8")):
+            conf = (r.get("confirmed") or "").strip().lower()
+            if not r.get("new_url") or conf == "no":
+                continue
+            if conf == "yes" or r.get("jaccard") == "1.0":
+                links.append(r)
+        parent = {}
+        def find(u):
+            parent.setdefault(u, u)
+            while parent[u] != u:
+                parent[u] = parent[parent[u]]
+                u = parent[u]
+            return u
+        def union(a, b):
+            parent[find(a)] = find(b)
+        for r in links:
+            union(r["old_url"], r["new_url"])
+        by_url = {p_["url"]: p_ for p_ in profiles}
+        groups_by_root = {}
+        for u in list(parent):
+            if u in by_url:
+                groups_by_root.setdefault(find(u), []).append(u)
+        for root, urls in groups_by_root.items():
+            if len(urls) < 2:
+                continue
+            members = [by_url[u] for u in urls]
+            primary = max(members, key=lambda m: _vkey(m["last_seen"] or "0"))
+            rest = [m for m in members if m is not primary]
+            primary["aka"] = sorted(m["url"] for m in rest)
+            primary["first_seen"] = min(members, key=lambda m: _vkey(m["first_seen"] or "9"))["first_seen"]
+            primary["n_versions"] = sum(m["n_versions"] for m in members)
+            merged_groups = [g for m in members for g in m["groups"]]
+            merged_groups.sort(key=lambda g: _vkey(g["versions"][0]) if g["versions"] else [0])
+            for i, g in enumerate(merged_groups):
+                g["idx"] = i + 1
+            primary["groups"] = merged_groups
+            seen_tx = {(t["from"], t["to"]) for t in primary["transitions"]}
+            for m in rest:
+                for t in m["transitions"]:
+                    if (t["from"], t["to"]) not in seen_tx:
+                        primary["transitions"].append(t)
+                        seen_tx.add((t["from"], t["to"]))
+            for r in links:
+                if r["old_url"] in urls and (r["old_version"], r["new_version"]) not in seen_tx:
+                    primary["transitions"].append({
+                        "from": r["old_version"], "to": r["new_version"],
+                        "cat": "renamed", "breaking": False,
+                        "n_add": 0, "n_rem": 0, "n_mod": 0,
+                        "severity": None,
+                        "reason": f"Canonical-Rename (inhaltsgleich): {r['old_url']} -> {r['new_url']}",
+                    })
+                    seen_tx.add((r["old_version"], r["new_version"]))
+            for m in rest:
+                profiles.remove(m)
+
+    gov_path = REPO_ROOT / "data" / "icu-isik-governance.csv"
+    if gov_path.exists():
+        by_url = {p_["url"]: p_ for p_ in profiles}
+        aka_idx = {a: p_ for p_ in profiles for a in p_.get("aka", [])}
+        for r in _csv.DictReader(open(gov_path, encoding="utf-8")):
+            if not r.get("mii_url"):
+                continue
+            prof = by_url.get(r["mii_url"]) or aka_idx.get(r["mii_url"])
+            if not prof:
+                continue
+            info = {"target_url": r["isik_url"], "jaccard": r["struktur_jaccard"],
+                    "since": r["mii_letzte_version"]}
+            if r["klasse"] == "nach-isik-uebergegangen":
+                prof["governance"] = info
+            elif r["klasse"] == "doppel-governance":
+                prof["isik_twin"] = info
+
     # ─ Lineage ─────────────────────────────────────────────────────────
     lineage = []
     for entry in matrix.get("lineage", []):
