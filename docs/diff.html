@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MII Kerndatensatz Release-Diff</title>
+<link rel="stylesheet" href="style.css?v=aebf2baa">
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div>
+      <h1>MII Kerndatensatz Release-Diff</h1>
+      <div class="subtitle" id="diff-subtitle">Gesamter KDS: letzter stabiler Stand gegen aktuellen Stand</div>
+    </div>
+    <div class="header-meta">
+      <div><a href="index.html">&larr; Subway-Explorer</a></div>
+      <div><a href="release-diff.json?v=aebf2baa" target="_blank">release-diff.json</a> ·
+        <a href="https://github.com/medizininformatik-initiative/mii-kerndatensatz-versionhistory/blob/main/data/release-diff.csv" target="_blank" rel="noopener">CSV</a></div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<div class="wip-banner">
+  <strong>⚠ Work in Progress</strong> &mdash;
+  Inhalte und Klassifikationen sind <strong>noch nicht reviewed</strong> und
+  können Fehler enthalten. Nicht für produktive Entscheidungen verwenden, bevor
+  die Daten validiert sind.
+</div>
+
+<section id="diff-intro">
+  <div class="intro-grid">
+    <div class="intro-text">
+      <h2 id="diff-title">&mdash;</h2>
+      <p>Je Modul werden die beiden in der
+        <a href="https://github.com/medizininformatik-initiative/kerndatensatz-complete" target="_blank" rel="noopener">Complete-BOM</a>
+        gepinnten Versionen <strong>direkt</strong> verglichen &mdash; ohne die
+        Zwischenstände, die der Subway-Explorer einzeln zeigt. Das ist die Liste
+        dessen, was bei einer Migration vom stabilen Stand auf den aktuellen
+        tatsächlich anfällt.</p>
+      <p>Verglichen werden die <strong>Differentials</strong> der Profile. Ein
+        &bdquo;entferntes Element&ldquo; heißt deshalb: das Profil schränkt es
+        nicht mehr ein &mdash; nicht, dass es in der Ressource fehlt.</p>
+    </div>
+    <div class="kpi-strip" id="diff-kpis"></div>
+  </div>
+</section>
+
+<section id="diff-modules">
+  <h2>Module</h2>
+  <div class="diff-table-wrap">
+    <table class="diff-modules" id="module-table"></table>
+  </div>
+</section>
+
+<section id="diff-list-section">
+  <div class="diff-filters">
+    <input type="search" id="f-search" placeholder="Profil, Element oder URL suchen …" aria-label="Suche">
+    <select id="f-module" aria-label="Modul"></select>
+    <div class="chips" id="f-status"></div>
+    <label class="diff-check"><input type="checkbox" id="f-tighter"> nur mit Verschärfungen</label>
+    <span class="diff-count" id="f-count"></span>
+  </div>
+  <div id="diff-list"></div>
+</section>
+
+<footer>
+  <p>
+    Daten aus dem öffentlichen
+    <a href="https://packages.simplifier.net/" target="_blank" rel="noopener">Simplifier FHIR Package Registry</a>.
+    Quellcode auf
+    <a href="https://github.com/medizininformatik-initiative/mii-kerndatensatz-versionhistory" target="_blank" rel="noopener">GitHub</a>.
+  </p>
+</footer>
+
+<script src="field-diff-render.js?v=aebf2baa"></script>
+<script src="diff.js?v=aebf2baa"></script>
+</body>
+</html>

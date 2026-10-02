@@ -55,6 +55,10 @@ Rückmeldungen gern als Issue, PR auf die CSVs oder direkt an das KDS-Team.
   zeigt ins Leere) — beides wird getrennt ausgewiesen.
 - **Governance-Übergänge**: ICU-Profile, die in ISiK 6 weitergeführt werden,
   enden in einem „ISiK 6"-Terminal statt einfach abzubrechen.
+- **Release-Diff** ([`diff.html`](docs/diff.html)): der gesamte KDS als eine
+  Liste — je Modul die in der letzten stabilen 2026er Complete-BOM gepinnte
+  Version direkt gegen die des aktuellen Stands, ohne Zwischenschritte.
+  Filterbar nach Modul, Status und Verschärfungen.
 - **Nachfolger-Hinweise**: verschwundene Profile zeigen, in welchem anderen Modul
   ihr Inhalt vermutlich aufgegangen ist.
 
@@ -72,6 +76,8 @@ Rückmeldungen gern als Issue, PR auf die CSVs oder direkt an das KDS-Team.
 | [`data/maturity-model.json`](data/maturity-model.json) | KDS Specification Maturity Scores pro Modul |
 | [`data/profile-element-index.json`](data/profile-element-index.json) | Element-Fingerprints pro Profil/Version |
 | [`docs/field-diffs.json`](docs/field-diffs.json) | Feld-genaue Änderungen je Übergang (vom Explorer nachgeladen) |
+| [`docs/diff.html`](docs/diff.html) | Release-Diff: gesamter KDS, letzte stabile 2026er-BOM gegen aktuellen Stand |
+| [`data/release-diff.csv`](data/release-diff.csv) | Derselbe Diff flach, eine Zeile je Änderung |
 | [`data/rename-candidates.csv`](data/rename-candidates.csv) | **Zur Kuratierung:** Canonical-Umbenennungen mit Ähnlichkeitsscore |
 | [`data/cross-module-candidates.csv`](data/cross-module-candidates.csv) | **Zur Kuratierung:** modulübergreifende Nachfolger |
 | [`data/icu-isik-governance.csv`](data/icu-isik-governance.csv) | **Zur Kuratierung:** ICU-Profile in ISiK-6-Governance |
@@ -91,6 +97,10 @@ cp output/version-comparison/profile-element-index.json data/
 ./scripts/propose-cross-module.py           # modulübergreifende Nachfolger
 ./scripts/build-field-diffs.py              # Feld-genaue Diffs
 python3 scripts/build-explorer-data.py      # docs/data.json
+./scripts/build-release-diff.py \
+    --baseline "$BOM/de.medizininformatikinitiative.kerndatensatz.complete-2026.2.0.tgz" \
+    --target "$BOM/package.json"            # Release-Diff (braucht docs/data.json)
+python3 scripts/stamp-assets.py             # Cache-Buster
 ```
 
 **Auswahlregel für Versionen:** stabile Releases und die in der BOM gepinnten
